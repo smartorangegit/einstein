@@ -6,6 +6,10 @@
  
 full-site/img
 full-site/pdf_docs
-
+full-site/docs/
+full-site/DB.php
+full-site/docs/classes/SiteDb.php
+full-site/application.php
+full-site/admin/bd.php
 
 
