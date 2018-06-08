@@ -1,0 +1,718 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+@import "my-animation"
+
+*
+	margin: 0
+	padding: 0
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+html, body
+	height: 100%
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.75
+	// font-family: $default-font
+	font-family: 'OksanaSansDemiBold', sans-serif
+	overflow-x: hidden
+	opacity: 1
+	background-color: #fff
+
+.wrapper
+	display: flex
+	flex-direction: column
+	height: 100%
+	// max-width: 1920px
+	margin: 0 auto
+	position: relative
+	.content
+		flex: 1 0  auto
+		position: relative
+	footer
+		flex: 0 0 auto
+		position: relative
+		z-index: 200
+	&:after
+		position: absolute
+		// background-color: rgba(#000, 0.5)
+		background-color: #000
+		z-index: 1010
+		width: 100%
+		height: 100%
+
+ul
+	list-style-type: none
+
+// ==========================================================
+
+.btn
+	outline: none
+	border: 1px solid #fff
+	background-color: transparent
+	color: #fff
+	font-size: 0.625em
+	text-transform: uppercase
+	letter-spacing: 0.1em
+	font-family: $Oksana-font-Bold
+	line-height: 2
+	&__top
+		margin-top: 4px;
+		width: 212px;
+		height: 38px;
+		&_other
+			border: 1px solid $accent-color
+			color: $accent-color
+
+	&__form
+		width: 100%;
+		height: 38px;
+		font-size: 0.75em
+		margin-top: 20px
+		color: #fff
+		background-color: $accent-color
+// ================ header =================================
+@import "header-style"// стили header
+// ==================== footer ===========================
+.footer
+	background-color: rgba(0,36,66,0.3)
+	// height: 40px
+	width: 100%
+	&__inner
+		max-width: 1200px
+		width: 100%
+		padding: 5px 10px
+		margin: auto
+		+clearfix
+	&__left
+		width: 50%
+		font-size: 0.875em
+		font-family: 'RobotoLight', sans-serif
+		line-height: 2.14
+		color: #fff
+		float: left
+	&__right
+		width: 50%
+		font-size: 0.875em
+		font-family: 'RobotoLight', sans-serif
+		line-height: 2.14
+		color: #fff
+		float: right
+		text-align: right
+.footer-other
+	background-color: rgba(0,36,66,1)
+// текст нужно перенести в другой файл
+
+.text-raboto
+	font-size: 14px
+	// font-size: 14px /in (em) mast be
+	font-family: 'RobotoLight', sans-serif
+	line-height: 2.14285714
+	color: #fff
+
+	&_right
+		text-align: right
+
+	a
+		margin-left: 15px
+		cursor: pointer
+// ========================= MAIN ================================
+.main-arrow-down
+	width: 25px
+	height: 25px
+	position: relative
+	z-index: 200
+	left: 0
+	right: 0
+	margin: auto
+	bottom: -120px
+	outline: none
+	border: 2px solid #fff
+	border-radius: 50%
+	display: none
+	animation: top 1.05s infinite ease-in-out
+
+@-webkit-keyframes top
+	0%
+		-webkit-transform: translateY(-3px)
+	50%
+		-webkit-transform: translateY(3px)
+	100%
+		-webkit-transform: translateY(-3px)
+
+	// display: block
+// ===============================================================
+// ================== blok-about =================================
+.blok-about
+	background: #01131d url("../img/blok-about/top-bg.jpg") no-repeat center top
+	background-size: cover
+	min-height: 2350px
+	// min-height: auto
+	margin: 0 auto
+	padding-top: 165px
+	position: relative
+	&__inner
+		max-width: 1200px
+		width: 100%
+		padding: 0 10px
+		margin: auto
+	.quote
+		width: 80.5084746% //950px/1180px
+		position: relative
+		margin-right: 0
+		margin-left: auto
+		padding-right: 115px
+		margin-bottom: 195px
+		img
+			float:  left
+			padding-bottom: 40px
+		&__description
+			font-size: 3.75em
+			line-height: 0.9
+			letter-spacing: -0.04em
+			color: #fff
+			margin: 0
+			font-weight: 100
+			padding: 35px 0 0 0
+			text-align: right
+			font-family: 'SFUIDisplayUltralight', sans-serif
+		&::after
+			content: ""
+			display: block
+			background: url('../img/q2.svg') no-repeat center center
+			width: 100px
+			height: 65px
+			position: absolute
+			right: -3px
+			bottom: 58px
+		&__text
+			font-size: 1.875em
+			line-height: 0.666666667
+			letter-spacing: 0.025em
+			color: #fff
+			text-align: right
+			padding-top: 34px
+			text-transform: uppercase
+			font-family: 'OksanaSansWideHeavy', sans-serif
+	.line-blok
+		background-color: #4d6b83
+		height: 1px
+		width: 120px
+		margin-top: 24px
+		margin-bottom: 5px
+	.tagline-about
+		&__caption
+			margin: 0
+			padding: 0
+			font-size: 2.25em
+			line-height: 1.16
+			letter-spacing: 0.025em
+			text-transform: uppercase
+			font-family: 'OksanaSansWideHeavy',sans-serif
+			color: #fff
+		&__text
+			margin: 0
+			padding: 0
+			font-size: 1.125em
+			letter-spacing: 0.002em
+			font-family: 'RobotoLight', sans-serif
+			color: #fff
+			padding-top: 20px
+	.about-descr
+		&__caption
+			margin: 0
+			padding: 0
+			font-size: 2.25em
+			line-height: 1.16
+			letter-spacing: 0.025em
+			text-transform: uppercase
+			font-family: 'OksanaSansWideHeavy',sans-serif
+			color: #fff
+		&__text-midle
+			font-size: 18px
+			line-height: 2
+			font-family: 'RobotoMedium', sans-serif
+			letter-spacing: 0.002em
+			color: #fff
+			text-transform: uppercase
+		&__menu
+			margin-top: 24px
+		&__item
+			padding-bottom: 40px
+			+clearfix
+		&__text-heavy
+			color: #fff
+			font-size: 1.5em
+			line-height: 1.25
+			letter-spacing: 0.002em
+			font-family: 'OksanaSansWideHeavy',sans-serif
+		&__text
+			font-size: 1.125em
+			line-height: 1.16
+			color: #fff
+			letter-spacing: 0.002em
+		img
+			float: left
+			margin-right: 36px
+			padding-bottom: 50px
+// =====================================================================
+.bc-wrapper
+	width: 47.4619289% //560px/1180px
+	margin-left: auto
+	margin-right: 0
+	position: relative
+	background: linear-gradient(to right, #002442, rgba(0,36,66,0.3))
+	padding: 40px 58px 45px 51px
+	margin-top: 83px
+.border-corner
+	.border-corner__top,
+	.border-corner__bottom
+		position: absolute
+		width: 18px
+		height: 18px
+		color: #fff
+	.border-corner__top
+		top: 0
+		border-top: 1px solid
+	.border-corner__bottom
+		bottom: 0
+		border-bottom: 1px solid
+	.border-corner__left
+		left: 0
+		border-left: 1px solid
+	.border-corner__right
+		right: 0
+		border-right: 1px solid
+
+
+//================================================================
+.blok-map-main
+	height: 460px
+	width: 100%
+	position: relative
+	.top-map
+		width: 100%
+		height: 100%
+		position: absolute
+	&__inner
+		max-width: 1200px
+		width: 100%
+		padding: 0 10px
+		margin: 0 auto
+		position: relative
+		height: 460px
+
+
+
+.location-wrap
+	width: 540px //540px/1180px
+	top: 75px
+	margin: auto
+	left: 10px
+	position: absolute
+	z-index: 50
+	padding: 1px
+	background: url('../img/blok-map/map-caprion-bg.png') no-repeat top left
+	background-size: cover
+	height: 255px
+	position: absolute
+
+.location-border-corner
+	.location-border-corner__top,
+	.location-border-corner__bottom
+		position: absolute
+		width: 18px
+		height: 18px
+		color: $accent-color
+	.location-border-corner__top
+		top: 0
+		border-top: 1px solid
+	.location-border-corner__bottom
+		bottom: 0
+		border-bottom: 1px solid
+	.location-border-corner__left
+		left: 0
+		border-left: 1px solid
+	.location-border-corner__right
+		right: 0
+		border-right: 1px solid
+
+.location
+	position: relative
+	padding: 28px 63px 20px 14.8148148%
+	text-align: justify
+	&__description
+		font-size: 2.25em
+		line-height: 1.16
+		letter-spacing: 0.025em
+		font-family: 'OksanaSansWideHeavy', sans-serif
+		font-weight: 800
+		text-transform: uppercase
+		margin: 0
+		padding: 0
+		color: $accent-color
+		margin-bottom: 10px
+		margin-top: 5px
+	&__text
+		font-size: 18px
+		line-height: 1.33
+		font-family: 'RobotoMedium', sans-serif
+		color: $accent-color
+		margin: 20px 0
+	&__link
+		background-color: transparent
+		border: 1px solid #b2bdc6
+		display: block
+		font-family: $default-font
+		font-size: 0.625em
+		line-height: 2
+		letter-spacing: 0.1em
+		color: $accent-color
+		padding: 9px 0;
+		text-align: center
+		margin-top: 30px
+		&:hover
+			color: $accent-color
+			text-decoration: none
+	&__closeBtn
+		position: absolute
+		position: absolute
+		background-color: red
+		z-index 280
+		top: 0
+		right: -60px
+		z-index: 300
+		outline: none
+		width: 60px
+		height: 60px
+		border: none
+		background: #f0f0f0 url('../img/blok-map/closeBtn-bg.svg') no-repeat center center
+//================================================================
+@import "blok-system-smart-style" // стили для blok-system-smart
+//================================================================
+.blok-optimization
+	background: url('../img/optimization/optimization-bg.jpg') no-repeat center center
+	background-size: cover
+	min-height: 300px
+	height: 690px
+	&__inner-wrap
+		max-width: 1200px
+		width: 100%
+		padding: 0 10px
+		margin: auto
+	&__inner
+		width: 53.2994924% // 630px / 1180px
+		padding-top: 80px
+	&__caption
+		font-size: 36px
+		line-height: 1.16666667
+		letter-spacing: 0.025em
+		font-family: 'OksanaSansWideHeavy', sans-serif
+		font-weight: 800
+		text-transform: uppercase
+		margin: 0
+		padding: 0
+		color: $accent-color
+		margin-bottom: 10px
+	&__text
+		font-size: 18px
+		line-height: 2
+		font-family: 'RobotoLight', sans-serif
+		letter-spacing: 0.002em
+		color: $accent-color
+	&__list
+		display: flex
+		align-items: stretch
+		flex-wrap: wrap
+	&__item
+		margin: 25px 0
+		width: 50%
+	&__pic-wrap
+		width: 54px
+		height: 54px
+		background-color: #002442
+		float: left
+		display: inline-block
+		border-radius: 50%
+		position: relative
+		img
+			position: absolute
+			top: 0
+			bottom: 0
+			left: 0
+			right: 0
+			margin: auto
+			display: block
+	&__descr
+		padding: 0 10px 0 72px
+		color: #032744
+		font-size: 14px
+		line-height: 18px
+		margin: 0
+//================================================================
+.blok-system-secur
+	background: url('../img/system-secur/system-secur-bg.jpg') no-repeat center center
+	background-size: cover
+	min-height: 300px
+	height: 690px
+	&__inner-wrap
+		max-width: 1200px
+		width: 100%
+		padding: 0 10px
+		margin: auto
+	&__inner
+		width: 52.62711186% // 621px / 1180px
+		margin-right: 0
+		margin-left: auto
+		padding-top: 75px
+	&__caption
+		font-size: 36px
+		line-height: 1.16666667
+		letter-spacing: 0.025em
+		font-family: 'OksanaSansWideHeavy', sans-serif
+		font-weight: 800
+		text-transform: uppercase
+		margin: 0
+		padding: 0
+		color: $accent-color
+		margin-bottom: 10px
+	&__text
+		font-size: 18px
+		line-height: 2
+		font-family: 'RobotoLight', sans-serif
+		letter-spacing: 0.002em
+		color: $accent-color
+	&__list
+		display: flex
+		align-items: stretch
+		flex-wrap: wrap
+		list-style-type: none
+	&__item
+		margin: 25px 0
+		width: 50%
+	&__pic-wrap
+		width: 54px
+		height: 54px
+		background-color: #002442
+		float: left
+		display: inline-block
+		border-radius: 50%
+		position: relative
+		img
+			position: absolute
+			top: 0
+			bottom: 0
+			left: 0
+			right: 0
+			margin: auto
+			display: block
+	&__descr
+		padding: 0 10px 0 72px
+		color: #032744
+		font-size: 14px
+		line-height: 18px
+		margin: 0
+//================================================================
+.blok-techno-house
+	background: url('../img/techno-house/techno-house-bg.jpg') no-repeat top center
+	background-size: cover
+	min-height: 300px
+	height: 690px
+	&__inner-wrap
+		width: 100%
+		max-width: 1200px
+		padding: 0 10px
+		margin: auto
+	&__inner
+		width: 72.8813559% // 860px /1182px
+		display: flex
+		padding-top: 150px
+	&__left
+		width: 55.8139535% //480px / 860px
+		padding-right: 50px
+	&__caption
+		font-size: 36px
+		line-height: 1.16666667
+		letter-spacing: 0.025em
+		font-family: 'OksanaSansWideHeavy', sans-serif
+		font-weight: 800
+		text-transform: uppercase
+		margin: 0
+		padding: 0
+		color: $accent-color
+		margin-bottom: 10px
+	&__text
+		font-size: 18px
+		line-height: 2
+		font-family: 'RobotoLight', sans-serif
+		letter-spacing: 0.002em
+		color: $accent-color
+	&__list
+		display: flex
+		align-items: stretch
+		width: 44.1860465% // 380px / 860px
+		flex-wrap: wrap
+	&__item
+		margin: 0 0 45px
+	&__pic-wrap
+		width: 54px
+		height: 54px
+		background-color: #002442
+		float: left
+		display: inline-block
+		border-radius: 50%
+		position: relative
+		img
+			position: absolute
+			top: 0
+			bottom: 0
+			left: 0
+			right: 0
+			margin: auto
+			display: block
+	&__descr
+		padding: 0 10px 0 72px
+		color: #032744
+		font-size: 14px
+		line-height: 18px
+		margin: 0
+//================================================================
+.contact
+	background: #285477 url('../img/fotter-bg.png') no-repeat center center
+	background-size: cover
+	min-height: 300px
+	padding: 55px 0
+	margin-bottom: -40px
+	// padding-bottom: 80px
+	&__inner
+		max-width: 1200px
+		width: 100%
+		padding: 0 10px
+		margin: auto
+		+clearfix
+	&__logo
+		width: 9.3220339% // 110/1180px
+		float: left
+		img
+			display: block
+			width: 100%
+			height: auto
+	&__wrap
+		+clearfix
+		width: 79.6610169% //940px/1180px
+		float: right
+	&__description
+		width: 32.2033898% //380px/1180px
+		// width: 50%
+		float: left
+		// margin-left: 11.0169492% //130px/1180px
+		// margin-right: 14.4067797% //170px/1180px
+	&__caption
+		font-size: 2.25em // 36px/16px
+		line-height: 1.16
+		letter-spacing: 0.025em
+		font-family: 'OksanaSansWideHeavy', sans-serif
+		text-transform: uppercase
+		color: #fff
+		margin: 0
+		padding: 0
+	&__list
+		margin-top: 30px
+		display: inline-block
+	&__medium
+		font-size: 1.125em // 18px/16px
+		font-family: 'RobotoMedium', sans-serif
+		line-height: 2
+		letter-spacing: 0.002em
+		color: #fff
+	&__link
+		font-size: 1.125em // 18px/16px
+		font-family: 'RobotoLight', sans-serif
+		line-height: 2
+		letter-spacing: 0.002em
+		color: #fff
+		&:hover
+			color: #fff
+		img
+			margin-right: 13px
+	&__form
+		width: 33.0508475% // 390px/1180px
+		float: right
+		
+		.form
+			margin-top: 30px
+			position: relative
+
+			input, textarea
+				outline: none
+				border: none
+				border-bottom: 1px solid #b1c5d5
+				background-color: transparent
+				width: 100%
+				font-family: 'RobotoLight', sans-serif
+				font-size: 1em
+				letter-spacing: 0.002em
+				line-height: 2.25
+				font-style: italic
+				color: #fff
+				&::after
+					content: '*'
+					width: 100px
+					height: 50px
+					position: absolute
+					top: 0
+					color: red
+			input:required
+				color: #fff
+			textarea:required
+				color: #fff
+			input::-moz-placeholder
+				color: #fff
+			input::-webkit-input-placeholder
+				color: #fff
+			textarea:-moz-placeholder
+				color: #fff
+			textarea::-webkit-input-placeholder
+				color: #fff
+
+		textarea
+			resize: none
+// ===============================================================
+
+@import "news-style"// стили страница лента новостией
+@import "newspage-style"// стили страница самих новости
+@import "construction-style"// стили страница строительсто
+@import "architecture-style"// стили страница архитектура
+@import "web-style"// стили страница веб камера
+@import "flootpage-style"// стили страница выбрать этаж
+@import "select-apartment-style"// стили страница выбрать на этаже квартиру
+@import "apartment-style"// стили страница выбрать квартиру
+// @import "apartment-style"// стили страница выбрать квартиру
+@import "location-page-style"// стили страница расположение
+
+@import "media" // Всегда в конце

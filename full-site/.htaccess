@@ -1,0 +1,98 @@
+#RedirectMatch 301 (.*)\.html$ http://einstein.house$1.php
+#AddDefaultCharset UTF-8
+#AddHandler application/x-httpd-php .htm .html
+
+ErrorDocument 404 /404.php
+
+RewriteEngine on
+
+RewriteCond %{HTTP_HOST} ^www\.(.*)$
+RewriteRule ^(.*)$ http://%1/$1 [L,R=301]
+
+RewriteCond %{REQUEST_URI} ^(.*)/index\.php$
+RewriteRule ^(.*)index\.php$ http://%{HTTP_HOST}/$1 [R=301,L]
+
+Redirect 301 /zeleni_zoni.php https://einstein.house/news/skveri_ta_parki_poblizu_einstein_concept_house/
+Redirect 301 /rozvinena_infrastructura.php https://einstein.house/news/rozvinena_infrastruktura_dlya_povsyakdennogo_komfortu_meshkanciv_einstein_concept_house/
+Redirect 301 /ditu_meshkanciv.php https://einstein.house/news/diti_meshkanciv_einstein_concept_house_zmozhut_navchatisya_poruch_iz_domom/
+Redirect 301 /miscya_dlya_sportivnogo_dozvillya.php https://einstein.house/news/miscya_dlya_sportivnog_dozvillya_poruch_z_einstein_concept_house/
+Redirect 301 /robota_ta_vidpochinok.php https://einstein.house/news/robota_ta_vidpochinok_poruch_iz_domom/
+
+#Редирект для планировок с версии без слеша на версию со слешом
+RewriteCond %{QUERY_STRING} ^apart=2A$
+RewriteRule ^apartment.php /apartment.php?apart=2A/ [L,R=301]
+
+RewriteCond %{QUERY_STRING} ^apart=1A$
+RewriteRule ^apartment.php /apartment.php?apart=1A/ [L,R=301]
+
+RewriteCond %{QUERY_STRING} ^apart=1B$
+RewriteRule ^apartment.php /apartment.php?apart=1B/ [L,R=301]
+
+RewriteCond %{QUERY_STRING} ^apart=2B$
+RewriteRule ^apartment.php /apartment.php?apart=2B/ [L,R=301]
+
+RewriteCond %{QUERY_STRING} ^apart=3A$
+RewriteRule ^apartment.php /apartment.php?apart=3A/ [L,R=301]
+
+RewriteCond %{QUERY_STRING} ^apart=3B$
+RewriteRule ^apartment.php /apartment.php?apart=3B/ [L,R=301]
+
+RewriteCond %{QUERY_STRING} ^apart=2V$
+RewriteRule ^apartment.php /apartment.php?apart=2V/ [L,R=301]
+
+RewriteCond %{QUERY_STRING} ^apart=3V$
+RewriteRule ^apartment.php /apartment.php?apart=3V/ [L,R=301]
+
+RewriteCond %{QUERY_STRING} ^apart=2G$
+RewriteRule ^apartment.php /apartment.php?apart=2G/ [L,R=301]
+
+RewriteCond %{QUERY_STRING} ^apart=3G$
+RewriteRule ^apartment.php /apartment.php?apart=3G/ [L,R=301]
+#Редирект для планировок с версии без слеша на версию со слешом
+
+
+<ifModule mod_expires.c>
+
+# Add correct content-type for fonts
+AddType application/vnd.ms-fontobject .eot
+AddType application/x-font-ttf .ttf
+AddType application/x-font-opentype .otf
+AddType application/x-font-woff .woff
+AddType image/svg+xml .svg
+
+# Compress compressible fonts
+AddOutputFilterByType DEFLATE application/x-font-ttf application/x-font-opentype image/svg+xml
+
+ExpiresActive On
+ExpiresDefault "access plus 5 seconds"
+
+# Cache Images
+ExpiresByType image/x-icon "access plus 2592000 seconds"
+ExpiresByType image/jpeg "access plus 2592000 seconds"
+ExpiresByType image/png "access plus 2592000 seconds"
+ExpiresByType image/gif "access plus 2592000 seconds"
+ExpiresByType image/svg+xml "access plus 2592000 seconds"
+
+# Cache Fonts
+ExpiresByType application/vnd.ms-fontobject "access plus 2592000 seconds"
+ExpiresByType application/x-font-ttf "access plus 2592000 seconds"
+ExpiresByType application/x-font-opentype "access plus 2592000 seconds"
+ExpiresByType application/x-font-woff "access plus 2592000 seconds"
+ExpiresByType image/svg+xml "access plus 2592000 seconds"
+
+# Cache other content types (Flash, CSS, JS, HTML, XML)
+ExpiresByType application/x-shockwave-flash "access plus 2592000 seconds"
+ExpiresByType text/css "access plus 604800 seconds"
+ExpiresByType text/javascript "access plus 2592000 seconds"
+ExpiresByType application/javascript "access plus 2592000 seconds"
+ExpiresByType application/x-javascript "access plus 2592000 seconds"
+ExpiresByType text/html "access plus 600 seconds"
+ExpiresByType application/xhtml+xml "access plus 600 seconds"
+
+</ifModule>
+
+<ifModule mod_deflate.c>
+
+AddOutputFilterByType DEFLATE text/html text/plain text/xml application/xml application/xhtml+xml text/css text/javascript application/javascript application/x-javascript
+
+</ifModule>

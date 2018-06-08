@@ -1,0 +1,490 @@
+.top-header
+	border-top: 2px solid #051924
+	padding-top: 30px
+	position: absolute
+	top: 0
+	z-index: 10
+	margin: auto
+	width: 100%
+	max-width: 1920px
+	&__inner
+		max-width: 1200px
+		width: 100%
+		padding: 0 10px
+		margin: 0 auto
+		+clearfix
+	&__left
+		width: 11.8644068% //140px /1180px
+		position: relative
+		float: left
+	&__logo
+		width: 100%
+		position: absolute
+		min-width: 110px
+		img
+			display: block
+			width: 100%
+			height: auto
+		.logo-blue
+			display: none
+	&__logo-other
+		background-color: rgba(#fff, .85)
+	&__right
+		width: 88.1355932% //1040px /1180px
+		float: right
+		+clearfix
+	&__btn-inner
+		+clearfix
+	&__btn
+		display: none
+	&__tel
+		// color: $accent-color
+		color: #fff
+		font-family: $SFUIDisplayReg-font
+		font-size: 1.125em
+		text-align: center
+		display: none
+		text-decoration: none
+		&:hover,
+		&:visited
+			color: #fff
+			text-decoration: none !important
+	&__tel_other
+		color: $accent-color 
+		&:hover,
+		&:visited
+			color: $accent-color 
+			text-decoration: none 
+		.phone-icon
+			display: none
+		.phone-icon-blue
+			display: inline-block
+	&__callback-btn
+		width: 214px
+		text-transform: uppercase
+		font-size: 0.625em
+		line-height: 2
+		color: #fff
+		font-family: $Oksana-font-Bold
+		border: 1px solid #fff
+		outline: none
+		background-color: transparent
+		display: none
+		text-align: center
+		padding: 9px 0
+		margin: 15px auto
+		text-decoration: none
+		&_darken
+			background-color: $accent-color
+			color: #fff
+			border: 1px solid $accent-color
+		&_brighter
+			background-color: #fff
+			color: $accent-color
+			border: 1px solid $accent-color
+		&:visited
+			color: #fff
+			text-decoration: none
+	&__callback-btn_other
+		color: $accent-color
+		border: 1px solid $accent-color
+
+.navigation
+	padding: 0
+	width: 77.8846154% //730px /1040px
+	float: left
+	position: relative
+	&__menu
+		list-style-type: none
+		padding: 0
+		margin: 0 0 0 auto
+		width: 730px
+		display: flex
+		justify-content: space-between
+		+clearfix
+	&__item
+		margin: 0
+		display: block
+		padding: 6px 0
+	&__link
+		font-size: 0.75em
+		color: #fff
+		text-transform: uppercase
+		text-decoration: none
+		cursor: pointer
+		line-height: 1.66
+		padding: 0 5px
+		font-family: $default-font
+		letter-spacing: 0.1em
+		transition: all 0.75s ease 0.1s
+		// &:visited,
+		&:hover
+			border-bottom: 1px solid #fff
+			padding: 12px 5px
+			border-top: 1px solid #fff
+			color: $accent-color
+			text-decoration: none
+			box-shadow: 0px 0px 10px rgba(255,255,255, 1)
+			background-color: #f1f1f1
+		&_other
+			color: $accent-color
+	&__link-other
+		font-size: 0.75em
+		color: $accent-color
+		text-transform: uppercase
+		text-decoration: none
+		cursor: pointer
+		line-height: 1.66
+		padding: 0 5px
+		font-family: $default-font
+		letter-spacing: 0.1em
+		transition: all 0.75s ease 0.1s
+		// &:visited,
+		&:hover
+			border-bottom: 1px solid $accent-color
+			padding: 12px 5px
+			border-top: 1px solid $accent-color
+			color: #fff
+			text-decoration: none
+			box-shadow: 0px 0px 10px rgba(0,36,66, 0.7)
+			background-color: rgba(0,36,66, 0.7)
+	&__close-mnu
+		display: none
+		background: url("../img/X.png") no-repeat center center
+		border: none
+		outline: none
+		position: absolute
+		z-index: 400
+		height: 36px
+		width: 36px
+		top: 30px
+		right: 20px
+	&__mnu-logo
+		width: 85px
+		position: absolute
+		display: none
+		z-index: 400
+		left: 20px
+		top: 30px
+		img
+			width: 100%
+			height: auto
+			display: block
+
+	// &__btn
+	// 	display: none
+.top-callback
+	width: 22.1153846%//230px/1040px
+	float: right
+	position: relative
+	+clearfix
+	&__inner
+		width: 214px
+		margin: 0 0 0 auto
+		text-align: center
+		+clearfix
+	&__link
+		color: #fff
+		display: block
+		width: 190px
+		text-align: right
+		margin: 0 0 0 auto
+		padding: 10px
+		font-size: 1.125em
+		line-height: 1.11em
+		letter-spacing: 0.025em
+		border: 1px solid transparent
+		text-decoration: none
+		transition: all .7s
+		transform: perspective(1px) translateZ(0)
+		font-family: 'SFUIDisplayRegular',sans-serif
+		img
+			// margin-right: 5px
+		&:hover
+			color: #f1f1f1
+			text-decoration: none
+			padding: 10px
+			border: 1px solid #fff
+			transition: all .7s
+			background: rgba(250,250,250, 0.5)
+		&_other
+			color: $accent-color
+			img
+				margin-right: 5px
+			.phone-ic-white
+				display: none
+			&:hover
+				color: #f1f1f1
+				text-decoration: none
+				padding: 10px
+				border: 1px solid $accent-color
+				transition: all .7s
+				background: rgba(0,36,66, 0.5)
+				.phone-ic-white
+					display: inline-block
+				.phone-ic-blue
+					display: none
+	&__link-other
+		color: $accent-color
+		display: block
+		width: 90%
+		text-align: left
+		margin: 0 0 0 auto
+		padding: 10px 0
+		font-size: 1.125em
+		line-height: 1.11em
+		letter-spacing: 0.025em
+		border: 1px solid transparent
+		text-decoration: none
+		transition: all .7s
+		transform: perspective(1px) translateZ(0)
+		font-family: 'SFUIDisplayRegular',sans-serif
+		img
+			margin-right: 5px
+		.phone-ic-white
+			display: none
+		// &:visited,
+		&:hover
+			color: #f1f1f1
+			text-decoration: none
+			padding: 10px
+			border: 1px solid $accent-color
+			transition: all .7s
+			background: rgba(0,36,66, 0.5)
+			
+			.phone-ic-blue
+				display: none !important
+			.phone-ic-white
+				display: inline-block
+	&__web-cam
+		position: absolute;
+		top: 5px;
+		left: -5px;
+		width: 30px;
+	&__web-cam-other
+		// background-color: #002442
+	&__web
+		color: #002442
+	&__btn
+		width: 100%
+		height: 40px
+		text-transform: uppercase
+		font-size: 0.625em
+		line-height: 2
+		color: #fff
+		font-family: $Oksana-font-Bold
+		border: 1px solid #fff
+		outline: none
+		background-color: transparent
+		&_other-darken
+			background-color: $accent-color
+			color: #fff
+			border: 1px solid $accent-color
+		&_other-brighter
+			background-color: #fff
+			color: $accent-color
+			border: 1px solid $accent-color
+	&__btn-other
+		width: 100%
+		height: 40px
+		text-transform: uppercase
+		font-size: 0.625em
+		line-height: 2
+		color: $accent-color
+		font-family: $Oksana-font-Bold
+		border: 1px solid $accent-color
+		outline: none
+		background-color: transparent
+	&__web-icon
+		fill: #fff
+		&_other
+			fill: $accent-color
+.default
+	transition: all 0.3s
+	position: fixed
+	top: 0
+	left: 0
+	right: 0
+	margin: auto
+	border-top: 2px solid #051924
+	background-color: $accent-color
+	background: linear-gradient(to right, rgba(#052844, .85), rgba(#10364c, .85))
+	width: 100%
+	max-width: 1920px
+	padding: 3px 0
+	height: 50px
+	z-index: 100
+	+clearfix
+	.top-header__left
+		width: 7.62711864%//90px/1180px
+		min-width: 90px
+		float: left
+	.top-header__logo
+		width: 100%
+		background: linear-gradient(to bottom, #062b48, #072d4b)
+		padding: 7px 10px 5px 10px
+		min-width: 90px
+	.top-header__logo-other
+		background: rgba(#fff, .85)
+		box-sizing: border-box
+		// border: 1px solid $accent-color
+	.top-header__right
+		width: 92.3728814%//1090px/1180px
+		float: right
+	.top-header__tel_other
+		.phone-icon
+			display: inline-block
+		.phone-icon-blue
+			display: none
+	.navigation
+		width: 60.1694915%
+		float: left
+	.navigation__menu
+		width: 100%
+	.navigation__link_other
+		color: #fff
+		&:visited,
+		&:hover
+			border-bottom: 1px solid  #fff
+			padding: 12px 5px
+			border-top: 1px solid  #fff
+			color: #fff
+			text-decoration: none
+			box-shadow: 0px 0px 10px rgba(0,36,66, 0.7)
+			background-color: rgba(255,255,255, 0.7)
+	.top-callback
+		width: 380px
+	.top-callback__inner
+		width: 100%
+	.top-callback__web-cam
+		left: -45px
+	.top-callback__web-icon
+		fill: #fff
+	.top-callback__link
+		width: 190px
+		float: left
+		text-align: left
+	.top-callback__btn
+		color: #fff
+		font-family: $Oksana-font-Bold
+		border: 1px solid #fff
+		background-color: transparent
+		width: 190px
+
+	.top-callback__link_other
+		color: #fff
+		.phone-ic-blue
+			display: none
+		.phone-ic-white
+			display: inline-block
+		&:visited,
+		&:hover
+			color: #f1f1f1
+			text-decoration: none
+			padding: 10px
+			border: 1px solid #fff
+			transition: all .7s
+			background: rgba(255,255,255, 0.5)
+	.top-callback__btn-other-darken
+		color: #fff
+		background-color: transparent
+		border: 1px solid #fff
+	// .top-callback__btn-other-brighter
+
+	// .top-callback__web-cam_other
+	// 	background-color: transparent
+
+.other
+	color: $accent-color
+	&:visited,
+	&:hover
+		color: $accent-color
+		border-bottom: 1px solid $accent-color
+		border-top: 1px solid $accent-color
+.phone-icon-blue
+	display: none
+.callback-form-pupop-wrap
+	display: none
+	width: 100%
+	height: 100%
+	background-color: rgba(#000, 0.7)
+	z-index: 99999
+	position: fixed
+	top: 0
+	left: 0
+.callback-form-pupop
+	background: rgba(0,36,66, 1)
+	position: absolute
+	width: 300px
+	margin: auto
+	z-index: 1000
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%)
+	padding: 20px
+	.form-corner
+		&__top,
+		&__bottom
+			position: absolute
+			width: 18px
+			height: 18px
+			color: #fff
+		&__top
+			top: 0
+			border-top: 1px solid
+		&__bottom
+			bottom: 0
+			border-bottom: 1px solid
+		&__left
+			left: 0
+			border-left: 1px solid
+		&__right
+			right: 0
+			border-right: 1px solid
+	.form-caption
+		font-size: 1em
+		color: #fff
+		text-align: center
+		letter-spacing: 0.0
+		font-family: $Oksana-font-Heavy
+		text-transform: uppercase
+	.form-btn
+		position: absolute
+		top: -20px
+		right: -20px
+		width: 40px
+		height: 40px
+		font-size: 1.2em
+		text-align: center
+		letter-spacing: 0.0
+		color: $accent-color
+		font-family: $Oksana-font-Heavy
+		text-transform: uppercase
+		background-color: rgba(255,255,255, 1)
+		border: 2px solid $accent-color
+		box-shadow: 0 0 5px rgba(255,255,255, 1)
+		border-radius: 50%
+		outline: none
+	.callback-form-input
+		height: 50px
+		width: 100%
+		margin-top: 15px
+		font-size: 1em
+		text-align: center
+		letter-spacing: 0.0
+		color: $accent-color
+		font-family: $RobotoLight-font
+		// text-transform: uppercase
+	.callback-form-btn
+		height: 50px
+		width: 100%
+		margin-top: 25px
+		font-size: 1em
+		letter-spacing: 1.5em
+		text-align: center
+		letter-spacing: 0.0
+		color: $accent-color
+		font-family: $Oksana-font-Heavy
+		text-transform: uppercase
+
+

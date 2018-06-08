@@ -1,0 +1,1275 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+	/**/
+	//main page
+	//top-header
+	.top-header__right
+		width: 100%
+	.navigation
+		width: 100%
+		margin: 0
+		&__menu 
+			justify-content: flex-end
+		&__item
+			margin-left: 1.4084507% //10px/710px
+			margin-right: 0
+			display: inline-block
+			float: none
+			margin: 0
+	.top-callback
+		padding: 0 5px 15px
+		width: 100%
+		float: right
+		&__inner
+			width: 450px
+			float: right
+		&__link,
+		&__link-other
+			float: left
+			width: 190px
+			margin: 0
+			text-align: center
+		&__btn,
+		&__btn-other
+			float: left
+			width: 214px
+		&__web-cam
+			width: 40px;
+			height: 35px;
+			position: relative;
+			left: 0;
+			bottom: -5px;
+			float: left;
+			margin: 0 5px 0 0
+	.default
+		height: 90px
+	.default .navigation
+		float: right
+		width: 100%
+	.default .top-callback
+		width: 100%
+		float: right
+		padding: 0
+	.default .top-callback__inner
+		width: 450px
+		padding: 0 5px 0 0
+	.default .top-callback__web-cam
+		position: relative
+		bottom: -5px
+		margin: auto
+		left: -5px
+	.default .top-callback__link
+		float: left
+		width: 190px
+		text-align: center
+	.default .top-callback__btn
+		width: 214px
+
+	//=========blok-about
+	.blok-about .quote
+		width: 82.7540107% //619px/748px
+	.blok-about .quote__description
+		font-size: 3.125em
+		line-height: 1
+	.blok-about .quote__text
+		font-size: 1.25em
+		line-height: 1
+	.bc-wrapper
+		padding: 40px 40px 45px 40px
+
+	//=========blok-techno-house
+	.blok-techno-house__caption
+		font-size: 1.875em
+		line-height: 1.2
+	.contact__description
+		width: 55.0847458%
+		float: left
+		// margin-left: 2.54237288% //30px/1180px
+		// margin-right: 0
+	.contact__form
+		width: 40%
+
+	//========= FLOORPAGE_STYLE
+
+	.floor-page__left
+		width: 40%
+		&::after
+			background: transparent
+			background: -moz-linear-gradient(right, rgba(255, 255, 255, 1) 20%, rgba(255, 255, 255, 0.1) 100%)
+			background: -webkit-gradient(left right, left right, color-stop(20%, rgba(255, 255, 255, 1)), color-stop(100%, rgba(255, 255, 255, 0.1)))
+			background: -webkit-linear-gradient(right, rgba(255, 255, 255, 1) 20%, rgba(255, 255, 255, 0.1) 100%)
+			background: -o-linear-gradient(right, rgba(255, 255, 255, 1) 20%, rgba(255, 255, 255, 0.1) 100%)
+			background: -ms-linear-gradient(right, rgba(255,255, 255, 1) 20%, rgba(255, 255, 255, 0.1) 100%)
+			background: linear-gradient(to right, rgba(255, 255, 255, 1) 20%, rgba(255, 255, 255, 0.1) 100%)
+			content: ""
+			display: block
+			height: 100%
+			right: -80px
+			position: absolute
+			top: 0
+			width: 100px
+	.floor-page__left-inner
+		padding: 0
+		width: 80%
+		margin: 50px 0 0
+	.floor-page__left-img
+		width: 100%
+		position: relative
+		top: 30px
+	.floor-page__img-wrap
+		margin: 0 0 0 auto
+	.floor-page__left-page-description
+		width: 100%
+		margin: 100px 0 0
+		float: none
+		padding: 0 10px
+	.floor-page__bottom-box
+		width: 100%
+	.floor-page__right
+		width: 60%
+	
+	//========= APARTMENT-STYLE
+	.blok-apartment__descr
+		font-size: 1.6em
+	//========= LOCATION-STYLE
+	.lacation-page__right
+		display: none
+	.lacation-page-wrap__description
+		font-size: 2em
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	/**/
+	//main page
+	//=========blok-about
+	.blok-about .quote__description
+		font-size: 2.5em //40px/16px
+		line-height: 1
+	.blok-about .quote__text
+		font-size: 1.25em //20px/16px
+		line-height: 1
+	.quote img
+		padding-bottom: 20px
+	.bc-wrapper
+		padding: 40px 15px 45px 30px
+
+	//=========blok-system-smart
+	.blok-system-smart
+		height: auto
+
+	//=========blok-optimization
+	.blok-optimization
+		height: auto
+
+	//=========blok-system-secur
+	.blok-system-secur
+		height: auto
+
+	//=========blok-techno-house
+	.blok-techno-house
+		height: auto
+	.blok-techno-house__inner
+		width: 45%
+		padding-top: 100px
+		display: block
+	.blok-techno-house__left
+		width: 100%
+		padding: 0
+	.blok-techno-house__list
+		display: flex;
+		align-items: stretch;
+		width: 100%
+		flex-wrap: wrap;
+		margin-top: 30px;
+	//=========contact
+	.contact__description
+		width: 55.0847458% //650px/1180px
+		float: left
+		// margin-left: 2.54237288% //30px/1180px
+		margin-right: 0
+	.contact__caption
+		font-size: 1.875em
+		line-height: 1.4
+	
+	//========= FLOORPAGE_STYLE
+	.floor-page__left-inner
+		width: 95%
+	.floor-page__left-img
+		top: 25px
+	.floor-page__img-wrap
+		margin: 0 70px 0 auto
+		width: 30%
+	.floor-page__left-page-description
+		margin: 50px 0 0
+	.floor-page__bottom-box
+		margin-top: 25px
+	.floor-page__box
+		min-height: 120px
+		min-width: 120px
+	//=========ARCHITECTURE-STYLE
+	.architecture__caption
+		font-size: 2em
+	.architecture__block
+		margin-bottom: 15px
+	.architecture__page-caption
+		margin-bottom: 15px
+	.floor-page__box
+		min-height: 120px
+		min-width: 120px
+
+	//========= SELECT-APARTMENT-STYLE
+	.select-apartment
+		&::before
+			content: ''
+			background-color: none
+			position: relative
+	.select-apartment__inner
+		padding-top: 160px
+	.select-apartment__caption-wrap
+		padding: 0
+		margin: 0
+		margin-top: 40px
+		width: 40%
+	.select-apartment__change-wrap
+		width: 73%
+		position: relative
+		margin: 0 auto
+		height: 50px
+	.select-apartment__change-floor
+		width: 230px
+		margin: 0 0 0 auto
+		padding: 0
+	.select-apartment__change-floor-inner
+		width: 120px
+		vertical-align: middle
+		display: inline-block
+		span
+			display: inline-block
+			vertical-align: middle
+			width: 50px
+		p
+			vertical-align: middle;
+			padding: 0
+			display: inline-block
+	.select-apartment__change-floor-next,
+	.select-apartment__change-floor-prev
+		transform: rotate(270deg)
+	.select-apartment__img-wrap
+		position: absolute
+		top: -52px
+		left: 10px
+	.select-apartment__img-inner
+		width: 115px
+	.select-apartment__description-wrap
+		padding: 0
+		margin: 0
+		width: 40%
+	.select-apartment__description
+		margin-bottom: 20px
+		width: 264px
+	.select-apartment__apartments-wrap
+		background-color: transparent
+		width: 60%
+		margin-top: 80px
+	.select-apartment__apartments-inner
+		margin: 0 auto
+		width: 80%
+
+	.select-apartment__box
+		margin: 15px 0 0
+		width: 120px
+	.select-apartment__box-inner
+		padding: 23px 0
+
+	//========= APARTMENT-STYLE
+	.blok-apartment
+		&::before
+			content: ''
+			background-color: none
+			position: relative
+	.blok-apartment__inner
+		padding-top: 140px
+	.blok-apartment__caption-wrap
+		padding: 0
+		margin: 0
+		margin-top: 70px
+		width: 40%
+	.blok-apartment__change-wrap
+		width: 73%
+		position: relative
+		margin: 0 auto
+		height: 50px
+	.blok-apartment__change-floor
+		width: 230px
+		margin: 0 0 0 auto
+		padding: 0
+	.blok-apartment__change-floor-inner
+		width: 103px
+		vertical-align: middle
+		display: inline-block
+		span
+			display: inline-block
+			vertical-align: middle
+			width: 50px
+		p
+			vertical-align: middle;
+			padding: 0
+			display: inline-block
+	.blok-apartment__change-floor-next,
+	.blok-apartment__change-floor-prev
+		transform: rotate(270deg)
+	.blok-apartment__img-wrap
+		position: absolute
+		top: -52px
+		left: 10px
+	.blok-apartment__img-inner
+		width: 115px
+	.blok-apartment__description-wrap
+		padding: 0
+		margin: 10px 0 0
+		width: 40%
+	.blok-apartment__description
+		margin-bottom: 20px
+		// width: 264px
+	.blok-apartment__apartments-wrap
+		background-color: transparent
+		width: 60%
+		margin-top: 30px
+	.blok-apartment__apartments-inner
+		margin: 0 auto
+		width: 80%
+
+	.blok-apartment__box
+		margin: 15px 0 0
+		width: 90%
+	.blok-apartment__box-inner
+		padding: 50px 30px 30px
+		margin: 0
+	.blok-apartment__descr
+		font-size: 1.5em
+
+	//========= LOCATION-STYLE
+	.lacation-page-wrap
+		width: 396px
+		padding: 15px 17px 40px 25px
+		max-width: 396px
+	.lacation-page-wrap__description
+		font-size: 1.875em
+	.lacation-page-wrap__text
+		font-size: 0.875em
+	.lacation-page-wrap__closeBtn
+		right: -44px
+		width: 44px
+		height: 44px
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	/**/
+	//main page
+	//top-header
+	
+
+	.blok-about .quote
+		display: none
+
+	//=========blok-about
+	.blok-about
+		background: #01131d url("../img/blok-about/top-bg-768.jpg") no-repeat center top
+		background-size: cover
+		min-height: 2135px
+	.blok-about__inner
+		padding: 180px 10px 78px
+	.bc-wrapper
+		width: 50% // 374px/748px
+		padding: 40px 0 45px 30px
+	.blok-about .tagline-about__caption
+		font-size: 1.875em
+		line-height: 1.4
+	.blok-about .about-descr__caption
+		font-size: 1.875em
+		line-height: 1.4
+	.blok-about .about-descr__item
+		padding-bottom: 20px
+	.blok-about .about-descr img
+		margin-right: 7.82608696%
+		padding-bottom: 51px
+		width: 20.2898551%
+	.blok-about .about-descr__text-heavy
+		width: 71.884058%
+		float: right
+		font-size: 1.25em
+	.blok-about .about-descr__text
+		width: 71.884058%
+		float: right
+	//=========blok-map
+	.location-wrap
+		width: 396px
+	.location
+		padding: 28px 45px 20px 6.31313131%
+	.location__description
+		font-size: 1.875em
+	//=========blok-system-smart
+	.blok-system-smart
+		background: url('../img/system-smart/system-smart-bg-768.jpg') no-repeat center center
+		background-size: cover
+		min-height: 300px
+		height: auto
+	.blok-system-smart__inner
+		width: 46.1229947% //345px/748px
+		padding: 56px 10px 70px;
+	.blok-system-smart__list
+		+clearfix
+	.blok-system-smart__item
+		margin: 20px 0
+		float: left
+		width: 100%
+	.blok-system-smart__caption
+		font-size: 1.875em
+		line-height: 1.4
+	.location__closeBtn
+		right: -46px
+		width: 45px
+		height: 45px
+	//=========blok-optimization
+	.blok-optimization
+		background: url('../img/optimization/optimization-bg-768.jpg') no-repeat center center
+		background-size: cover
+		min-height: 300px
+		height: auto
+	.blok-optimization__inner
+		width: 61.2299465% //458px/748px
+		padding-bottom: 115px;
+	.blok-optimization__list
+		+clearfix
+	.blok-optimization__item
+		margin: 20px 0
+		float: left
+		width: 100%
+	.blok-optimization__caption
+		font-size: 1.875em
+		line-height: 1.4
+
+	//=========blok-system-secur
+	.blok-system-secur
+		background: url('../img/system-secur/system-secur-bg-768.jpg') no-repeat center center
+		background-size: cover
+		min-height: 300px
+		height: auto
+	.blok-system-secur__inner
+		width: 100%;
+		margin: 0
+		padding: 50px 0 60px
+		+clearfix
+	.blok-system-secur__left
+		width: 53.8770053% //403px/748px
+		float: left
+	.blok-system-secur__list
+		width: 46.1229947% //345px/748px
+		float: right
+	.blok-system-secur__caption
+		font-size: 1.875em
+		line-height: 1.4
+	//=========blok-techno-house
+	.blok-techno-house
+		background: url('../img/techno-house/techno-house-bg-768.jpg') no-repeat top center
+		background-size: cover
+		min-height: 300px
+		height: auto
+	.blok-techno-house__inner
+		width: 53.8770053% // 403px/748px
+		padding: 70px 0 10px
+
+	//=========blok-contact
+	.contact
+		height: auto
+		padding-bottom: 80px
+	.contact__logo
+		width: 14.7058824%//110px/748px
+	.contact__description
+		width: 70%
+		margin-right: 0
+		float: none
+		margin-left: auto
+		margin-bottom: 50px
+	.contact__form
+		width: 70%
+	//========= FLOORPAGE_STYLE
+	.floor-page__left-inner
+		margin: 0
+	.floor-page__left-img
+		top: 70px
+	.floor-page__left-page-description
+		margin: 80px 0 0
+	.floor-page__caption
+		font-size: 2em
+		line-height: 1
+		padding: 5px 0
+	.floor-page__text
+		font-size: 1em
+		line-height: 1.2
+	.floor-page__descr
+		line-height: 1.5
+		margin-top: 10px
+	.floor-page__box-inner span
+		font-size: 3em
+	//========= SELECT-APARTMENT-STYLE
+	.select-apartment__inner
+		padding-top: 145px
+	.select-apartment__apartments-wrap
+		margin-top: 100px
+	//========= APARTMENT-STYLE
+	.blok-apartment__inner
+		padding-bottom: 0
+	.blok-apartment__caption-wrap
+		width: 50%
+	.blok-apartment__apartments-wrap
+		margin-top: 55px
+		width: 50%
+	.blok-apartment__description-wrap
+		width: 50%
+	.blok-apartment__box-inner
+		padding: 20px 30px 10px
+	.blok-apartment__box
+		// width: 100%
+
+	//=========NEWS-STYLE:
+	.news-feed__inner
+		width: 100%
+		margin-right: 0
+		margin-left: 0
+	.news-feed__caption
+		text-align: center
+
+	//=========NEWSPAGE-STYLE
+	.news-page__inner
+		width: 100%
+		margin-right: 0
+		margin-left: 0
+	.news-page__caption
+		text-align: center
+
+	//=========CONSTRUCTION-STYLE
+	.construction__inner
+		width: 100%
+		margin-right: 0
+		margin-left: 0
+	.construction__page-caption
+		text-align: center
+	.construction__item
+		margin: 0
+
+	//=========ARCHITECTURE-STYLE
+	.architecture__caption
+		font-size: 1.5em
+	.architecture__block .architecture__pic_small
+		display: block
+	.architecture__block .architecture__pic_big
+		display: none
+	.architecture__block_last
+		float: left
+		width: 43.0392157% //439px/1020px
+	//=========CONSTRUCTION-STYLE
+	.webcamera__inner
+		width: 100%
+		margin-left: 0
+		margin-right: 0
+	.webcamera__page-caption
+		text-align: center
+/* Small Devices, Tablets */
+@media only screen and (max-width : 750px)
+	/**/
+	//main page
+	//top-header
+	.top-header
+		padding: 25px 0
+		max-height: 100%
+		padding: 0
+		height: 60px
+	.top-header__inner
+		padding: 0 10px 35px
+	.top-header__left
+		width: 100%
+		float: none
+		margin: 0 auto
+		padding: 25px 0 35px
+	.top-header__logo
+		min-width: 110px
+		position: relative
+		display: block
+		width: 140px
+		margin: 0 auto
+	.top-header__btn
+		display: block
+		position: absolute
+		right: 0
+		left: 0
+		margin: 0 auto
+		width: 100px
+		text-align: center
+		background-color: transparent
+		border: none
+		outline: 0
+		color: #fff
+		font-size: 1.09em
+		letter-spacing: .1em
+		text-transform: uppercase
+		font-family: RobotoMedium,sans-serif
+	.top-header__tel
+		display: block
+	.top-header_other
+		
+	.top-header__callback-btn
+		display: block
+	.top-header__btn-page
+		color: $accent-color
+	.top-header__btn_other
+		background: $accent-color
+	.top-header__right
+		background: #fff
+		display: none
+		top: 0
+		position: fixed
+		z-index: 20
+		right: 0
+		left: 0
+		margin: auto
+		max-height: 100%
+		overflow-y: auto
+	.navigation
+		float: none
+		display: block
+		&__menu
+			display: block
+			padding: 20px
+			width: 100%
+		&__item
+			display: block
+			text-align: center
+		&__link
+			color: $accent-color
+			&:hover
+				border-bottom: 1px solid $accent-color
+				border-top: 1px solid $accent-color
+				background-color: transparent
+				box-shadow: none
+		&__close-mnu
+			display: block
+		&__mnu-logo
+			display: block
+	.top-callback
+		padding: 45px 10px 15px
+		&__inner
+			float: none
+			width: 100%
+		&__btn
+			float: right
+			border: 1px solid $accent-color
+			color: $accent-color
+			background: transparent
+		&__btn-other
+			float: right
+			border: 1px solid $accent-color
+			color: $accent-color
+			background: transparent
+		&__web-cam
+			position: absolute
+			top: -75px
+			right: 0
+			left: 0
+			margin: auto
+		&__web-icon
+			fill: $accent-color
+		&__link,
+		&__link-other
+			margin: 0
+			color: $accent-color
+			&:hover
+				border: 1px solid $accent-color
+				background: rgba(0,36,66, 0.5)
+				.phone-icon
+					display: inline-block
+		.phone-icon
+			display: none
+		.phone-icon-blue
+			display: inline-block
+	.default
+		// height: 420px
+		// max-height: 100%
+
+	.default .top-header__left
+		padding: 0 10px
+		z-index: 100
+	.default .top-header__right
+		margin-top: 0
+		width: 100%
+		position: fixed
+		z-index: 10
+		left: 0
+		right: 0
+		max-height: 100%
+		overflow-y: auto
+	.default .top-header__logo
+		display: none
+	.default .navigation__link-other
+		color: $accent-color
+		&:hover
+			border-bottom: 1px solid  $accent-color
+			padding: 12px 5px
+			border-top: 1px solid  $accent-color
+			color: #fff
+			text-decoration: none
+			box-shadow: 0px 0px 10px rgba(0,36,66, 0.7)
+			background-color: rgba(0,36,66, 0.7)
+	.default .top-header__btn
+		margin: 0 auto 0 10px
+		top: 6px
+	.default .top-header__btn_other
+		background: transparent
+	.default .top-header__callback-btn
+		background-color: transparent
+		border: 1px solid
+		position: absolute
+		right: 10px
+		top: -12px
+	.default .top-header__callback-btn_other
+		color: #fff
+		border: 1px solid #fff
+	.default .top-header__tel
+		position: absolute
+		right: 50px
+		left: 0
+		margin: auto
+		top: 5px
+		color: #fff 
+
+		.phone-ic-blue
+			display: none
+		&:hover
+			color: #fff
+	.default .top-header_other
+		// color: $accent-color
+	.default .top-callback
+		padding: 45px 10px 15px
+	.default .top-callback__link-other
+		color: $accent-color
+		.phone-ic-blue
+			display: inline-block
+		&:hover
+			color: #f1f1f1
+			text-decoration: none
+			padding: 10px
+			border: 1px solid $accent-color
+			transition: all .7s
+			background: rgba(0,36,66, 0.5)
+		&:hover	.phone-ic-blue
+			display: none
+	.default .top-callback__inner
+		width: 100%
+		padding: 0
+	.default .top-callback__web-cam
+		position: absolute
+		margin: auto
+	.default .top-callback__btn-other
+		border: 1px solid $accent-color
+		color: $accent-color
+	.default .top-callback__link_other
+		color: $accent-color !important
+		.phone-ic-blue
+			display: inline-block
+		.phone-ic-white
+			display: none
+	.default .navigation__link_other
+		color: $accent-color
+		&:hover, &:visited
+			color: $accent-color
+	.default .top-callback__btn
+		border: 1px solid $accent-color
+		color: $accent-color
+	.default .top-callback__web-icon
+		fill: $accent-color
+	//========= FLOORPAGE_STYLE
+	.floor-page
+		display: block
+		padding: 0 10px
+	.floor-page__left
+		float: none
+		width: 100%
+		padding-bottom: 10px
+		&::after
+			content: ""
+			display: none
+	.floor-page__left-inner
+		margin: 400px auto 0
+		width: 100%
+	.floor-page__left-img
+		top: 85px
+		position: absolute
+		bottom: 0
+	.floor-page__img-wrap
+		margin: 0 auto
+		width: 120px
+	.floor-page__left-page-description
+		margin: 0 auto
+	.floor-page__bottom-box
+		// margin: 0
+		// position: absolute
+		// left: 0
+		// padding: 0
+		// bottom: -150px
+		display: none
+	.floor-page__box
+		width: 40%
+	.floor-page__left-page-caption
+		text-align: center
+		margin-bottom: 130px
+	.floor-page__text
+		display: none
+	.floor-page__text_mob
+		display: block
+	.floor-page__right
+		float: none
+		width: 100%
+
+	//========= SELECT-APARTMENT-STYLE
+	.select-apartment__inner
+		padding-top: 470px
+	.select-apartment__caption-wrap
+		width: 50%
+		padding-right: 40px
+	.select-apartment__caption
+		font-size: 2em
+	.select-apartment__apartments-wrap
+		width: 50%
+		margin-top: 120px
+	.select-apartment__change-wrap
+		width: 80%
+	.select-apartment__apartments-inner
+		width: 100%
+	.select-apartment__description-wrap
+		width: 50%
+	//========= APARTMENT-STYLE
+	.blok-apartment__inner
+		padding-top: 400px
+	.blok-apartment__box-inner
+		padding: 10px
+	//=========NEWS-STYLE:
+	.news-feed__inner
+		margin-top: 400px
+	//=========NEWSPAGE-STYLE
+	.news-page__inner
+		margin-top: 400px
+	//=========CONSTRUCTION-STYLE
+	.construction__inner
+		margin-top: 400px
+	//=========WEBCAMERA-STYLE
+	.webcamera__inner
+		margin-top: 400px
+	//=========ARCHITECTURE-STYLE
+	.architecture__inner
+		margin: 400px auto 0
+		width: 100%
+	//========= LOCATION-STYLE
+	.lacation-page
+		margin: 250px 0 0
+	.lacation-page-wrap
+		max-width: 360px
+		padding: 15px 17px 40px 25px
+		max-width: 396px
+		bottom: 5%
+		right: 0
+		left: 0
+		margin: auto
+	.lacation-page-wrap__description
+		font-size: 1.5em
+	.box-corner__inner-descr
+		padding-right: 15px
+		height: 175px
+	.lacation-page-wrap__closeBtn
+		right: 0
+		top: -44px
+		transform: rotate(-90deg)
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 600px)
+	/**/
+	.default .top-header__callback-btn
+		position: absolute
+		right: 10px
+		top: 12px
+		margin: 0
+		width: 140px
+	.default .top-header__tel
+		top: 23px
+		width: 110px
+		font-size: .75em
+	.default .top-header__btn
+		top: 17px
+		width: 90px
+	//=========blok-about
+	.bc-wrapper
+		width: 60%
+	.blok-about__inner
+		padding: 300px 10px 78px
+	//=========blok-system-smart
+	.blok-system-smart__inner
+		width: 57%
+	.architecture__caption
+		font-size: 1.875em
+	//=========blok-contact
+	.contact__description
+		margin: 0 auto 50px
+	.contact__form
+		width: 70%
+		margin: 0 auto
+		float: none
+	//=========footer
+	.footer__left
+		width: 55%
+	.footer__right
+		width: 45%
+	//========= SELECT-APARTMENT-STYLE
+	.select-apartment__inner
+		padding-top: 400px
+	.select-apartment__caption-wrap
+		float: none
+		width: 100%
+		margin: 30px auto
+		padding: 0 23%
+		text-align: center
+	.select-apartment__change-wrap
+		width: 100%
+		height: 100px
+	.select-apartment__img-wrap
+		position: relative
+		top: 0
+		left: 0
+	.select-apartment__img-inner
+		margin: 0 auto
+	.select-apartment__change-floor
+		margin: 30px auto
+	.select-apartment__apartments-wrap
+		width: 100%
+		padding: 0 10px
+		margin: 100px 0 0 0
+	.select-apartment__description-wrap
+		// width: 100%
+		display: none
+	.select-apartment__description
+		margin: 50px auto
+	//=========ARCHITECTURE-STYLE
+	.architecture__description-wrap
+		display: block
+		width: 100%
+	.architecture__block_left,
+	.architecture__block_right,
+	.architecture__block_last
+		width: 100%
+
+	//========= APARTMENT-STYLE
+	.blok-apartment__inner
+		padding-top: 470px
+	.blok-apartment__caption-wrap
+		float: none
+		width: 100%
+		margin: 30px auto
+		padding: 0
+		text-align: center
+	.blok-apartment__change-wrap
+		width: 100%
+		height: 100px
+	.blok-apartment__img-wrap
+		position: relative
+		top: 0
+		left: 0
+	.blok-apartment__img-inner
+		margin: 0 auto
+	.blok-apartment__change-floor
+		margin: 30px auto
+	.blok-apartment__apartments-wrap
+		width: 100%
+		padding: 0 10px
+		margin: 100px 0 0 0
+	.blok-apartment__description-wrap
+		width: 100%
+	.sblok-apartment__description
+		margin: 50px auto
+	.blok-apartment__box
+		margin: 15px auto
+	.blok-apartment__box-inner
+		padding: 30px 40px 10px
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	/**/
+	//main page
+	//top-header
+	
+	.top-callback
+		&__link,
+		&__link-other
+			width: 140px
+			font-size: .75em
+			.phone-ic-white
+				display: none
+		
+		&__btn,
+		&__btn-other
+			width: 140px
+	.default .top-callback__link
+		width: 140px
+		font-size: .75em
+		.phone-ic-white
+			display: none
+	.default .top-callback__btn
+		width: 140px
+
+	//=========blok-about
+	.blok-about .quote
+		display: none
+	.bc-wrapper
+		width: 100%
+	//=========blok-map
+	.blok-map
+		// padding: 365px 0 99px
+	.location-wrap
+		width: 95%
+	.location-wrap
+		bottom: 25px
+	.location__closeBtn
+		top: -46px
+		right: 0
+	.location__description
+		font-size: 1.5em
+	//=========blok-about
+	.blok-about
+		background: #01131d url("../img/blok-about/top-bg-380.jpg") no-repeat center top
+		background-size: cover
+		min-height: 2852px
+	.blok-about__inner
+		padding: 730px 10px 78px
+	.bc-wrapper
+		width: 100%
+
+	//=========blok-system-smart
+	.blok-system-smart
+		background: url('../img/system-smart/system-smart-bg-380.jpg') no-repeat center center
+		background-size: cover
+		min-height: 300px
+		height: auto
+	.blok-system-smart__inner
+		width: 100%
+		padding: 50px 0 540px
+	.blok-system-smart__item
+		margin: 20px 0 0
+	.blok-system-smart__caption
+		font-size: 1.5em
+	//=========blok-optimization
+	.blok-optimization
+		background: url('../img/optimization/optimization-bg-380.jpg') no-repeat center center
+		background-size: cover
+		min-height: 300px
+		height: auto
+	.blok-optimization__inner
+		width: 100%
+		padding-bottom: 440px;
+	.blok-optimization__item
+		margin: 20px 0 0
+	.blok-optimization__caption
+		font-size: 1.5em
+	//=========blok-system-secur
+	.blok-system-secur
+		background: url('../img/system-secur/system-secur-bg-380.jpg') no-repeat center center
+		background-size: cover
+		min-height: 300px
+		height: 1228px
+	.blok-system-secur__inner
+		width: 100%;
+		margin: 0
+		padding: 50px 0 60px
+		+clearfix
+	.blok-system-secur__caption
+		font-size: 1.6em
+	.blok-system-secur__left
+		width: 100%
+		float: none
+	.blok-system-secur__list
+		width: 100%
+		float: none
+	//=========blok-techno-house
+	.blok-techno-house
+		background: url('../img/techno-house/techno-house-bg-380.jpg') no-repeat top center
+		background-size: cover
+		min-height: 300px
+		height: 1069px
+	.blok-techno-house__inner
+		width: 100%
+	.blok-techno-house__caption
+		font-size: 1.5em
+	//=========blok-contact
+	.contact
+		margin-bottom: -70px
+		padding-bottom: 100px
+	.contact__logo
+		float: none
+		width: 20.833333333%
+		margin: 0 auto
+	.contact__wrap
+		width: 100%
+		float: none
+	.contact__description
+		margin: 45px auto 50px
+		width: 100%
+	.contact__form
+		width: 100%
+	.contact__caption
+		font-size: 1.5em
+		text-align: center
+	//=========footer
+	.footer__left
+		float: none
+		width: 100%
+		text-align: center
+	.footer__right
+		float: none
+		width: 100%
+		text-align: center
+
+	//========= MAIN
+	.main-arrow-down
+		display: block
+
+	//=========NEWSPAGE-STYLE
+	.news-feed__item
+		width: 100%
+		float: none
+		padding: 0
+		margin: 23px 0 0
+
+
+	//========= LOCATION-STYLE
+	.lacation-page-wrap
+		max-width: 90%
+		padding: 10px 10px 40px 10px
+		bottom: 2%
+		right: 0
+		left: 0
+		margin: auto
+	
+	//========= SELECT-APARTMENT-STYLE
+	.select-apartment__caption
+		font-size: 1.875em
+	.select-apartment__caption-wrap
+		padding: 0px 7%
+	//=========NEWSPAGE-STYLE
+	.news-page__date-time-wrap
+		float: none
+		width: 100%
+	.news-page__content-description
+		text-align: center
+		padding-bottom: 5px
+	.news-page__gallery
+		float: none
+		width: 100%
+		margin: 0
+
+	//=========CONSTRUCTION-STYLE
+	.construction__caption
+		font-size: 1.8em
+	.construction__stutas
+		display: block
+		margin: 0
+	.construction__stutas-descr
+		display: block
+		width: 100%
+		margin-top: 15px
+		padding: 0
+	.construction__item
+		width: 100%
+		display: block
+		float: none
+
+	//=========ARCHITECTURE-STYLE
+	.architecture__inner
+		width: 100%
+		margin-right: 0
+		margin-left: 0
+	.architecture__caption
+		font-size: 1.5em
+		text-align: center
+	.architecture__text
+		text-align: justify
+	.architecture__block
+		float: none
+		width: 100%
+
+	//=========CONSTRUCTION-STYLE
+	.webcamera__caption
+		font-size: 1.8em
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 380px)
+	/**/
+	.default .top-header__callback-btn
+		width: 110px
+		top: 10px
+	.default .top-header__tel
+		top: 20px
+	.callback-form-pupop .form-btn
+		top: -15px
+		right: -10px
+		width: 35px
+		height: 35px
+	.default .top-header__btn
+		top: 10px
+		width: 40px
+		height: 40px
+		font-size: 0
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/**/
+	.navigation__menu
+		width: 85%
+	.top-callback
+		padding: 30px 10px 15px
+		&__web-cam
+			top: -85px
+	.default .navigation__menu
+		width: 85%
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 751px)
+	/**/
+	.top-header__right
+		display: block !important
+	
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
+

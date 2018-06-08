@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'SFUIDisplayUltralight';
+    src: url('fonts/SFUIDisplayUltralight.eot');
+    src: url('fonts/SFUIDisplayUltralight.eot') format('embedded-opentype'),
+         url('fonts/SFUIDisplayUltralight.woff2') format('woff2'),
+         url('fonts/SFUIDisplayUltralight.woff') format('woff'),
+         url('fonts/SFUIDisplayUltralight.ttf') format('truetype'),
+         url('fonts/SFUIDisplayUltralight.svg#SFUIDisplayUltralight') format('svg');
+}

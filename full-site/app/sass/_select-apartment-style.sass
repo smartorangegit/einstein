@@ -1,0 +1,140 @@
+.select-apartment
+	position: relative
+	&::before
+		content: ''
+		background-color: #ebebeb
+		position: absolute
+		width: 50%
+		height: 100%
+		right: 0
+	&__inner
+		max-width: 1200px
+		width: 100%
+		padding: 0 10px
+		margin: 0 auto
+		position: relative
+		padding-top: 140px
+		+clearfix
+	&__caption-wrap
+		float: left
+		width: 28.8135593% //340px/1180px
+		margin-left: 18.6440678% //220px/1180px
+		padding: 0 10px
+	&__caption
+		font-family: $Oksana-font-Heavy
+		font-size: 2.25em
+		line-height: 1.16
+		letter-spacing: 0.025em
+		color: $accent-color
+		padding: 0
+		margin-bottom: 30px
+		text-transform: uppercase
+	&__change-wrap
+		width: 13.559322% //160px/1180px
+		position: absolute
+		bottom: 20px
+		+clearfix
+	&__change-floor
+		text-align: center
+		margin-bottom: 170px
+		+clearfix
+	&__change-floor-inner
+		span
+			font-family: $Oksana-font-Heavy
+			font-size: 1.875em
+			line-height: 1.4
+			letter-spacing: 0.025em
+			color: $accent-color
+			display: block
+			width: 100%
+			text-transform: uppercase
+		p
+			font-family: $RobotoLight-font
+			font-size: 0.875em
+			line-height: 1.70
+			color: $accent-color
+			letter-spacing: 0.025em
+			padding-top: 10px
+	&__change-floor-next,
+	&__change-floor-prev
+		background-color: transparent
+		width: 50px
+		height: 50px
+		outline: none
+		border: none
+		border-radius: 50%
+	&__img-wrap
+		position: absolute
+		bottom: 0
+	&__img-inner
+		img
+			width: 100%
+			height: auto
+			display: block
+	&__apartments-wrap
+		float: right
+		width: 50%
+		margin-top: 130px
+		background-color: #ebebeb
+	&__apartments-inner
+		margin: 0 0 0 auto
+		width: 77.9661017% //460px/1180px
+		img
+			width: 100%
+			display: block
+			height: auto
+	&__description-wrap
+		float: left
+		width: 28.8135593% //340px/1180px
+		margin-left: 18.6440678% //220px/1180px
+		padding: 0 10px
+	&__description
+		+clearfix
+		width: 100%
+		text-align: center
+	&__box
+		background-color: #f1f1f1
+		width: 46.875% //150px/320px
+		position: relative
+		margin: 15px 0
+	.box-corner
+		&__top, &__bottom
+			position: absolute
+			width: 18px
+			height: 18px
+			color: $accent-color
+		&__top
+			top: 0
+			border-top: 1px solid
+		&__bottom
+			bottom: 0
+			border-bottom: 1px solid
+		&__left
+			left: 0
+			border-left: 1px solid
+		&__right
+			right: 0
+			border-right: 1px solid
+	&__box-inner
+		padding: 37px 0
+		margin-top: 2px
+		span
+			font-family: $Oksana-font-Heavy
+			font-size: 1.875em
+			line-height: 1.4
+			letter-spacing: 0.025em
+			color: $accent-color
+			display: block
+			width: 100%
+			text-transform: uppercase
+		p
+			font-family: $RobotoLight-font
+			font-size: 0.875em
+			line-height: 1.2
+			color: $accent-color
+			letter-spacing: 0.025em
+			padding: 0 15%
+	.box-left
+		float: left
+	.box-right
+		float: right

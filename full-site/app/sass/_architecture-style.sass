@@ -1,0 +1,93 @@
+.architecture
+	max-width: 1200px
+	width: 100%
+	padding: 0 10px
+	margin: 0 auto
+	&__inner
+		width: 86.440678% //1020px/1180px
+		margin-right: 0
+		margin-left: auto
+		margin-top: 122px
+		margin-bottom: 33px
+		+clearfix
+	&__description-wrap
+		float: right
+		width: 55%
+
+	&__block
+		margin-bottom: 20px
+		cursor: pointer
+		position: relative
+		a
+			// position: absolute
+			// width: 100%
+			// height: 100%
+			// z-index: 20
+			// background-color: rgba(#000, .85)
+		&_left
+			float: left
+			width: 43.0392157% //439px/1020px
+		&_right
+			width: 55% //560px/1020px
+			float: right
+		img
+			width: 100%
+			display: block
+			height: auto
+		.architecture__pic_small
+			display: none
+		&_last
+			width: 55% //560px/1020px
+			float: right
+	&__page-caption
+		width: 100% //560px/1020px
+		margin-left: auto
+		margin-right: 0
+		position: relative
+		float: right
+		padding: 40px
+		margin-bottom: 19px
+		border: 1px solid #bec7ce
+	&__caption
+		font-size: 2.25em
+		color: $accent-color
+		letter-spacing: 0.0
+		font-family: 'OksanaSansWideHeavy', sans-serif
+		text-transform: uppercase
+	&__text
+		line-height: 1.70
+		font-size: 0.875em
+		letter-spacing: 0.002em
+		font-family: 'RobotoLight', sans-serif
+		color: $accent-color
+	
+
+	&__line-blok
+		background-color: #bfc8d0
+		height: 1px
+		width: 120px
+		margin-bottom: 17px
+	.border-corner
+		.border-corner__top,
+		.border-corner__bottom
+			position: absolute
+			width: 18px
+			height: 18px
+			color: $accent-color
+		&__top
+			top: 0
+			border-top: 1px solid
+		&__bottom
+			bottom: 0
+			border-bottom: 1px solid
+		&__left
+			left: 0
+			border-left: 1px solid
+		&__right
+			right: 0
+			border-right: 1px solid
+
+	.border-corner__left
+		float: left
+	.border-corner__right
+		float: right

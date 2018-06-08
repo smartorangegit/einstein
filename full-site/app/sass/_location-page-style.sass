@@ -1,0 +1,110 @@
+.lacation-page
+	position: relative
+	height: 95vh
+	.main-map
+		position: absolute
+		width: 100%
+		height: 100%
+	&__inner
+		max-width: 1200px
+		width: 100%
+		padding: 5px 10px
+		margin: auto
+		+clearfix
+	&__right
+		position: absolute
+		right: 0
+		bottom: 0
+		margin: auto
+	&__list
+		border: 1px solid #f1f1f1
+		border-bottom: none
+	&__item
+		border-bottom: 1px solid #f1f1f1
+		background-color: #fff
+		text-align: center
+		width: 145px
+		padding: 5px
+		h3
+			font-family: $Oksana-font-Heavy
+			font-size: 1.5em
+			line-height: 0.83
+			letter-spacing: 0.025em
+			color: $accent-color
+		span
+			font-family: $default-font
+			font-size: 0.75em
+			line-height: 1.66
+			letter-spacing: 0.002em
+			color: $accent-color
+
+.lacation-page-wrap
+	// width: 540px //540px/1180px
+	width: 45.7627119% //540px/1180px
+	max-width: 540px
+	bottom: 10%
+	left: 10px
+	position: absolute
+	z-index: 50
+	background: url('../img/blok-map/map-caprion-bg.png') no-repeat top left
+	background-size: cover
+	padding: 35px 20px 48px 80px
+	height: 255px
+	&__description
+		font-size: 2.25em
+		line-height: 1.16
+		letter-spacing: 0.025em
+		font-family: 'OksanaSansWideHeavy', sans-serif
+		font-weight: 800
+		text-transform: uppercase
+		margin: 0
+		padding: 0
+		color: $accent-color
+		margin-bottom: 10px
+		margin-top: 5px
+	&__text
+		font-size: 1.125em
+		line-height: 1.33
+		font-family: 'RobotoMedium', sans-serif
+		color: $accent-color
+		margin: 0
+	&__closeBtn
+		position: absolute
+		background-color: red
+		z-index 280
+		top: 0
+		right: -60px
+		z-index: 300
+		outline: none
+		width: 60px
+		height: 60px
+		border: none
+		background: #f0f0f0 url('../img/location/arrow-icon.png') no-repeat center
+
+.box-corner
+	&__top,
+	&__bottom
+		position: absolute
+		width: 18px
+		height: 18px
+		color: $accent-color
+	&__top
+		top: 0
+		border-top: 1px solid
+	&__bottom
+		bottom: 0
+		border-bottom: 1px solid
+	&__left
+		left: 0
+		border-left: 1px solid
+	&__right
+		right: 0
+		border-right: 1px solid
+	&__inner
+		position: relative
+		text-align: justify
+		overflow: hidden
+	&__inner-descr
+		height: 135px
+		overflow-y: scroll
+		padding-right: 10px

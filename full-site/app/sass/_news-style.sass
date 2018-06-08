@@ -1,0 +1,131 @@
+.news-feed
+	max-width: 1200px
+	width: 100%
+	padding: 0 10px
+	margin: 0 auto
+	&__inner
+		width: 80.5084746% //950px/1180px
+		margin-right: 0
+		margin-left: auto
+		margin-top: 110px
+	&__page-caption
+		// margin-bottom: 20px
+	&__caption
+		font-size: 2.25em
+		color: $accent-color
+		line-height: 0.833333333
+		font-family: 'OksanaSansWideHeavy', sans-serif
+		letter-spacing: 0.025em
+		text-transform: uppercase
+		margin: 0
+		padding: 13px 0
+	&__list
+		+clearfix
+		margin: 0 -1.05263158% //10px/950px
+	&__item
+		width: 50%
+		float: left
+		margin: 23px 0
+		padding: 0 1.05263158%//10px/950px
+	&__news-wrapper
+		background-color: #f2f2f2
+		margin-top: 25px
+		position: relative
+	&__top
+		position: absolute
+		z-index: 5
+		top: 0
+		width: 100%
+		left: 0
+		+clearfix
+	&__news-time
+		font-family: 'RobotoLight', sans-serif
+		font-size: 0.875em
+		line-height: 1
+		letter-spacing: 0.050em
+		color: #fff
+		padding: 9px 15px
+		float: left
+		width: 50%
+	&__news-date
+		font-family: 'RobotoLight', sans-serif
+		font-size: 0.875em
+		line-height: 1
+		letter-spacing: 0.050em
+		color: #fff
+		padding: 9px 15px
+		float: right
+		text-align: right
+		width: 50%
+	&__pic
+		width: 100%
+		height: auto
+		display: block
+
+	&__blok-inner
+		padding: 10px 17px 20px
+	&__description
+		font-family: 'OksanaSansWideHeavy', sans-serif
+		font-size: 1.125em
+		line-height: 2
+		letter-spacing: 0.025em
+		color: $accent-color
+		text-transform: uppercase
+	&__link
+		margin-top: 15px
+		width: 150px
+		box-sizing: border-box
+		border: 2px solid $accent-color
+		font-size: 0.75em
+		line-height: 2.15
+		letter-spacing: 0.025em
+		margin-right: 0
+		margin-left: auto
+		display: block
+		text-transform: uppercase
+		text-decoration: none
+		color: $accent-color
+		font-family: 'OksanaSansDemiBold', sans-serif
+		text-align: center
+		font-weight: bold
+		cursor: pointer
+		transition: all 1s 
+		&:hover
+			background-color: $accent-color
+			color: #fff
+			text-decoration: none
+			transition: all 1s 
+	&__text
+		font-family: 'RobotoLight', sans-serif
+		font-size: 0.875em
+		color: #000
+		line-height: 2.14
+		text-align: justify
+
+.pagination
+	padding: 23px 0
+	width: 100%
+	overflow: hidden
+	text-align: center
+	a
+		border: 1px solid transparent
+		display: inline-block
+		outline: 0
+		padding: 8px 16px
+		vertical-align: middle
+		overflow: hidden
+		border-radius: 50%
+		text-decoration: none
+		background-color: inherit
+		text-align: center
+		cursor: pointer
+		color: $accent-color
+		font-size: 0.625em
+		line-height: 2
+		letter-spacing: 0.1em
+		transition: all .5s
+		font-family: 'OksanaSansDemiBold', sans-serif
+		&:hover
+			border: 1px solid $accent-color
+	.active
+		border: 1px solid $accent-color
