@@ -176,25 +176,6 @@ $webAd = 'https://' . $_SERVER['HTTP_HOST'] . $_SERVER['PHP_SELF'];
 			height="0" width="0" style="display:none;visibility:hidden"></iframe>
 </noscript>
 <!-- End Google Tag Manager (noscript) -->
-<!-- <a href="http://saga-development.com.ua/" class="saga-logo" target="_blank">
-<img src="/img/Saga_white.svg">
-</a>
-<style>
-.saga-logo {
-    position: fixed;
-    top: 138px;
-    right: 125px;
-    display: block;
-    width: 60px;
-    z-index: 20;
-    text-align: center;
-    overflow: hidden;
-}
-@media screen and (max-width: 768px){
-	.saga-logo {
-		right: 30px;
-	}
-}
-</style> -->
+
 </body>
 </html>

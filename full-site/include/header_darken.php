@@ -171,7 +171,31 @@ $uRn = "https://$_SERVER[HTTP_HOST]".'/en'."$_SERVER[REQUEST_URI]";
 
 			</div>
 		</div>
+		<a href="http://saga-development.com.ua/" class="saga-logo" target="_blank">
+		<img src="/img/Saga_white.svg">
+		</a>
+		<style>
+		.saga-logo {
+		    position: fixed;
+		    top: 138px;
+		    right: 125px;
+		    display: block;
+		    width: 60px;
+		    transition: 0.6s;
+				-webkit-transition: 0.6s;
+		}
+		.top-header.default .saga-logo{
+			top: 55px;
+			right: 5px;
 
+		}
+		@media screen and (max-width: 768px){
+			.saga-logo {
+				right: 30px;
+				display:none;
+			}
+		}
+		</style>
 	</div>
 	<!-- / end top-header__inner -->
 
