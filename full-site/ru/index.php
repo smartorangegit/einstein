@@ -559,7 +559,7 @@
         <video class="video_desk" autoplay loop muted class="main-video-bg">
           <source src="/SAGA_EIN.mp4" type="video/mp4">
         </video>
-        <video  class="is__mobile" src="/SAGA_EIN_mob.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' playsinline loop muted autoplay controls></video>
+        <video  class="is__mobile" src="/SAGA_EINSTEIN_mob.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' playsinline loop muted autoplay controls></video>
       </div>
       <div class="sound">
         <img id="sound_on" onclick="sound_off ()" src="/img/sound_on.svg" style="display:none;">

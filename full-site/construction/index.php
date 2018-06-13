@@ -93,17 +93,20 @@ include("../admin/bd.php");
 	<?php include('../include/header.php'); ?>
 	<main class="content">
 
-		<section class="status-page">
+				<section class="status-page">
 			<div class="status-page__inner">
 
 				<div class="status-page__descr-wrap">
 					<div class="status-page__descr-inner">
-						<h1 class="status-page__heading">Статус робіт</h1>
+						<h1 class="status-page__heading">Хід будівництва</h1>
 						<p class="status-page__description" style="font-size: 0.875em;">
-							Завершено роботи з улаштування зовнішньої цегляної кладки. Тривають роботи з улаштування внутрішніх перегородок.
+							Продовжуються монтаж вікон та підготовчі роботи по монтажу фасаду. Ведуться роботи по прокладанню зовнішніх тепломереж та каналізації. Зовнішні електромережі заведено в будинок. Продовжуються роботи з улаштування внутрішніх перегородок.Змонтовано тимчасовий підйомник для подачі матеріалів.
 						</p>
 					</div>
 				</div>
+<style>
+.status-page__descr-inner {margin: 8px 0 0 auto;}
+</style>
 
 				<div class="status-page__navIcon-wrap">
 					<div class="status-page__navIcon-inner">
