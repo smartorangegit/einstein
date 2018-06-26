@@ -6,9 +6,9 @@ include("../../admin/bd.php");
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
-	<title>Ход строительства жилого комплекса EINSTEIN Concept House</title>
+	<title>≡ ЖК Эйнштейн 》 Ход строительства жилого комплекса EINSTEIN Concept House</title>
 	<meta name="description"
-		  content="EINSTEIN Concept House - ход строительства жилого комплекса  г. Киев, ул. Златоустовская, 24А">
+		  content="【Ход строительства】EINSTEIN Concept House - умный дом с централизованным управле... ✅【EINSTEIN】Дистанционный контроль потребления электроэнергии, газа и воды онлайн ...  ✅【EINSTEIN】Доступ в подъезд по отпечатку пальца, тротуар с подогревом, видеонаблю... ✅【EINSTEIN】- это технологичность в историческом центре Киева!">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<link rel="alternate" hreflang="uk" href="https://einstein.house<?php echo str_replace('ru/', '', $_SERVER['REQUEST_URI'])?>"/>
@@ -100,7 +100,7 @@ include("../../admin/bd.php");
 					<div class="status-page__descr-inner">
 						<h1 class="status-page__heading">Ход строительства</h1>
 						<p class="status-page__description" style="font-size: 0.875em;">
-Продолжаются монтаж окон и подготовительные работы по монтажу фасада. Ведутся работы по прокладке наружных теплосетей и канализации. Внешние электросети принято в дом. Продолжаются работы по устройству внутренних перегородок. Смонтировано временный подъемник для подачи материалов.
+Ведутся работы по монтажу окон и утеплению фасада. Продолжаются работы по устройству кирпичных внутренних перегородок.
 </p>
 <style>
 .status-page__descr-inner {margin: 8px 0 0 auto;}

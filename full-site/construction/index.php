@@ -6,9 +6,9 @@ include("../admin/bd.php");
 <html lang="uk">
 <head>
 	<meta charset="UTF-8">
-	<title>Хід будівництва житлового комплексу EINSTEIN Concept House</title>
+	<title>≡ ЖК Ейнштейн 》 Хід будівництва житлового комплексу EINSTEIN Concept House</title>
 	<meta name="description"
-		  content="EINSTEIN Concept House - хід будівництва житлового комплексу м. Київ, вул. Златоустівська, 24А">
+		  content="【Хід будівництва】EINSTEIN Concept House - розумний будинок з централізованим управлі ... ✅【EINSTEIN】 Дистанційний контроль за споживанням електроенергії, газу та води онлайн ... ✅【EINSTEIN】 Доступ до під'їзду по відбитку пальця, тротуар з підігрівом, відеоспостереж ... ✅【EINSTEIN】 - це технологічність в історичному центрі Києва!">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<link rel="alternate" hreflang="uk" href="https://einstein.house<?php echo $_SERVER['REQUEST_URI']; ?>"/>
@@ -93,21 +93,20 @@ include("../admin/bd.php");
 	<?php include('../include/header.php'); ?>
 	<main class="content">
 
-				<section class="status-page">
+		<section class="status-page">
 			<div class="status-page__inner">
 
 				<div class="status-page__descr-wrap">
 					<div class="status-page__descr-inner">
 						<h1 class="status-page__heading">Хід будівництва</h1>
 						<p class="status-page__description" style="font-size: 0.875em;">
-							Продовжуються монтаж вікон та підготовчі роботи по монтажу фасаду. Ведуться роботи по прокладанню зовнішніх тепломереж та каналізації. Зовнішні електромережі заведено в будинок. Продовжуються роботи з улаштування внутрішніх перегородок.Змонтовано тимчасовий підйомник для подачі матеріалів.
+							Ведуться роботи по монтажу вікон та утепленню фасаду. Продовжуються роботи з улаштування цегляних внутрішніх перегородок.
 						</p>
 					</div>
 				</div>
 <style>
 .status-page__descr-inner {margin: 8px 0 0 auto;}
 </style>
-
 				<div class="status-page__navIcon-wrap">
 					<div class="status-page__navIcon-inner">
 						<img src="/img/status-page/navIcon.svg" alt="navigation icon">
