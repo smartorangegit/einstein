@@ -273,7 +273,7 @@ include("../admin/bd.php");
 						<a class="status-page__btn status-page__btn_big constBtn" href="#construction">Дивитися хід
 						будівництва</a>
 						<a class="status-page__btn status-page__btn_sm" href="/webcamera/">Веб-камера</a>
-						<p class="status-page__btn-bar-text">Введення в експлуатацію: II - III квартал 2018 року</p>
+						<p class="status-page__btn-bar-text">Введення в експлуатацію: III квартал 2018 року</p>
 						<a class="status-page__btn status-page__btn_sm constBtn" href="#construction">Докладніше</a>
 					</div>
 				</div>
@@ -288,7 +288,7 @@ include("../admin/bd.php");
 			<div class="construction__inner">
 				<div class="construction__page-caption">
 					<h2 class="construction__caption">Будівництво</h2>
-					<p class="construction__top-text">Завершення будівництва – II квартал 2018 року</p>
+					<!--<p class="construction__top-text">Завершення будівництва – II квартал 2018 року</p>-->
 				</div>
 			<?php/*	<ul class="construction__stutas">
 					<li class="construction__stutas-descr">

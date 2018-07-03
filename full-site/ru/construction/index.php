@@ -274,7 +274,7 @@ include("../../admin/bd.php");
 						<a class="status-page__btn status-page__btn_big constBtn" href="/ru/documentation/">Документация</a>
 						<a class="status-page__btn status-page__btn_big constBtn" href="#construction">Смотреть ход строительства</a>
 						<a class="status-page__btn status-page__btn_sm" href="/ru/webcamera/">Веб-камера</a>
-						<p class="status-page__btn-bar-text">Ввод в эксплуатацию: II - III квартал 2018</p>
+						<p class="status-page__btn-bar-text">Ввод в эксплуатацию: III квартал 2018</p>
 						<a class="status-page__btn status-page__btn_sm constBtn" href="#construction">Подробнее</a>
 					</div>
 				</div>
@@ -289,7 +289,7 @@ include("../../admin/bd.php");
 			<div class="construction__inner">
 				<div class="construction__page-caption">
 					<h2 class="construction__caption">Строительство</h2>
-					<p class="construction__top-text">Завершение строительства - II квартал 2018</p>
+					<!--<p class="construction__top-text">Завершение строительства - II квартал 2018</p>-->
 				</div>
 			<?php/*	<ul class="construction__stutas">
 					<li class="construction__stutas-descr">
