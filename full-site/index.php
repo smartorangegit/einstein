@@ -299,7 +299,7 @@
 								</li> */?>
 								<li class="blok-optimization__item">
 									<div class="blok-optimization__pic-wrap">
-										<img src="img/techno-house/icon1.svg" alt="icon">
+										<img src="img/techno-house/card.svg" alt="icon">
 									</div>
 									<p class="blok-optimization__descr">
 										Вхід у під’їзд за карткою
