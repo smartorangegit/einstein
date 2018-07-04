@@ -302,7 +302,7 @@
 										<img src="img/techno-house/icon1.svg" alt="icon">
 									</div>
 									<p class="blok-optimization__descr">
-										Вхід у під’їзд за відбитком пальця та за карткою
+										Вхід у під’їзд за карткою
 									</p>
 								</li>
 								<li class="blok-optimization__item">

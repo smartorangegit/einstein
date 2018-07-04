@@ -301,7 +301,7 @@
 										<img src="/img/techno-house/icon1.svg" alt="icon">
 									</div>
 									<p class="blok-optimization__descr">
-										Вход в подъезд по отпечатку пальца и по карте
+										Вход в подъезд по карте
 									</p>
 								</li>
 								<li class="blok-optimization__item">
