@@ -13,7 +13,7 @@
 		</div>
 		<div class="footer__right">
 			<span>Разработка сайта</span>
-			<a href="#"><img src="/img/smart-logo.svg" alt="logo smartorange"></a>
+			<a href="#"><img src="/img/smart-logo.png" alt="logo smartorange"></a>
 		</div>
 	</div>
 	<!-- / end footer-inner -->

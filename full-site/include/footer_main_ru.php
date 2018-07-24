@@ -76,7 +76,7 @@ $webAd = 'https://' . $_SERVER['HTTP_HOST'] . $_SERVER['PHP_SELF'];
 						<input class="text-big text-big_form" type="email" placeholder="Ваш e-mail:" name="email" >
 						<input class="text-big text-big_form" type="tel" onkeyup="javascript:countmeForm('form_rieltor');"  placeholder="Ваш телефон"	name="tel"	required="required"	>
 						<textarea   class="text-big text-big_form" name="textarea" rows="1" placeholder="Ваше сообщение:"></textarea>
-						
+
 						<input  name="typ" class="webad" type="hidden" value="8" >
 						<input name="webad" class="webad" type="hidden" value="<?= $webAd; ?>"/>
 						<input name="metka" class="metka" type="hidden" value="Сотрудничество для риелторов - Einstein"/>
@@ -115,7 +115,7 @@ $webAd = 'https://' . $_SERVER['HTTP_HOST'] . $_SERVER['PHP_SELF'];
 		</div>
 		<div class="footer__right">
 			<span>Разработка сайта</span>
-			<a href="#"><img src="/img/smart-logo.svg" alt="logo smartorange"></a>
+			<a href="#"><img src="/img/smart-logo.png" alt="logo smartorange"></a>
 		</div>
 	</div>
 	<!-- / end footer-inner -->
