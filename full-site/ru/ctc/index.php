@@ -199,7 +199,7 @@
 	.ctc__box .ctc_img {width: 15%;display: flex;align-items: center;position: relative;left: -20px; }
 	@media only screen and (max-width: 570px) {
 		.content_name{font-size: 38px;}
-		.content_wrap{margin-bottom: 0;}
+		.content_wrap{margin-bottom: 0; padding-top: 340px;}
 		.ctc__footer, .ctc__box{flex-direction: column; -webkit-flex-direction: column;}
 		.ctc__footer .ctc_img, .ctc__box  .ctc_img{width: 100%; left: 0;}
 		.ctc__content { width: 100%;column-count: 1; -moz-column-count: 1; -webkit-column-count: 1; }
