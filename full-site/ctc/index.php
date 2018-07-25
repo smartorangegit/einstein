@@ -217,6 +217,7 @@
 						.ctc__top, .ctc__box, .ctc__footer{margin-top: 10px; padding: 0 20px;}
 						.ctc__box .ctc_icon{ max-height: 82px!important;}
 						.ctc_item{width: 100%;}
+						.ctc_icon{margin: 0 auto;}
 						.ctc_img.icon_man{top:-20px;}
 						.ctc__footer .ctc_img{height: 80px;}
 						.ctc__footer .ctc_icon{height: 100%;}
