@@ -130,10 +130,10 @@ $_SESSION['fl'] = $fl;
 						<img src="/img/select-apartment/selectapartment.png" alt="apartment plan" usemap="#Map" id="img_1">
 </div>
 <map name="Map" id="Map" >
-    <area class="2a" alt="2a" title="" href="../apartment.php?apart=2A/" shape="poly" coords="90,174,90,325,5,325,4,36,90,35,90,9,172,9,172,172" />
-    <area class="1a" alt="1a" title="" href="../apartment.php?apart=1A/" shape="poly" coords="90,172,232,172,230,325,90,327" />
-    <area class="1b" alt="1b" title="" href="../apartment.php?apart=1B/" shape="poly" coords="375,172,232,172,230,325,375,325" />
-    <area class="2b" alt="2b" title="" href="../apartment.php?apart=2B/" shape="poly" coords="374,325,450,325,450,36,370,36,370,9,290,9,290,172,374,172" />
+    <area class="2F1_1_1_1" alt="2F1_1_1_1" title="" href="/ru/apartment.php?apart=2F1_1_1_1/" shape="poly" coords="90,174,90,325,5,325,4,36,90,35,90,9,172,9,172,172" />
+    <area class="1G1_1_1_2" alt="1G1_1_1_2" title="" href="/ru/apartment.php?apart=1G1_1_1_2/" shape="poly" coords="90,172,232,172,230,325,90,327" />
+    <area class="1G2_1_1_3" alt="1G2_1_1_3" title="" href="/ru/apartment.php?apart=1G2_1_1_3/" shape="poly" coords="375,172,232,172,230,325,375,325" />
+    <area class="2F2_1_1_4" alt="2F2_1_1_4" title="" href="/ru/apartment.php?apart=2F2_1_1_4/" shape="poly" coords="374,325,450,325,450,36,370,36,370,9,290,9,290,172,374,172" />
     
 </map>
 <?}
@@ -196,13 +196,13 @@ elseif($fl == 10){?>
 										<div class="box-corner__bottom box-corner__right"></div>
 										<div class="box-corner__bottom box-corner__left"></div>
 										<div class="select-apartment__box-inner">
-											<span id="level_1">2a</span>
+											<span id="level_1">2F1_1_1_1</span>
 											<p>код планировки</p>
 										</div>
 								</div>
 							</div>
 							<!-- / end select-apartment__box -->
-							<div class="select-apartment__box box-left">
+							<!--<div class="select-apartment__box box-left">
 								<div class="box-corner">
 									<div class="box-corner__top box-corner__left"></div>
 										<div class="box-corner__top box-corner__right"></div>
@@ -213,7 +213,7 @@ elseif($fl == 10){?>
 											<p>жилая площадь м2</p>
 										</div>
 								</div>
-							</div>
+							</div>-->
 							<!-- / end select-apartment__box -->
 							<div class="select-apartment__box box-right">
 								<div class="box-corner">
@@ -222,7 +222,7 @@ elseif($fl == 10){?>
 										<div class="box-corner__bottom box-corner__right"></div>
 										<div class="box-corner__bottom box-corner__left"></div>
 										<div class="select-apartment__box-inner">
-											<span id="level_3">73.77</span>
+											<span id="level_3">77,27</span>
 											<p>общая площадь м2</p>
 										</div>
 								</div>

@@ -106,9 +106,11 @@ $tips = str_replace('/', '', $_GET['apart']);
 $row = mysql_query("SELECT * FROM aparts where type='$tips'" ,$DB);
 
 
+
+
+
 while ($currow = mysql_fetch_array($row))
-{
-	
+{	
 	
 echo "<pre>";
 //print_r($currow);
@@ -244,7 +246,7 @@ switch ($currow['type']) {
 									<ul class="blok-apartment__list">
 										<li class="blok-apartment__descr">Площадь<span>м<sup>2</sup></span></li>
 
-<li class="blok-apartment__item">Прихожая<span><?=$currow['peredpokiy'];?></span></li>
+<li class="blok-apartment__item">Коридор<span><?=$currow['peredpokiy'];?></span></li>
 <li <?=$hidd_holl;?> class="blok-apartment__item">Холл<span><?=$currow['holl'];?></span></li>
 <li <?=$hidd_kuhVit;?> class="blok-apartment__item">Кухня-гостиная<span><?=$currowp['kuhnia-vitalnia'];?></span></li>
 <li <?=$hidd_kuhnia;?> class="blok-apartment__item">Кухня<span><?=$currow['kuhnia'];?></span></li>
@@ -261,24 +263,24 @@ switch ($currow['type']) {
 <li <?=$hidd_terasa;?> class="blok-apartment__item">Терраса<span><?=$currow['terasa'];?></span></li>
 
 
-										<li class="blok-apartment__all">Жилая<span><?=$currow['zhitlova'];?></span></li>
+										<?/* <li class="blok-apartment__all">Жилая<span><?=$currow['zhitlova'];?></span></li> */?>
 										<li class="blok-apartment__all">Общая<span><?=$currow['zagalna'];?></span></li>
 									</ul>
 								</div>
 							</div>
 						</div>
 						<!-- / end select-apartment__box -->
-						<div class="blok-apartment__box">
+						<!--<div class="blok-apartment__box">
 								<div class="box-corner">
 									<div class="box-corner__top box-corner__left"></div>
 										<div class="box-corner__top box-corner__right"></div>
 										<div class="box-corner__bottom box-corner__right"></div>
 										<div class="box-corner__bottom box-corner__left"></div>
 										<div class="blok-apartment__link-wrap">
-											<a class="blok-apartment__link-btn" href="../img/plans/<?=$currow['type'];?>.jpg" target="_blank">Скачать планировку в PDF</a>
+											<a class="blok-apartment__link-btn" href="../img/plans/<?/* =$currow['type']; */?>.jpg" target="_blank">Скачать планировку в PDF</a>
 										</div>
 								</div>
-						</div>
+						</div>-->
 						<!-- / end select-apartment__box -->
 						<div class="blok-apartment__box box-left">
 								<div class="box-corner">
@@ -311,6 +313,11 @@ switch ($currow['type']) {
 
 			</div>
 			<!-- /end blok-apartment-inner-->
+		    <style>
+			.blok-apartment__apartments-wrap img {
+				background-color: #002442;
+			}
+			</style>
 		</main>
 <?
 }

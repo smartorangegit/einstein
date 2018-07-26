@@ -168,7 +168,7 @@ elseif($fl == 10){?>
 										<div class="box-corner__bottom box-corner__right"></div>
 										<div class="box-corner__bottom box-corner__left"></div>
 										<div class="select-apartment__box-inner">
-											<span id="level">2</span>
+											<span id="level">1</span>
 											<p>кількість кімнат</p>
 										</div>
 								</div>
@@ -181,13 +181,13 @@ elseif($fl == 10){?>
 										<div class="box-corner__bottom box-corner__right"></div>
 										<div class="box-corner__bottom box-corner__left"></div>
 										<div class="select-apartment__box-inner">
-											<span id="level_1">2a</span>
+											<span id="level_1">NP1_1_1_4</span>
 											<p>код планування</p>
 										</div>
 								</div>
 							</div>
 							<!-- / end select-apartment__box -->
-							<div class="select-apartment__box box-left">
+							<!--<div class="select-apartment__box box-left">
 								<div class="box-corner">
 									<div class="box-corner__top box-corner__left"></div>
 										<div class="box-corner__top box-corner__right"></div>
@@ -198,7 +198,7 @@ elseif($fl == 10){?>
 											<p>житлова площа м2</p>
 										</div>
 								</div>
-							</div>
+							</div>-->
 							<!-- / end select-apartment__box -->
 							<div class="select-apartment__box box-right">
 								<div class="box-corner">
@@ -207,7 +207,7 @@ elseif($fl == 10){?>
 										<div class="box-corner__bottom box-corner__right"></div>
 										<div class="box-corner__bottom box-corner__left"></div>
 										<div class="select-apartment__box-inner">
-											<span id="level_3">73.77</span>
+											<span id="level_3">66,96</span>
 											<p>загальна площа м2</p>
 										</div>
 								</div>

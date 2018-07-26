@@ -158,98 +158,258 @@ if(strGETm != 2){
 }
 }
 
-$('.2a').mouseover(function() {   
+$('.2A_1_1_1').mouseover(function() {   
   $('#level').text( "2");
-	$('#level_1').text( "2A");
-	$('#level_2').text( "37.46");
-	$('#level_3').text( "73.77");
+	$('#level_1').text( "2A_1_1_1");
+	$('#level_2').text( "");
+	$('#level_3').text( "77,1");
         }).mouseout(function(){
     });
 
-$('.1a').mouseover(function() {     
+$('.1C1_1_1_2').mouseover(function() {     
   $('#level').text( "1");
-	$('#level_1').text( "1A");
-	$('#level_2').text( "16.76");
-	$('#level_3').text( "43.42");
+	$('#level_1').text( "1C1_1_1_2");
+	$('#level_2').text( "");
+	$('#level_3').text( "46,32");
         }).mouseout(function(){
   
     });
-$('.2b').mouseover(function() {     
-  $('#level').text( "2");
-	$('#level_1').text( "2Б");
-	$('#level_2').text( "37.46");
-	$('#level_3').text( "73.77");
+$('.1C2_1_1_3').mouseover(function() {     
+  $('#level').text( "1");
+	$('#level_1').text( "1C2_1_1_3");
+	$('#level_2').text( "");
+	$('#level_3').text( "46,32");
         }).mouseout(function(){
     });
 
-$('.1b').mouseover(function() {     
-  $('#level').text( "1");
-	$('#level_1').text( "1Б");
-	$('#level_2').text( "16.76");
-	$('#level_3').text( "43.42");
-        }).mouseout(function(){
-  
-    });
-$('.3a').mouseover(function() {     
-  $('#level').text( "3");
-	$('#level_1').text( "3A");
-	$('#level_2').text( "121.29");
-	$('#level_3').text( "53.92");
-        }).mouseout(function(){
-  
-    });
-$('.3b').mouseover(function() {     
-  $('#level').text( "3");
-	$('#level_1').text( "3Б");
-	$('#level_2').text( "121.29");
-	$('#level_3').text( "53.92");
-        }).mouseout(function(){
-  
-    });
-$('.2v').mouseover(function() {     
+$('.2B_1_1_4').mouseover(function() {     
   $('#level').text( "2");
-	$('#level_1').text( "2В");
-	$('#level_2').text( "71.72");
-	$('#level_3').text( "36.11");
+	$('#level_1').text( "2B_1_1_4");
+	$('#level_2').text( "");
+	$('#level_3').text( "76,11");
+        }).mouseout(function(){
+  
+    });
+$('.2D1_1_1').mouseover(function() {     
+  $('#level').text( "2");
+	$('#level_1').text( "2D1_1_1");
+	$('#level_2').text( "");
+	$('#level_3').text( "77,61");
+        }).mouseout(function(){
+  
+    });
+$('.1E1_1_1').mouseover(function() {     
+  $('#level').text( "1");
+	$('#level_1').text( "1E1_1_1");
+	$('#level_2').text( "");
+	$('#level_3').text( "46,63");
+        }).mouseout(function(){
+  
+    });
+$('.1E2_1_1').mouseover(function() {     
+  $('#level').text( "1");
+	$('#level_1').text( "1E2_1_1");
+	$('#level_2').text( "");
+	$('#level_3').text( "46,62");
         }).mouseout(function(){
   
 	});
-$('.2g').mouseover(function() {     
+$('.2D2_1_1').mouseover(function() {     
 	$('#level').text( "2");
-	$('#level_1').text( "2Г");
-	$('#level_2').text( "71.72");
-	$('#level_3').text( "36.11");
+	$('#level_1').text( "2D2_1_1");
+	$('#level_2').text( "");
+	$('#level_3').text( "76,44");
 }).mouseout(function(){
 }); 
-$('.3v_1').mouseover(function() {     
-  $('#level').text( "1");
-	$('#level_1').text( "3В");
-	$('#level_2').text( "43.42");
-	$('#level_3').text( "16.76");
+$('.2D1_1_1_1').mouseover(function() {     
+  $('#level').text( "2");
+	$('#level_1').text( "2D1_1_1_1");
+	$('#level_2').text( "");
+	$('#level_3').text( "75,37");
         }).mouseout(function(){
   
     });
-$('.3g_1').mouseover(function() {     
+$('.1E1_1_1_2').mouseover(function() {     
   $('#level').text( "1");
-	$('#level_1').text( "3Г");
-	$('#level_2').text( "43.42");
-	$('#level_3').text( "16.76");
+	$('#level_1').text( "1E1_1_1_2");
+	$('#level_2').text( "");
+	$('#level_3').text( "46,42");
         }).mouseout(function(){
   
     }); 
-$('.3v_2').mouseover(function() {     
-  $('#level').text( "3");
-	$('#level_1').text( "3В");
-	$('#level_2').text( "116.49");
-	$('#level_3').text( "42.75");
+$('.1E2_1_1_3').mouseover(function() {     
+  $('#level').text( "1");
+	$('#level_1').text( "1E2_1_1_3");
+	$('#level_2').text( "");
+	$('#level_3').text( "46,41");
         }).mouseout(function(){
   
     });
-$('.3g_2').mouseover(function() {     
+$('.2D2_1_1_4').mouseover(function() {     
+  $('#level').text( "2");
+	$('#level_1').text( "2D2_1_1_4");
+	$('#level_2').text( "");
+	$('#level_3').text( "75,35");
+        }).mouseout(function(){
+  
+    });//
+	$('.2F1_1_1_1').mouseover(function() {     
+  $('#level').text( "2");
+	$('#level_1').text( "2F1_1_1_1");
+	$('#level_2').text( "");
+	$('#level_3').text( "77,27");
+        }).mouseout(function(){
+  
+    });
+	$('.1G1_1_1_2').mouseover(function() {     
+  $('#level').text( "1");
+	$('#level_1').text( "1G1_1_1_2");
+	$('#level_2').text( "");
+	$('#level_3').text( "46,65");
+        }).mouseout(function(){
+  
+    });
+	$('.2D2_1_1_4').mouseover(function() {     
+  $('#level').text( "2");
+	$('#level_1').text( "2D2_1_1_4");
+	$('#level_2').text( "");
+	$('#level_3').text( "75,35");
+        }).mouseout(function(){
+  
+    });
+	$('.1G2_1_1_3').mouseover(function() {     
+  $('#level').text( "1");
+	$('#level_1').text( "1G2_1_1_3");
+	$('#level_2').text( "");
+	$('#level_3').text( "46,65");
+        }).mouseout(function(){
+  
+    });
+	$('.2F2_1_1_4').mouseover(function() {     
+  $('#level').text( "2");
+	$('#level_1').text( "2F2_1_1_4");
+	$('#level_2').text( "");
+	$('#level_3').text( "76,14");
+        }).mouseout(function(){
+  
+    });
+	$('.2H1_1_1_1').mouseover(function() {     
+  $('#level').text( "2");
+	$('#level_1').text( "2H1_1_1_1");
+	$('#level_2').text( "");
+	$('#level_3').text( "77,28");
+        }).mouseout(function(){
+  
+    });
+	$('.2D2_1_1_4').mouseover(function() {     
+  $('#level').text( "2");
+	$('#level_1').text( "2D2_1_1_4");
+	$('#level_2').text( "");
+	$('#level_3').text( "75,35");
+        }).mouseout(function(){
+  
+    });
+	$('.1K1_1_1_2').mouseover(function() {     
+  $('#level').text( "1");
+	$('#level_1').text( "1K1_1_1_2");
+	$('#level_2').text( "");
+	$('#level_3').text( "46,67");
+        }).mouseout(function(){
+  
+    });
+	$('.1K2_1_1_3').mouseover(function() {     
+  $('#level').text( "1");
+	$('#level_1').text( "1K2_1_1_3");
+	$('#level_2').text( "");
+	$('#level_3').text( "46,68");
+        }).mouseout(function(){
+  
+    });
+	$('.2H2_1_1_4').mouseover(function() {     
+  $('#level').text( "2");
+	$('#level_1').text( "2H2_1_1_4");
+	$('#level_2').text( "");
+	$('#level_3').text( "75,54");
+        }).mouseout(function(){
+  
+    });//
+		$('.3L1_1_1_1_2').mouseover(function() {     
   $('#level').text( "3");
-	$('#level_1').text( "3Г");
-	$('#level_2').text( "116.49");
-	$('#level_3').text( "42.75");
+	$('#level_1').text( "3L1_1_1_1_2");
+	$('#level_2').text( "123,24");
+	$('#level_3').text( "");
+        }).mouseout(function(){
+  
+    });
+		$('.3L2_1_1_3_4').mouseover(function() {     
+  $('#level').text( "3");
+	$('#level_1').text( "3L2_1_1_3_4");
+	$('#level_2').text( "123,61");
+	$('#level_3').text( "");
+        }).mouseout(function(){
+  
+    });
+		$('.3L1_1_1_1').mouseover(function() {     
+  $('#level').text( "3");
+	$('#level_1').text( "3L1_1_1_1");
+	$('#level_2').text( "123,24");
+	$('#level_3').text( "");
+        }).mouseout(function(){
+  
+    });
+		$('.3L2_1_1_3').mouseover(function() {     
+  $('#level').text( "3");
+	$('#level_1').text( "3L2_1_1_3");
+	$('#level_2').text( "123,23");
+	$('#level_3').text( "");
+        }).mouseout(function(){
+  
+    });
+		$('.2P1_1_1_1').mouseover(function() {     
+  $('#level').text( "2");
+	$('#level_1').text( "2P1_1_1_1");
+	$('#level_2').text( "72,83");
+	$('#level_3').text( "");
+        }).mouseout(function(){
+  
+    });
+		$('.3R1_1_1_1').mouseover(function() {     
+  $('#level').text( "3");
+	$('#level_1').text( "3R1_1_1_1");
+	$('#level_2').text( "117,83");
+	$('#level_3').text( "");
+        }).mouseout(function(){
+  
+    });
+			$('.3R2_1_1_3').mouseover(function() {     
+  $('#level').text( "3");
+	$('#level_1').text( "3R2_1_1_3");
+	$('#level_2').text( "117,81");
+	$('#level_3').text( "");
+        }).mouseout(function(){
+  
+    });
+		$('.2P2_1_1_4').mouseover(function() {     
+  $('#level').text( "2");
+	$('#level_1').text( "2P2_1_1_4");
+	$('#level_2').text( "72,85");
+	$('#level_3').text( "");
+        }).mouseout(function(){
+  
+    });
+		$('.NP_1_1_4').mouseover(function() {     
+  $('#level').text( "");
+	$('#level_1').text( "NP_1_1_4");
+	$('#level_2').text( "");
+	$('#level_3').text( "66,96");
+        }).mouseout(function(){
+  
+    });
+			$('.NP2_1_1_1').mouseover(function() {     
+  $('#level').text( "");
+	$('#level_1').text( "NP2_1_1_1");
+	$('#level_2').text( "");
+	$('#level_3').text( "105,17");
         }).mouseout(function(){
   
     });
