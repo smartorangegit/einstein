@@ -99,12 +99,15 @@ include("../admin/bd.php");
 				<div class="status-page__descr-wrap">
 					<div class="status-page__descr-inner">
 						<h1 class="status-page__heading">Хід будівництва</h1>
-						<p class="status-page__description" style="font-size: 0.875em;">
-Продовжується монтаж вікон та роботи по утепленню фасаду. Триває улаштування цегляних внутрішніх перегородок.
+<p class="status-page__description" style="font-size: 0.875em;">
+Триває монтаж вікон та утеплення фасаду. Ведуться роботи з улаштування цегляних внутрішніх перегородок. 
+Розпочато роботи по прокладці внутрішніх електромереж. Триває монтаж сантехнічного обладнання. Виконуються роботи з замонолічування отворів проходження комунікацій.
+
 						</p>
 					</div>
 				</div>
 <style>
+/* .status-page__heading {margin-top: -14px;} */
 .status-page__descr-inner {margin: 8px 0 0 auto;}
 </style>
 				<div class="status-page__navIcon-wrap">
