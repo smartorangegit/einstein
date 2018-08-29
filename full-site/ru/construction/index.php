@@ -99,13 +99,12 @@ include("../../admin/bd.php");
 				<div class="status-page__descr-wrap">
 					<div class="status-page__descr-inner">
 						<h1 class="status-page__heading">Ход строительства</h1>
-<p class="status-page__description" style="font-size: 0.875em;">
+						<p class="status-page__description" style="font-size: 0.875em;">
 Продолжается монтаж окон и утепление фасада. Ведутся работы по устройству кирпичных внутренних перегородок.
-Начаты работы по прокладке внутренних электросетей. Продолжается монтаж сантехнического оборудования. Выполняются работы по замоноличивания отверстий прохождения коммуникаций и гидроизоляции офисной части 1-го этажа. Выполняются работы по вентиляции офисных помещений.
-</p>
+Продолжается прокладка внутренних электросетей и монтаж сантехнического оборудования.</p>
 <style>
 .status-page__heading {margin-top: -14px;}
-.status-page__descr-inner {margin: 8px 0 0 auto;}
+.status-page__descr-inner {margin: 30px 0 0 auto;}
 </style>
 					</div>
 				</div>
