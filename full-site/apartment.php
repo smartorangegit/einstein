@@ -15,7 +15,7 @@
 	 .default .phoneRingo {
 			color: #002442 !important;
 		}
-	
+
 	}
 		.phoneRingo1,
 		.phoneRingo {
@@ -316,6 +316,12 @@ switch ($currow['type']) {
 			<style>
 			.blok-apartment__apartments-wrap img {
 				background-color: #002442;
+			}
+			.blok-apartment__apartments-inner img {
+			    max-width: 100%;
+			    width: auto;
+			    display: block;
+			    height: 75vh;
 			}
 			</style>
 		</main>

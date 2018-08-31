@@ -13,7 +13,7 @@
 		</div>
 		<div class="footer__right">
 			<span>Розробка сайту</span>
-			<a href="#"><img src="/img/smart-logo.png" alt="logo smartorange"></a>
+			<a href="#"><img src="/img/smart-logo.svg" alt="logo smartorange"></a>
 		</div>
 	</div>
 	<!-- / end footer-inner -->
@@ -33,7 +33,7 @@
 <script src="/js/intlTelInput.min.js"></script>
 <script src="/js/jquery.magnific-popup.min.js"></script>
 <script src="/js/common.js"></script>
-<script src="/js/apart.js"></script>
+<script src="/js/apart.js?v=1.1"></script>
 <script src="/js/scripts.js"></script>
 
 <!-- Google Tag Manager (noscript) -->
@@ -42,6 +42,5 @@
 			height="0" width="0" style="display:none;visibility:hidden"></iframe>
 </noscript>
 <!-- End Google Tag Manager (noscript) -->
-
 </body>
 </html>
