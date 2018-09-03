@@ -35,6 +35,7 @@ $_SESSION['fl'] = $fl;
 		.default.phoneRingo1 {color: #002442;}
 		.phoneRingo:visited {color: #002442 !important;text-decoration: none !important;}
 	</style>
+
 		<!-- Start Google Tag Manager -->
 		<script>(function (w, d, s, l, i) {
             w[l] = w[l] || [];
@@ -50,7 +51,7 @@ $_SESSION['fl'] = $fl;
         })(window, document, 'script', 'dataLayer', 'GTM-TCWCW9Z');</script>
 	<!-- End Google Tag Manager -->
 </head>
-<body>
+<body class="body_flatplan">
 
 	<div class="wrapper">
 <?php include('../include/header_darken.php'); ?>
@@ -171,18 +172,3 @@ $_SESSION['fl'] = $fl;
 			<!-- /end select-apartment__inner -->
 		</main>
 <?php include('../include/footer.php'); ?>
-<script type="text/javascript">
-$('.svg_links').each(function() {
-
-    $(this).mouseenter(function() {
-      $('#level').html(this.dataset.flats);
-      $('#level_1').html(this.dataset.number);
-      $('#level_3').html(this.dataset.square);
-    });
-
-    $(this).mouseleave(function() {
-
-    });
-  });
-
-</script>

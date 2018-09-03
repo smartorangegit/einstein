@@ -145,6 +145,7 @@ $(function () {
     })()
 
     $('#polygon185').mouseover(function () {
+      $('.hidden_box_info').addClass('hidden_over');
         $('#g153-8').css('opacity', '1')
         $('#polygon185').css('opacity', '0.7')
         $('#polygon185').css('cursor', 'pointer')
@@ -155,6 +156,7 @@ $(function () {
         $('#polygon185').css('opacity', '0')
     })
     $('#polygon183').mouseover(function () {
+        $('.hidden_box_info').addClass('hidden_over');
         $('#g131').css('opacity', '1')
         $('#polygon183').css('opacity', '0.7')
         $('#polygon183').css('cursor', 'pointer')
@@ -166,6 +168,7 @@ $(function () {
         $('#polygon183').css('opacity', '0')
     })
     $('#polygon181').mouseover(function () {
+        $('.hidden_box_info').addClass('hidden_over');
         $('#g43').css('opacity', '1')
         $('#polygon181').css('opacity', '0.7')
         $('#polygon181').css('cursor', 'pointer')
@@ -176,6 +179,7 @@ $(function () {
         $('#polygon181').css('opacity', '0')
     })
     $('#polygon179').mouseover(function () {
+        $('.hidden_box_info').addClass('hidden_over');
         $('#g65').css('opacity', '1')
         $('#polygon179').css('opacity', '0.7')
         $('#polygon179').css('cursor', 'pointer')
@@ -186,6 +190,7 @@ $(function () {
         $('#polygon179').css('opacity', '0')
     })
     $('#polygon177').mouseover(function () {
+        $('.hidden_box_info').addClass('hidden_over');
         $('#g87').css('opacity', '1')
         $('#polygon177').css('opacity', '0.7')
         $('#polygon177').css('cursor', 'pointer')
@@ -196,6 +201,7 @@ $(function () {
         $('#polygon177').css('opacity', '0')
     })
     $('#polygon187').mouseover(function () {
+        $('.hidden_box_info').addClass('hidden_over');
         $('#g109').css('opacity', '1')
         $('#polygon187').css('opacity', '0.7')
         $('#polygon187').css('cursor', 'pointer')
@@ -206,6 +212,7 @@ $(function () {
         $('#polygon187').css('opacity', '0')
     })
     $('#polygon189').mouseover(function () {
+        $('.hidden_box_info').addClass('hidden_over');
         $('#g109-3').css('opacity', '1')
         $('#polygon189').css('opacity', '0.7')
         $('#polygon189').css('cursor', 'pointer')
@@ -216,6 +223,7 @@ $(function () {
         $('#polygon189').css('opacity', '0')
     })
     $('#polygon189-5').mouseover(function () {
+        $('.hidden_box_info').addClass('hidden_over');
         $('#g109-2').css('opacity', '1')
         $('#polygon189-5').css('opacity', '0.7')
         $('#polygon189-5').css('cursor', 'pointer')
@@ -226,6 +234,7 @@ $(function () {
         $('#polygon189-5').css('opacity', '0')
     })
     $('#polygon189-6').mouseover(function () {
+        $('.hidden_box_info').addClass('hidden_over');
         $('#g109-4').css('opacity', '1')
         $('#polygon189-6').css('opacity', '0.7')
         $('#polygon189-6').css('cursor', 'pointer')

@@ -50,7 +50,7 @@ $_SESSION['fl'] = $fl;
         })(window, document, 'script', 'dataLayer', 'GTM-TCWCW9Z');</script>
 	<!-- End Google Tag Manager -->
 </head>
-<body>
+<body class="body_flatplan">
 
 	<div class="wrapper">
 <?php include('../include/header_darken.php'); ?>
@@ -84,7 +84,7 @@ $_SESSION['fl'] = $fl;
 				<!-- /end select-apartment-wrap-->
 
 				<div class="select-apartment__apartments-wrap">
-					
+
 					<div class="select-apartment__apartments-inner">
 						<svg height="532.11359" viewBox="0 0 750.00002 532.11357" width="750" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 						  <image height="532.11359" preserveAspectRatio="none" width="750" xlink:href="/img/select-apartment/selectapartment-7.png"/><g fill="none" stroke="#000">

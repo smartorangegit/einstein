@@ -23,58 +23,18 @@ $_SESSION['fl'] = $fl;
 	<link rel="stylesheet" href="/css/main.min.css">
 	<link rel="stylesheet" href="/css/apart.css">
 	<style>
-	@media (max-width: 750px) {
-	 .default .phoneRingo {
-			color: #002442 !important;
-		}
-	
-	}
-		.phoneRingo1,
-		.phoneRingo {
-			color: #002442;
-			text-decoration: none;
-		}
-		.phoneRingo1::before,
-		.phoneRingo::before {
-			content: '044 ';
-		}
-		.top-callback__link_other:hover .phoneRingo{
-			color: #fff;
-		}
-		.phoneRingo:hover {
-			color: #fff;
-			text-decoration: none;
-		}
-		.phoneRingo:visited {
-			color: #fff !important;
-			text-decoration: none !important;
-		}
-		.phoneRingo1:hover {
-			color: #002442;
-			text-decoration: none;
-		}
-		.phoneRingo1:visited {
-			color: #002442 !important;
-			text-decoration: none !important;
-		}
-		.default .phoneRingo1,
-		.default .phoneRingo {
-			color: #fff;
-			text-decoration: none;
-		}
-		.default.phoneRingo1:hover {
-			color: #002442;
-			text-decoration: none;
-		}
-
-
-		.default.phoneRingo1 {
-			color: #002442;
-		}
-		.phoneRingo:visited {
-			color: #002442 !important;
-			text-decoration: none !important;
-		}
+	@media (max-width: 750px) {.default .phoneRingo {color: #002442 !important;}}
+		.phoneRingo1,	.phoneRingo {	color: #002442;	text-decoration: none;}
+		.phoneRingo1::before,.phoneRingo::before {content: '044 ';}
+		.top-callback__link_other:hover .phoneRingo{color: #fff;}
+		.phoneRingo:hover {color:#fff;	text-decoration: none;}
+		.phoneRingo:visited {color: #fff !important;	text-decoration: none !important;}
+		.phoneRingo1:hover {color: #002442;	text-decoration: none;}
+		.phoneRingo1:visited {color: #002442 !important;	text-decoration: none !important;}
+		.default .phoneRingo1,.default .phoneRingo {	color: #fff;	text-decoration: none;}
+		.default.phoneRingo1:hover {color: #002442;	text-decoration: none;}
+		.default.phoneRingo1 {color: #002442;}
+		.phoneRingo:visited {color: #002442 !important;text-decoration: none !important;}
 	</style>
 		<!-- Start Google Tag Manager -->
 		<script>(function (w, d, s, l, i) {
@@ -91,8 +51,8 @@ $_SESSION['fl'] = $fl;
         })(window, document, 'script', 'dataLayer', 'GTM-TCWCW9Z');</script>
 	<!-- End Google Tag Manager -->
 </head>
-<body>
-	
+<body class="body_flatplan">
+
 	<div class="wrapper">
 <?php include('../../include/header_darken_ru.php'); ?>
 		<main class="content select-apartment">
@@ -123,57 +83,33 @@ $_SESSION['fl'] = $fl;
 					<!-- / end select-apartment__change-floor -->
 				</div>
 				<!-- /end select-apartment-wrap-->
- 
+
 				<div class="select-apartment__apartments-wrap">
-<?if($fl >= 2 && $fl <=6 ){?>
-<div class="select-apartment__apartments-inner">
-						<img src="/img/select-apartment/selectapartment.png" alt="apartment plan" usemap="#Map" id="img_1">
-</div>
-<map name="Map" id="Map" >
-    <area class="2D1_1_1" alt="2D1_1_1" title="" href="/ru/apartment.php?apart=2D1_1_1/" shape="poly" coords="90,174,90,325,5,325,4,36,90,35,90,9,172,9,172,172" />
-    <area class="1E1_1_1" alt="1E1_1_1" title="" href="/ru/apartment.php?apart=1E1_1_1/" shape="poly" coords="90,172,232,172,230,325,90,327" />
-    <area class="1E2_1_1" alt="1E2_1_1" title="" href="/ru/apartment.php?apart=1E2_1_1/" shape="poly" coords="375,172,232,172,230,325,375,325" />
-    <area class="2D2_1_1" alt="2D2_1_1" title="" href="/ru/apartment.php?apart=2D2_1_1/" shape="poly" coords="374,325,450,325,450,36,370,36,370,9,290,9,290,172,374,172" />
-    
-</map>
-<?}
-elseif($fl >= 7 && $fl <=8 ){?>
-<div class="select-apartment__apartments-inner">
-					<img src="/img/select-apartment/selectapartment7-8.jpg" alt="apartment plan" usemap="#Map_2" id="img_2" />
-</div>
-<map name="Map_2" id="Map_2">
-    <area class="3a" alt="3a" title="" href="../apartment.php?apart=3A/" shape="poly" coords="167,5,90,5,90,32,3,32,6,324,233,324,232,166,171,168" />
-    <area class="3b" alt="3b" title="" href="../apartment.php?apart=3B/" shape="poly" coords="290,5,373,5,373,30,460,36,460,320,232,322,232,168,293,168" />
-   
-</map>
-<?}
-elseif($fl == 9){
-?>
-<div class="select-apartment__apartments-inner">
-					<img src="/img/select-apartment/selectapartment9.jpg" alt="apartment plan" usemap="#Map_3" id="img_3" />
-</div>
+					<div class="select-apartment__apartments-inner">
+						<svg height="525" viewBox="0 0 750 525" width="750" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+							<image height="525.22266" preserveAspectRatio="none" width="750" xlink:href="/img/select-apartment/selectapartment-2.png" y="0"/><g fill="none">
+								<a class="svg_links 2A" xlink:href="/apartment.php?apart=2D1_1_1" data-number="2A" data-square="77.61" data-flats="2">
+									<path class="level-area" d="m 149.90665,271.60699 v 249.8444 H 18.856176 v -56.5685 H 7.5424664 v -82.0244 H 18.856176 V 164.12675 H 4.7140464 V 107.55821 H 20.741796 V 4.7920146 H 286.61397 V 271.60699 Z"/>
+								</a>
+								<a class="svg_links 2B" xlink:href="/apartment.php?apart=2D2_1_1" data-number="2Б" data-square="76.44" data-flats="2">
+									<path class="level-area" d="M 472.34736,0.07797463 H 740.10515 V 391.34379 h 5.65685 v 73.5391 h -6.59966 v 56.5685 H 609.05468 v -0.9428 0 -250.7872 H 481.77545 V 207.49597 H 476.1186 V 0.07797463 Z"/>
+								</a>
+								<a class="svg_links 1A" xlink:href="/apartment.php?apart=1E1_1_1" data-number="1A" data-square="46.63" data-flats="1">
+									<path class="level-area" d="m 380.89488,269.72139 h 228.1598 v 248.9016 H 378.06645 v -248.9016 z"/>
+								</a>
+								<a class="svg_links 2B" xlink:href="/apartment.php?apart=1E2_1_1" data-number="1Б" data-square="46.62" data-flats="1">
+									<path class="level-area" d="m 149.90665,271.60699 h 228.1598 v 247.016 H 145.1926 v -247.016 z"/>
+								</a>
+						</g>
+					</svg>
+					<style media="screen">
+					.select-apartment__apartments-inner{background: #002442;border: 8px solid #002442;}	.select-apartment__apartments-inner svg{width: 100%; height: auto; pointer-events: none;}.level-area{transition: 0.4s; opacity: 0; fill: #ffffff;}	.svg_links{pointer-events: all;}.svg_links:hover .level-area{opacity: .5;}
+					</style>
 
-<map name="Map_3" id="Map_3">
-    <area class="2v" alt="2v" title="" href="../apartment.php?apart=2V/" shape="poly" coords="146,170,147,129,172,130,171,5,89,6,89,36,6,34,6,323,89,323,90,173" />
-    <area class="3v_1" alt="3v_1" title="" href="../apartment.php?apart=3V/" shape="poly" coords="232,323,89,323,89,171,232,171" />
-    <area class="3g_1" alt="3g_1" title="" href="../apartment.php?apart=3G/" shape="poly" coords="232,323,232,171,376,171,376,323" />
-    <area class="2g" alt="2g" title="" href="../apartment.php?apart=2G/" shape="poly" coords="320,171,320,130,291,133,291,5,377,5,379,37,459,37,462,324,376,324,376,165" />
-</map>
-<?}
-elseif($fl == 10){?>
-<div class="select-apartment__apartments-inner">
-					<img src="/img/select-apartment/selectapartment10.jpg" alt="apartment plan" usemap="#Map_4" id="img_4" />
-</div>
-
-<map name="Map_4" id="Map_4">
-    <area class="3v_2" alt="3v" title="" href="../apartment.php?apart=3V/" shape="poly" coords="232,317,88,318,87,95,166,95,169,164,232,161" />
-    <area class="3g_2" alt="3g" title="" href="../apartment.php?apart=3G/" shape="poly" coords="238,316,236,163,299,163,300,95,377,97,379,319" />
-    
-</map>
-<?}?>	
+					</div>
 				</div>
 				<!-- /end select-apartment__apartments -->
- 
+
 				<div class="select-apartment__description-wrap">
 					<div class="select-apartment__description">
 						<div class="select-apartment__box box-left">
@@ -196,7 +132,7 @@ elseif($fl == 10){?>
 										<div class="box-corner__bottom box-corner__right"></div>
 										<div class="box-corner__bottom box-corner__left"></div>
 										<div class="select-apartment__box-inner">
-											<span id="level_1">2D1_1_1</span>
+											<span id="level_1">2A</span>
 											<p>код планировки</p>
 										</div>
 								</div>
@@ -222,7 +158,7 @@ elseif($fl == 10){?>
 										<div class="box-corner__bottom box-corner__right"></div>
 										<div class="box-corner__bottom box-corner__left"></div>
 										<div class="select-apartment__box-inner">
-											<span id="level_3">77,61</span>
+											<span id="level_3">77.61</span>
 											<p>общая площадь м2</p>
 										</div>
 								</div>
@@ -235,4 +171,3 @@ elseif($fl == 10){?>
 			<!-- /end select-apartment__inner -->
 		</main>
 <?php include('../../include/footer_ru.php'); ?>
-

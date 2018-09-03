@@ -3338,26 +3338,24 @@ header {
     margin-right: 0;
     margin-left: auto;
     max-width: 600px;
-    position: relative;
-    display: flex;
-
+    position: relative
 }
 
 .floor-page__left-inner::after,
 .floor-page__left-inner::before {
     content: "";
-    display: table;
+    display: table
 }
 
 .floor-page__left-inner::after {
-    clear: both;
+    clear: both
 }
 
 .floor-page__left-img {
-    width: 38%;
-    padding-top: 185px;
-    padding-left: 10px;
-  }
+    width: 26.6666667%;
+    position: absolute;
+    bottom: 40px
+}
 
 .floor-page__img-wrap {
     width: 110px
@@ -3626,13 +3624,13 @@ header {
 .select-apartment__apartments-wrap {
     float: right;
     width: 50%;
-    margin-top: 100px;
+    margin-top: 130px;
     background-color: #ebebeb
 }
 
 .select-apartment__apartments-inner {
     margin: 0 0 0 auto;
-    width: 90%
+    width: 77.9661017%
 }
 
 .select-apartment__apartments-inner img {
@@ -3643,7 +3641,7 @@ header {
 
 .select-apartment__description-wrap {
     float: left;
-    width: 26%;
+    width: 28.8135593%;
     margin-left: 18.6440678%;
     padding: 0 10px
 }
@@ -3665,7 +3663,7 @@ header {
 
 .select-apartment__box {
     background-color: #f1f1f1;
-    width: 46%;
+    width: 46.875%;
     position: relative;
     margin: 15px 0
 }
@@ -3699,7 +3697,7 @@ header {
 }
 
 .select-apartment__box-inner {
-    padding: 24px 0;
+    padding: 37px 0;
     margin-top: 2px
 }
 
@@ -5272,23 +5270,20 @@ input[type=button] {
     /* Правки от 08.09.17 Андрей */
     .floor-page__left-inner {
         padding: 0;
-        /* width: 80%; */
-        margin: 50px 0 0;
-        flex-direction: column-reverse;
-        -webkit-flex-direction: column-reverse;
-
+        width: 80%;
+        margin: 50px 0 0
     }
     .floor-page__left-img {
-      padding-top: 10px;
         width: 100%;
-
+        position: relative;
+        top: 30px
     }
     .floor-page__img-wrap {
         margin: 0 0 0 auto
     }
     .floor-page__left-page-description {
-        width: 90%;
-        margin: 140px auto 0;
+        width: 100%;
+        margin: 100px 0 0;
         float: none;
         padding: 0 10px
     }
@@ -5786,10 +5781,10 @@ input[type=button] {
         width: 70%
     }
     .floor-page__left-inner {
-        /* margin: 0 */
+        margin: 0
     }
     .floor-page__left-img {
-        /* top: 70px */
+        top: 70px
     }
     .floor-page__left-page-description {
         margin: 80px 0 0
@@ -6195,9 +6190,8 @@ input[type=button] {
 	*/
 
     .floor-page {
-        /* display: block; */
-        padding: 0 10px;
-        flex-direction: column;
+        display: block;
+        padding: 0 10px
     }
     .floor-page__left {
         float: none;
@@ -6213,12 +6207,12 @@ input[type=button] {
         display: none
     }
     .floor-page__left-inner {
-        margin: 180px auto 0;
+        margin: 70px auto 0;
         width: 100%
     }
     .floor-page__left-img {
         top: 85px;
-        /* position: absolute; */
+        position: absolute;
         bottom: 0
     }
     .floor-page__img-wrap {

@@ -101,6 +101,12 @@ $(function () {
         })
         $('#callback-form-btn-close2').click(function () {
             $('.callback-form-pupop-wrap').fadeOut()
+          })
+      $('#callback-btn_ctc').click(function () {
+              $('.callback-form-pupop-wrap').fadeIn()
+          })
+      $('#callback-form-btn-close_ctc').click(function () {
+              $('.callback-form-pupop-wrap').fadeOut()
         });
 
         //=========for flood page
@@ -125,6 +131,7 @@ $(function () {
             $('#polygon189').css('opacity', '0')
             $('#polygon189-5').css('opacity', '0')
             $('#polygon189-6').css('opacity', '0')
+            $('#path120').css('opacity', '0')
         })()
 
         $('#polygon185').mouseover(function () {
@@ -218,6 +225,16 @@ $(function () {
             $('#g109-4').css('opacity', '0')
             $('#polygon189-6').css('opacity', '0')
         })
+        $('#path120').mouseover(function () {
+             $('#g153-8-6').css('opacity', '1')
+             $('#path120').css('opacity', '0.7')
+             $('#path120').css('cursor', 'pointer')
+             $('#level').html($('#g153-8-6').find('tspan').html())
+             $('#appart').html($('#g153-8-6').attr('data-floor'))
+         }).mouseout(function () {
+             $('#g153-8-6').css('opacity', '0')
+             $('#path120').css('opacity', '0')
+         })
 
     //=========end floor page
     //========= for map js
@@ -627,6 +644,7 @@ $(function () {
     ;(function() {
         var text = returnLanguage();
 
+
 		$('#openText2').click(function(e){
 			e.preventDefault();
 			if($('#floorNewText').hasClass('shown')){
@@ -635,6 +653,13 @@ $(function () {
 			} else {
 				$('#floorNewText').addClass('shown'),
 				$('#openText2').text(text.close)
+        var elementClick = $('#floorNewText');
+        var destination = $(elementClick).offset().top - 100;
+        // if ($.browser.safari) {
+            // $('body').animate({ scrollTop: destination }, 1100);
+        // } else {
+            $('html').animate({ scrollTop: destination }, 1100);
+        // }
 			}
 		});
 

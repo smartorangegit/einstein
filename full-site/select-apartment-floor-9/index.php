@@ -133,7 +133,7 @@ $_SESSION['fl'] = $fl;
 										<div class="box-corner__bottom box-corner__right"></div>
 										<div class="box-corner__bottom box-corner__left"></div>
 										<div class="select-apartment__box-inner">
-											<span id="level_1">2P1_1_1_1</span>
+											<span id="level_1">2В</span>
 											<p>код планування</p>
 										</div>
 								</div>

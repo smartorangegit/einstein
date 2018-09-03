@@ -50,7 +50,7 @@ $_SESSION['fl'] = $fl;
         })(window, document, 'script', 'dataLayer', 'GTM-TCWCW9Z');</script>
 	<!-- End Google Tag Manager -->
 </head>
-<body>
+<body class="body_flatplan">
 
 	<div class="wrapper">
 <?php include('../include/header_darken.php'); ?>
@@ -157,7 +157,7 @@ $_SESSION['fl'] = $fl;
 										<div class="box-corner__bottom box-corner__right"></div>
 										<div class="box-corner__bottom box-corner__left"></div>
 										<div class="select-apartment__box-inner">
-											<span id="level_3">77,28</span>
+											<span id="level_3">77.28</span>
 											<p>загальна площа м2</p>
 										</div>
 								</div>

@@ -14,60 +14,18 @@
 	<link rel="stylesheet" href="/css/intlTelInput.css">
 	<link rel="stylesheet" href="/css/main.min.css">
 	<style>
-	@media (max-width: 750px) {
-	 .default .phoneRingo {
-			color: #002442 !important;
-		}
-
-	}
-		.phoneRingo1,
-		.phoneRingo {
-			color: #002442;
-			text-decoration: none;
-		}
-		.phoneRingo1::before,
-		.phoneRingo::before {
-			content: '044 ';
-		}
-		.top-callback__link_other:hover .phoneRingo{
-			color: #fff;
-		}
-		.phoneRingo:hover {
-			color: #fff;
-			text-decoration: none;
-		}
-		.phoneRingo:visited {
-			color: #fff !important;
-			text-decoration: none !important;
-		}
-		.phoneRingo1:hover {
-			color: #002442;
-			text-decoration: none;
-		}
-		.phoneRingo1:visited {
-			color: #002442 !important;
-			text-decoration: none !important;
-		}
-		.default .phoneRingo1,
-		.default .phoneRingo {
-			color: #fff;
-			text-decoration: none;
-		}
-		.default.phoneRingo1:hover {
-			color: #002442;
-			text-decoration: none;
-		}
-		.default.phoneRingo1 {
-			color: #002442;
-		}
-		.phoneRingo:visited {
-			color: #002442 !important;
-			text-decoration: none !important;
-		}
-
-
-
-
+	@media (max-width: 750px) {.default .phoneRingo {color: #002442 !important;}}
+		.phoneRingo1,	.phoneRingo {	color: #002442;	text-decoration: none;}
+		.phoneRingo1::before,.phoneRingo::before {content: '044 ';}
+		.top-callback__link_other:hover .phoneRingo{color: #fff;}
+		.phoneRingo:hover {color:#fff;	text-decoration: none;}
+		.phoneRingo:visited {color: #fff !important;	text-decoration: none !important;}
+		.phoneRingo1:hover {color: #002442;	text-decoration: none;}
+		.phoneRingo1:visited {color: #002442 !important;	text-decoration: none !important;}
+		.default .phoneRingo1,.default .phoneRingo {	color: #fff;	text-decoration: none;}
+		.default.phoneRingo1:hover {color: #002442;	text-decoration: none;}
+		.default.phoneRingo1 {color: #002442;}
+		.phoneRingo:visited {color: #002442 !important;text-decoration: none !important;}
 	</style>
 		<!-- Start Google Tag Manager -->
 		<script>(function (w, d, s, l, i) {
@@ -93,39 +51,35 @@
 			<div class="floor-page__left">
 				<div class="floor-page__left-inner">
 					<div class="floor-page__left-img">
-					 <div class="floor-link">
-						<a class="floor-page__descr" href="/ru/floorpage/odnokomnatnye-kvartiry/">1 комнатные квартиры</a>
-						<a class="floor-page__descr" href="/ru/floorpage/dvuhkomnatnye-kvartiry/">2 комнатные квартиры</a>
-						<a class="floor-page__descr" href="/ru/floorpage/trehkomnatnye-kvartiry/">3 комнатные квартиры</a>
-						<a class="floor-page__descr" href="/ru/floorpage/dvuhurovnevye-kvartiry/">Двухуровневые квартиры</a>
-					 </div>
+							<p class="floor-page__descr">
+								Предлагаем вам удобную опцию для ознакомления с планировками одно- и двухкомнатных квартир, а также трехкомнатных и двухуровневых
+								апартаментов в EINSTEIN Concept House. Выбирайте на изображении интересующий вас этаж и подходящую планировку квартиры, планируйте свой завтрашний
+								день уже сегодня!
+							</p>
+							<a id="openText2" href="#" class="status-page__btn status-page__btn_sm">Читать далее</a>
+
 					 <style>
-					 .floor-page{
-						 display: block;
-					 }
-						.floor-link{margin-bottom: 125px;}
-						.floor-link .floor-page__descr {
+					.top-callback__btn-d{background: white;}
+					.top-callback__btn-d::before, .top-callback__btn-d_ru::before {	background-color: #002442;}
+					.top-callback__btn-d:hover:after, .default .top-callback__btn-d_ru:hover:after{	color: white;}
+					.floor-page{ display: block;}
+					.floor-link{margin-bottom: 125px;}
+					.floor-link .floor-page__descr {
 							text-decoration: none;
 							font-size: 16px;
 							display: block;
 							white-space: nowrap;
 						}
-						.floor-page__left-img {
-							top: 130px;
-							bottom: auto;
-							}
-						.floor-page__img-wrap {
-						    margin: 0 auto;
+					.floor-page__img-wrap {
+					    margin: 0 auto;
 						}
 						.floor-page__bottom-box {
-					    width: 320px;
-					    margin-top: 0px;
-							margin-bottom: 30px;
+					 		margin-bottom: 30px;
 						}
 						.status-page__btn_sm {
-						    max-width: 150px;
+						    max-width: 220px;
 						    text-align: center;
-								margin: 20px 0 20px auto;
+								margin: 20px auto;
 						}
 						.not_shown{
 							height: 0px;
@@ -159,12 +113,7 @@
 								}
 						}
 						@media only screen and (max-width: 1200px){
-							.floor-page__left-img {
-								padding-top: 140px;
-								text-align: center;
-								position: static;
-						    }
-							.navigation__mnu-logo img{
+						.navigation__mnu-logo img{
 								width: 63%;
 							  }
 							.floor-page__descr{
@@ -175,9 +124,6 @@
 							}
 						}
 					 </style>
-						<div class="floor-page__img-wrap">
-							<img src="/img/apartment/nav.png" alt="icon navigation">
-						</div>
 					</div>
 					<div class="floor-page__left-page-description">
 						<div class="floor-page__left-page-caption">
@@ -192,7 +138,7 @@
 										<div class="box-corner__bottom box-corner__right"></div>
 										<div class="box-corner__bottom box-corner__left"></div>
 										<div class="floor-page__box-inner">
-											<span id="level">2</span>
+											<span id="level"></span>
 											<p>этаж</p>
 										</div>
 								</div>
@@ -206,7 +152,7 @@
 									<div class="box-corner__bottom box-corner__right"></div>
 									<div class="box-corner__bottom box-corner__left"></div>
 									<div class="floor-page__box-inner">
-										<span id="appart">4</span>
+										<span id="appart"></span>
 										<p>количество квартир</p>
 									</div>
 								</div>
@@ -215,16 +161,14 @@
 							<!-- /end floor-page__box -->
 						</div>
 
-						<div class="floor-page__info">
-							<p class="floor-page__descr">
-								Предлагаем вам удобную опцию для ознакомления с планировками одно- и двухкомнатных квартир, а также трехкомнатных и двухуровневых 
-								апартаментов в EINSTEIN Concept House. Выбирайте на изображении интересующий вас этаж и подходящую планировку квартиры, планируйте свой завтрашний 
-								день уже сегодня!
-							</p>
-							<a id="openText2" href="#" class="status-page__btn status-page__btn_sm">Читать далее</a>
-						</div>
+						<div class="floor-link">
+ 						<a class="floor-page__descr" href="/ru/floorpage/odnokomnatnye-kvartiry/">1 комнатные квартиры</a>
+ 						<a class="floor-page__descr" href="/ru/floorpage/dvuhkomnatnye-kvartiry/">2 комнатные квартиры</a>
+ 						<a class="floor-page__descr" href="/ru/floorpage/trehkomnatnye-kvartiry/">3 комнатные квартиры</a>
+ 						<a class="floor-page__descr" href="/ru/floorpage/dvuhurovnevye-kvartiry/">Двухуровневые квартиры</a>
+ 					 </div>
 
-						<!-- / end floor-page__bottom-box -->
+										<!-- / end floor-page__bottom-box -->
 					</div>
 					<!-- / end floor-page__left-page-description -->
 				</div>
@@ -12771,6 +12715,44 @@ KcZmSo9EtItQdNGCWDqkn//Z
 		 style="font-size:11px;font-family:Roboto-Regular;fill:#002442">этаж</tspan></text>
 	</g>
 </svg>
+<div class="hidden_box_info">
+	Выберите нужный вам этаж
+</div>
+<style media="screen">
+.floor-page__right{
+	position: relative;
+}
+@-webkit-keyframes blink { from { opacity: 0.2; } to { opacity: 1; }  }
+   @-moz-keyframes blink { from { opacity: 0.2; } to { opacity: 1; }  }
+     @-o-keyframes blink { from { opacity: 0.2; } to { opacity: 1; }  }
+        @keyframes blink { from { opacity: 0.2; } to { opacity: 1; }  }
+	.hidden_box_info{
+		position: absolute;
+		top: 33%;
+		left: 46%;
+		transform: translateX(-50%);
+		background: rgba(0,36,66,.8);
+		padding: 20px;
+		color: white;
+		-webkit-animation: 1s linear 0s infinite alternate blink;
+	 	-moz-animation: 1s linear 0s infinite alternate blink;
+		-o-animation: 1s linear 0s infinite alternate blink;
+		animation: 1s linear 0s infinite alternate blink;
+	}
+	.hidden_box_info:after{
+		content: '';
+		position: absolute;
+		bottom: -32px;
+		left: 50%;
+		margin-left: -16px;
+		border: 16px solid transparent;
+		border-top-color: rgba(0,36,66,.8);
+	}
+	.hidden_over{
+		visibility: hidden;
+		pointer-events: none;
+	}
+</style>
 
 
 
@@ -12778,63 +12760,63 @@ KcZmSo9EtItQdNGCWDqkn//Z
 
 			<div id="floorNewText" class="floor-page__descr not_shown">
 				<p>
-					Большинство жителей столицы мечтают, чтобы у них была квартира в центре Киева. Так удается находиться в гуще городских событий, 
+					Большинство жителей столицы мечтают, чтобы у них была квартира в центре Киева. Так удается находиться в гуще городских событий,
 					за считанное время добираться до ключевых транспортных узлов и всегда любоваться историческими достопримечательностями украинской столицы.
 				</p>
 				<p>
-					Квартира в центре Киева – это вполне реальная  мечта, которую вы можете купить уже в этом сезоне. Сейчас цены на жилье находятся на самых низких 
-					позициях и это наилучшее время для выгодного капиталовложения. Более того, даже элитные квартиры в центре Киева можно купить по взвешенной стоимости. 
+					Квартира в центре Киева – это вполне реальная  мечта, которую вы можете купить уже в этом сезоне. Сейчас цены на жилье находятся на самых низких
+					позициях и это наилучшее время для выгодного капиталовложения. Более того, даже элитные квартиры в центре Киева можно купить по взвешенной стоимости.
 				</p>
 				<p>
-					В частности, особого внимания заслуживают квартиры в «умном доме» EINSTEIN Concept House, который возводится в самом центре Киева, на улице Златоустовской, в 
-					трех минутах от площади Победы. Кроме того, что дом расположен в центральной части столицы, он представляет собой уникальное воплощение современных технологий, комфорта, 
-					экономичной системы использования энергоресурсов, инновационных систем безопасности. Это высокотехнологичный дом, обеспечивающий жильцам все 
-					инновации завтрашнего дня уже сегодня. 
+					В частности, особого внимания заслуживают квартиры в «умном доме» EINSTEIN Concept House, который возводится в самом центре Киева, на улице Златоустовской, в
+					трех минутах от площади Победы. Кроме того, что дом расположен в центральной части столицы, он представляет собой уникальное воплощение современных технологий, комфорта,
+					экономичной системы использования энергоресурсов, инновационных систем безопасности. Это высокотехнологичный дом, обеспечивающий жильцам все
+					инновации завтрашнего дня уже сегодня.
 				</p>
 				<p>
-					Жилой комплекс EINSTEIN Concept House – это десятиэтажный дом, в котором ограниченное количество квартир, а значит, чтобы купить квартиру в этой новостройке в центре Киева, 
+					Жилой комплекс EINSTEIN Concept House – это десятиэтажный дом, в котором ограниченное количество квартир, а значит, чтобы купить квартиру в этой новостройке в центре Киева,
 					лучше не медлить. На сегодняшний день есть выбор различных планировок одно-, двух- и трехкомнатных квартир.
 				</p>
 				<h2 class="news-feed__description">Однокомнатные квартиры</h2>
 				<p>
-					Однокомнатные квартиры в Киеве на правом берегу, а еще лучше в центре, станут прекрасным выбором для проживания одному или вдвоем. Это подходящее решение для молодых семей или людей, 
+					Однокомнатные квартиры в Киеве на правом берегу, а еще лучше в центре, станут прекрасным выбором для проживания одному или вдвоем. Это подходящее решение для молодых семей или людей,
 					стремящихся к самостоятельности и уединению.
 				</p>
 				<p>
-					Предусмотрено две базовые планировки, каждая из которых включает просторную комнату и большую кухню с выходом на балкон, раздельные ванную и туалет. 
-					Площадь однокомнатных квартир в EINSTEIN Concept House составляет 43.42 м<sup>2</sup>. Такой метраж, а также свободная планировка, позволят реализовать 
-					любые дизайнерские решения, создать зонирование для работы, приема гостей и отдыха. В EINSTEIN Concept House применяется монолитно-каркасная технология 
-					строительства, что делает возможной самостоятельную перепланировку помещения по желанию владельца. Все, о чем вы мечтали, доступно уже сейчас! 
+					Предусмотрено две базовые планировки, каждая из которых включает просторную комнату и большую кухню с выходом на балкон, раздельные ванную и туалет.
+					Площадь однокомнатных квартир в EINSTEIN Concept House составляет 43.42 м<sup>2</sup>. Такой метраж, а также свободная планировка, позволят реализовать
+					любые дизайнерские решения, создать зонирование для работы, приема гостей и отдыха. В EINSTEIN Concept House применяется монолитно-каркасная технология
+					строительства, что делает возможной самостоятельную перепланировку помещения по желанию владельца. Все, о чем вы мечтали, доступно уже сейчас!
 				</p>
 				<h2 class="news-feed__description">Двухкомнатные квартиры</h2>
 				<p>
-					Купить двухкомнатную квартиру в центре Киева – замечательное решение, если вы планируете завести ребенка или вместо компактности предпочитаете пространство. 
-					Площадь двухкомнатных квартир в EINSTEIN Concept House колеблется от 71 до 74 м<sup>2</sup>. Размах метража небольшой, зато есть выбор из четырех базовых планировок. 
-					Как и в случае с однокомнатными квартирами, любая базовая планировка может быть видоизменена в соответствии с представлениями владельцев о комфорте и 
+					Купить двухкомнатную квартиру в центре Киева – замечательное решение, если вы планируете завести ребенка или вместо компактности предпочитаете пространство.
+					Площадь двухкомнатных квартир в EINSTEIN Concept House колеблется от 71 до 74 м<sup>2</sup>. Размах метража небольшой, зато есть выбор из четырех базовых планировок.
+					Как и в случае с однокомнатными квартирами, любая базовая планировка может быть видоизменена в соответствии с представлениями владельцев о комфорте и
 					функциональности пространства.
 				</p>
 				<h2 class="news-feed__description">Трехкомнатные квартиры</h2>
 				<p>
-					Трехкомнатные квартиры в EINSTEIN Сoncept House – это по-настоящему просторное, светлое жилье, куда можно въехать большой семьей. Трехкомнатные квартиры в EINSTEIN Concept House 
-					в центре Киева, продажа которых уже стартовала, имеют площадь 121.29 м<sup>2</sup>. В любой из них гостиная соседствует с кухней, а в другом крыле квартиры располагаются три 
-					спальных комнаты. Предусмотрены один санузел с раздельными ванной и туалетом, один – со смежными. Безусловно, базовую планировку жильцы могут видоизменить в соответствии со 
-					своими потребностями и чувством вкуса. Большие трехкомнатные квартиры предоставляют массу пространства, где можно реализовать все свои представления о комфортном жилье для большой семьи. 
+					Трехкомнатные квартиры в EINSTEIN Сoncept House – это по-настоящему просторное, светлое жилье, куда можно въехать большой семьей. Трехкомнатные квартиры в EINSTEIN Concept House
+					в центре Киева, продажа которых уже стартовала, имеют площадь 121.29 м<sup>2</sup>. В любой из них гостиная соседствует с кухней, а в другом крыле квартиры располагаются три
+					спальных комнаты. Предусмотрены один санузел с раздельными ванной и туалетом, один – со смежными. Безусловно, базовую планировку жильцы могут видоизменить в соответствии со
+					своими потребностями и чувством вкуса. Большие трехкомнатные квартиры предоставляют массу пространства, где можно реализовать все свои представления о комфортном жилье для большой семьи.
 				</p>
 				<h2 class="news-feed__description">Двухуровневые квартиры</h2>
 				<p>
-					Мечтаете наблюдать рассвет или закат с собственной террасы на крыше? Для этого вовсе не обязательно самостоятельно возводить загородный дом. Можно поселиться на верхнем этаже EINSTEIN Concept House 
+					Мечтаете наблюдать рассвет или закат с собственной террасы на крыше? Для этого вовсе не обязательно самостоятельно возводить загородный дом. Можно поселиться на верхнем этаже EINSTEIN Concept House
 					в двухуровневой квартире с собственным выходом на крышу! Настоящая роскошь, максимум удобства, воплощение мечты.
 				</p>
 				<p>
-					Двухуровневые квартиры площадью 116.49 м<sup>2</sup> предполагают кухню-гостиную и санузел на первом уровне, две спальные комнаты, санузел и выход на террасу на 
-					втором уровне. Вид с террасы открывается на три стороны из четырех возможных: пропустить рассвет или закат будет сложно. 
+					Двухуровневые квартиры площадью 116.49 м<sup>2</sup> предполагают кухню-гостиную и санузел на первом уровне, две спальные комнаты, санузел и выход на террасу на
+					втором уровне. Вид с террасы открывается на три стороны из четырех возможных: пропустить рассвет или закат будет сложно.
 				</p>
 				<a id="closeText2" href="#" class="status-page__btn status-page__btn_sm">Свернуть</a>
 			</div>
 
 		</main>
 
-		<script type="text/javascript">
+		<!-- <script type="text/javascript">
 		$('#openText2').click(function(e){
 			e.preventDefault();
 			if($('#floorNewText').hasClass('shown')){
@@ -12851,6 +12833,6 @@ KcZmSo9EtItQdNGCWDqkn//Z
 			$('#floorNewText').removeClass('shown'),
 			$('#openText2').text('Читать далее')
 		});
-		</script>
+		</script> -->
 
 <?php include('../../include/footer_ru.php'); ?>

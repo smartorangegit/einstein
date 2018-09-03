@@ -158,7 +158,7 @@ $_SESSION['fl'] = $fl;
 										<div class="box-corner__bottom box-corner__right"></div>
 										<div class="box-corner__bottom box-corner__left"></div>
 										<div class="select-apartment__box-inner">
-											<span id="level_3">77,61</span>
+											<span id="level_3">77.61</span>
 											<p>загальна площа м2</p>
 										</div>
 								</div>
