@@ -10,57 +10,46 @@ $webAd = 'https://' . $_SERVER['HTTP_HOST'] . $_SERVER['PHP_SELF'];
 		<div class="contact__wrap">
 			<div class="contact__description">
 				<h2 class="contact__caption">Контактная информация:</h2>
-				<ul class="contact__list">
-					<li class="contact__item">
-						<span class="contact__link">
-							<img src="/img/contact-icon/map-icon.png" alt="map-icon">г. Киев, ул. Златоустовская, 24А</span>
-					</li>
-					<li class="contact__item">
-						<a class="contact__link" href="#">
-							<img src="/img/contact-icon/phone-icon.svg" alt="phone-icon">+38 (044) 290 34 27</a></li>
-					<li class="contact__item">
-						<a class="contact__link" href="mailto:info@einstein.house">
-							<img src="/img/contact-icon/mail-icon.svg" alt="mail-icon">info@einstein.house</a></li>
-					<p class="contact__medium">Отдел маркетинга:</p>
-					<li class="contact__item">
-						<a class="contact__link" href="mailto:marketing@riverside.net.ua">
-							<img src="/img/contact-icon/mail-icon.svg" alt="mail-icon">marketing@saga-development.com.ua </a>
-					</li>
-					<li class="working_hours">
-						<p class="contact__medium">Часы работы отдела продаж:</p>
-						<div class="contact__item">Пн-пт: 09.00 - 19.00</div>
-						<div class="contact__item">Сб: 10.00 - 18.00</div>
-						<div class="contact__item">Вск: 10.00 - 18.00</div>
-					</li>
-					<li class="working_hours">
-						<p class="contact__medium">Адрес отдела продаж:</p>
-						<div class="contact__link"><img src="/img/contact-icon/map-icon.png" alt="map-icon">г. Киев, ул. Антоновича 74</span></div>
-					</li>
-					<li class="working_hours">
-						<p class="contact__medium">Отдел послепродажного обслуживания:</p>
-					</li>
-					<li class="contact__item">
-						<a class="contact__link" href="#">
-							<img src="/img/contact-icon/phone-icon.svg" alt="phone-icon">+38 (067) 230 42 65</a></li>
-							<li class="contact__item">
-								<a class="contact__link" href="#">
-									<img src="/img/contact-icon/phone-icon.svg" alt="phone-icon">+38 (067) 616 75 38 </a></li>
-									<li class="working_hours">
-										<div class="contact__item">Пн-пт: 09.00 - 18.00</div>
-										<div class="contact__item">Сб: 10.00 - 18.00</div>
-										<div class="contact__item">Вс: выходной</div>
-									</li>
-				</ul>
+				<div class="contact__caption__inner">
+					<div class="contact__caption__inner__item contact__medium">
+						<p class="contact__header">Адрес отдела продаж:</p>
+						<p><img src="/img/contact-icon/map-icon.png" alt="map-icon">г. Киев, ул. Антоновича 74</p>
+						<p><a class="contact__link" href="#"><img src="/img/contact-icon/phone-icon.svg" alt="phone-icon">+38 (044) 290 34 27</a></p>
+						<p><a class="contact__link" href="mailto:info@einstein.house"><img src="/img/contact-icon/mail-icon.svg" alt="mail-icon">info@einstein.house</a></p>
+						<p>Часы работы отдела продаж:</p>
+						<p>Пн-пт: 09.00 - 19.00</p>
+						<p>Сб - вск: 10.00 - 18.00</p>
+					</div>
+
+					<div class="contact__caption__inner__item contact__medium">
+						<p class="contact__header">Адрес комплекса:</p>
+						<p><img src="/img/contact-icon/map-icon.png" alt="map-icon">г. Киев, ул. Златоустовская, 24А</p>
+						<p class="contact__header">Отдел послепродажного обслуживания:</p>
+						<p><a class="contact__link" href="#"><img src="/img/contact-icon/phone-icon.svg" alt="phone-icon">+38 (067) 230 42 65</a></p>
+						<p><a class="contact__link" href="#"><img src="/img/contact-icon/phone-icon.svg" alt="phone-icon">+38 (067) 616 75 38 </a></p>
+						<p>Пн-пт: 09.00 - 18.00</p>
+						<p>Сб: 10.00 - 18.00</p>
+						<p>Вс: выходной</p>
+					</div>
+				</div>
 			</div>
 			<!-- / end contact__description -->
 			<div class="contact__form" id="contact">
 				<div class="contact-for-all">
 					<div class="contact__caption">Свяжитесь с нами:</div>
 					<form class="form" id="form">
-						<input class="text-big text-big_form" type="text" placeholder="Ваше имя:" name="name_ru"  required="required">
+						<div class="input_wrapper">
+							<input class="text-big text-big_form" type="text" placeholder="Ваше имя:" name="name_ru"  required="required">
+					</div>
+					<div class="input_wrapper">
 						<input class="text-big text-big_form" type="tel" placeholder="Ваш телефон" name="tel"  required="required">
+					</div>
+					<div class="input_wrapper">
 						<input class="text-big text-big_form" type="email" placeholder="Ваш e-mail:" name="email">
+					</div>
+					<div class="input_wrapper">
 						<textarea onkeyup="javascript:countmeForm('form');"   class="text-big text-big_form" name="textarea" rows="1" placeholder="Ваше сообщение:"></textarea>
+					</div>
 						<input name="webad" class="webad" type="hidden" value="<?= $webAd; ?>"/>
 						<input name="metka" class="metka" type="hidden" value="Einstein callback"/>
 						<input name="inn" class="userInn" type="hidden" value="Einstein callback"/>
@@ -126,8 +115,9 @@ $webAd = 'https://' . $_SERVER['HTTP_HOST'] . $_SERVER['PHP_SELF'];
 </div>
 <!-- /end wrapper -->
 
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC3v4tMpbXGrrr2GY00coDwi9YeP4aqyA4&amp;language=uk&amp;ver=1.16"></script>
 
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCb1nF3LPA_ZOACIAdwgtrh0nrQd4NYybA&sensor=false"></script>
+<!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCb1nF3LPA_ZOACIAdwgtrh0nrQd4NYybA&sensor=false"></script> -->
 <!-- /end wrapper -->
 
 <!--

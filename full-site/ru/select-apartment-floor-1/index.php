@@ -26,7 +26,7 @@ $_SESSION['fl'] = $fl;
 	 .default .phoneRingo {
 			color: #002442 !important;
 		}
-	
+
 	}
 		.phoneRingo1,
 		.phoneRingo {
@@ -76,8 +76,8 @@ $_SESSION['fl'] = $fl;
 		}
 	</style>
 </head>
-<body>
-	
+<body class="body_flatplan">
+
 	<div class="wrapper">
 <?php include('../../include/header_darken_ru.php'); ?>
 		<main class="content select-apartment">
@@ -108,7 +108,7 @@ $_SESSION['fl'] = $fl;
 					<!-- / end select-apartment__change-floor -->
 				</div>
 				<!-- /end select-apartment-wrap-->
- 
+
 				<div class="select-apartment__apartments-wrap">
 <?if($fl >= 2 && $fl <=6 ){?>
 <div class="select-apartment__apartments-inner">
@@ -119,7 +119,7 @@ $_SESSION['fl'] = $fl;
     <area class="1a" alt="1a" title="" href="../apartment.php?apart=1A" shape="poly" coords="90,172,232,172,230,325,90,327" />
     <area class="1b" alt="1b" title="" href="../apartment.php?apart=1B" shape="poly" coords="375,172,232,172,230,325,375,325" />
     <area class="2b" alt="2b" title="" href="../apartment.php?apart=2B" shape="poly" coords="374,325,450,325,450,36,370,36,370,9,290,9,290,172,374,172" />
-    
+
 </map>
 <?}
 elseif($fl >= 7 && $fl <=8 ){?>
@@ -129,7 +129,7 @@ elseif($fl >= 7 && $fl <=8 ){?>
 <map name="Map_2" id="Map_2">
     <area class="3a" alt="3a" title="" href="../apartment.php?apart=3A" shape="poly" coords="167,5,90,5,90,32,3,32,6,324,233,324,232,166,171,168" />
     <area class="3b" alt="3b" title="" href="../apartment.php?apart=3B" shape="poly" coords="290,5,373,5,373,30,460,36,460,320,232,322,232,168,293,168" />
-   
+
 </map>
 <?}
 elseif($fl == 9){
@@ -153,12 +153,12 @@ elseif($fl == 10){?>
 <map name="Map_4" id="Map_4">
     <area class="3v_2" alt="3v" title="" href="../apartment.php?apart=3V" shape="poly" coords="232,317,88,318,87,95,166,95,169,164,232,161" />
     <area class="3g_2" alt="3g" title="" href="../apartment.php?apart=3G" shape="poly" coords="238,316,236,163,299,163,300,95,377,97,379,319" />
-    
+
 </map>
-<?}?>	
+<?}?>
 				</div>
 				<!-- /end select-apartment__apartments -->
- 
+
 				<div class="select-apartment__description-wrap">
 					<div class="select-apartment__description">
 						<div class="select-apartment__box box-left">
@@ -169,7 +169,7 @@ elseif($fl == 10){?>
 										<div class="box-corner__bottom box-corner__left"></div>
 										<div class="select-apartment__box-inner">
 											<span id="level">1</span>
-											<p>кількість кімнат</p>
+											<p>количество комнат</p>
 										</div>
 								</div>
 							</div>
@@ -182,7 +182,7 @@ elseif($fl == 10){?>
 										<div class="box-corner__bottom box-corner__left"></div>
 										<div class="select-apartment__box-inner">
 											<span id="level_1">NP1_1_1_4</span>
-											<p>код планування</p>
+											<p>код планировки</p>
 										</div>
 								</div>
 							</div>
@@ -208,11 +208,23 @@ elseif($fl == 10){?>
 										<div class="box-corner__bottom box-corner__left"></div>
 										<div class="select-apartment__box-inner">
 											<span id="level_3">66,96</span>
-											<p>загальна площа м2</p>
+											<p>общая площадь м2</p>
 										</div>
 								</div>
 							</div>
 							<!-- / end select-apartment__box -->
+							<div class="blok-apartment__box box-left">
+								<div class="box-corner">
+									<div class="box-corner__top box-corner__left"></div>
+										<div class="box-corner__top box-corner__right"></div>
+										<div class="box-corner__bottom box-corner__right"></div>
+										<div class="box-corner__bottom box-corner__left"></div>
+										<div class="blok-apartment__link-wrap">
+											<a class="blok-apartment__link-btn" href="/floorpage">вернуться к выбору этажа</a>
+										</div>
+								</div>
+						</div>
+
 					</div>
 				</div>
 				<!-- /end select-apartment__description -->
@@ -220,4 +232,3 @@ elseif($fl == 10){?>
 			<!-- /end select-apartment__inner -->
 		</main>
 <?php include('../../include/footer_ru.php'); ?>
-

@@ -59,19 +59,10 @@
 							</p>
 							<a id="openText2" href="#" class="status-page__btn status-page__btn_sm">Читати далі</a>
 						<!-- </div> -->
-
-
-
 					 <style>
-					 .top-callback__btn-d{
-						 background: white;
-					 }
-					 .top-callback__btn-d::before, .top-callback__btn-d_ru::before {
-						 background-color: #002442;
-						 }
-					 .top-callback__btn-d:hover:after, .default .top-callback__btn-d_ru:hover:after{
-						 color: white;
-					 }
+					 .top-callback__btn-d{ background: white; }
+					 .top-callback__btn-d::before, .top-callback__btn-d_ru::before {background-color: #002442;}
+					 .top-callback__btn-d:hover:after, .top-callback__btn-d_ru:hover:after{color: white;}
 					 .floor-page{
 						 display: block;
 					 }
@@ -82,24 +73,15 @@
 						display: block;
 						white-space: nowrap;
 					}
-					.floor-page__img-wrap {
-					   margin: 0 auto;
-					}
-					.floor-page__bottom-box {
-					   margin-bottom: 30px;
-						}
+					.floor-page__img-wrap {margin: 0 auto;}
+					.floor-page__bottom-box {margin-bottom: 30px;}
 						.status-page__btn_sm {
 						  max-width: 220px;
 						  text-align: center;
 							margin: 20px 0 20px auto;
 						}
-						.not_shown{
-							height: 0px;
-							overflow: hidden;
-						}
-						.floor-page__info{
-							margin-top: 60px;
-						}
+						.not_shown{height: 0px;	overflow: hidden;}
+						.floor-page__info{margin-top: 60px;}
 						.shown{
 							height: auto;
 							clear: both;
@@ -108,32 +90,16 @@
 					    margin: 30px auto;
 							padding: 10px;
 							box-sizing: border-box;
-
-						}
-
-						@media only screen and (max-width: 1200px){
-							.floor-link{
-							margin-bottom: 0;
-						        padding:24px;
-						    }
-								.floor-page__img-wrap {
-							    margin: 0 auto;
-							    width: 30%;
-							}
-							.floor-page__caption {
-						      font-size: 1.5em;
-								}
 						}
 						@media only screen and (max-width: 1200px){
-						.navigation__mnu-logo img{
-								width: 63%;
-							  }
-							.floor-page__descr{
-							  display: block;
-						  }
-							.status-page__btn_sm {
-								width: 140px;
-							}
+							.floor-link{margin-bottom: 0; padding:24px;}
+							.floor-page__img-wrap { margin: 0 auto; width: 30%;}
+							.floor-page__caption { font-size: 1.5em;}
+						}
+						@media only screen and (max-width: 1200px){
+						.navigation__mnu-logo img{width: 63%; }
+							.floor-page__descr{ display: block;}
+							.status-page__btn_sm {width: 140px;}
 						}
 					 </style>
 						<!-- <div class="floor-page__img-wrap">

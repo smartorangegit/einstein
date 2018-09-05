@@ -97,7 +97,7 @@ $_SESSION['fl'] = $fl;
 						</g></svg>
 
 					<style media="screen">
-					.select-apartment__apartments-inner{background: #002442;border: 8px solid #002442;}	.select-apartment__apartments-inner svg{width: 100%; height: auto; pointer-events: none;}.level-area{transition: 0.4s; opacity: 0; fill: #ffffff;}	.svg_links{pointer-events: all;}.svg_links:hover .level-area{opacity: .5;}
+
 					</style>
 
 					</div>
@@ -158,6 +158,18 @@ $_SESSION['fl'] = $fl;
 								</div>
 							</div>
 							<!-- / end select-apartment__box -->
+							<div class="blok-apartment__box box-left">
+								<div class="box-corner">
+									<div class="box-corner__top box-corner__left"></div>
+										<div class="box-corner__top box-corner__right"></div>
+										<div class="box-corner__bottom box-corner__right"></div>
+										<div class="box-corner__bottom box-corner__left"></div>
+										<div class="blok-apartment__link-wrap">
+											<a class="blok-apartment__link-btn" href="/floorpage">вернуться к выбору этажа</a>
+										</div>
+								</div>
+						</div>
+						
 					</div>
 				</div>
 				<!-- /end select-apartment__description -->

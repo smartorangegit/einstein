@@ -20,36 +20,37 @@ $webAd = 'https://' . $_SERVER['HTTP_HOST'] . $_SERVER['PHP_SELF'];
 							<img src="/img/contact-icon/phone-icon.svg" alt="phone-icon">+38 (044) 290 34 27</a></li>
 					<li class="contact__item">
 						<a class="contact__link" href="mailto:info@einstein.house">
-							<img src="/img/contact-icon/mail-icon.svg" alt="mail-icon">info@einstein.house</a></li>
-					<p class="contact__medium">Відділ маркетингу:</p>
+							<img src="/img/contact-icon/mail-icon.svg" alt="mail-icon">info@einstein.house
+						</a></li>
+					<!-- <p class="contact__medium">Відділ маркетингу:</p>
 					<li class="contact__item">
 						<a class="contact__link" href="mailto:marketing@riverside.net.ua">
 							<img src="/img/contact-icon/mail-icon.svg" alt="mail-icon">marketing@saga-development.com.ua </a>
+					</li> -->
+					<li class="working_hours">
+						<p class="contact__medium" style="font-weight: bold; font-size: 1.4em;">Адреса відділу продажу:</p>
+						<div class="contact__link"><img src="/img/contact-icon/map-icon.png" alt="map-icon">м. Київ, вул. Антоновича 74</span></div>
 					</li>
 					<li class="working_hours">
 						<p class="contact__medium">Години роботи відділу продажу:</p>
 						<div class="contact__item">Пн-пт: 09.00 - 19.00</div>
-						<div class="contact__item">Сб: 10.00 - 18.00</div>
-						<div class="contact__item">Нд: 10.00 - 18.00</div>
-					</li>
-					<li class="working_hours">
-						<p class="contact__medium">Адреса відділу продажу:</p>
-						<div class="contact__link"><img src="/img/contact-icon/map-icon.png" alt="map-icon">м. Київ, вул. Антоновича 74</span></div>
+						<div class="contact__item">Сб - нд: 10.00 - 18.00</div>
+						<!-- <div class="contact__item">Нд: 10.00 - 18.00</div> -->
 					</li>
 					<li class="working_hours">
 						<p class="contact__medium">Відділ післяпродажного обслуговування:</p>
 					</li>
 					<li class="contact__item">
-						<a class="contact__link" href="#">
-							<img src="/img/contact-icon/phone-icon.svg" alt="phone-icon">+38 (067) 230 42 65</a></li>
-							<li class="contact__item">
-								<a class="contact__link" href="#">
-									<img src="/img/contact-icon/phone-icon.svg" alt="phone-icon">+38 (067) 616 75 38 </a></li>
-									<li class="working_hours">
-										<div class="contact__item">Пн-пт: 09.00 - 18.00</div>
-										<div class="contact__item">Сб: 10.00 - 18.00</div>
-										<div class="contact__item">Нд: вихідний</div>
-									</li>
+						<a class="contact__link" href="#"><img src="/img/contact-icon/phone-icon.svg" alt="phone-icon">+38 (067) 230 42 65</a>
+					</li>
+					<li class="contact__item">
+						<a class="contact__link" href="#"><img src="/img/contact-icon/phone-icon.svg" alt="phone-icon">+38 (067) 616 75 38 </a>
+					</li>
+					<li class="working_hours">
+						<div class="contact__item">Пн-пт: 09.00 - 18.00</div>
+						<div class="contact__item">Сб: 10.00 - 18.00</div>
+						<div class="contact__item">Нд: вихідний</div>
+					</li>
 
 				</ul>
 			</div>
@@ -134,8 +135,9 @@ $webAd = 'https://' . $_SERVER['HTTP_HOST'] . $_SERVER['PHP_SELF'];
 </div>
 <!-- /end wrapper -->
 
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC3v4tMpbXGrrr2GY00coDwi9YeP4aqyA4&amp;language=uk&amp;ver=1.16"></script>
 
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCb1nF3LPA_ZOACIAdwgtrh0nrQd4NYybA&sensor=false"></script>
+<!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCb1nF3LPA_ZOACIAdwgtrh0nrQd4NYybA&sensor=false"></script> -->
 <!-- /end wrapper -->
 
 <!--

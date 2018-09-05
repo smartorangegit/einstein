@@ -103,10 +103,10 @@ $(function () {
             $('.callback-form-pupop-wrap').fadeOut()
           })
       $('#callback-btn_ctc').click(function () {
-              $('.callback-form-pupop-wrap-ctc').fadeIn()
+              $('.callback-form-pupop-wrap').fadeIn()
           })
       $('#callback-form-btn-close_ctc').click(function () {
-              $('.callback-form-pupop-wrap-ctc').fadeOut()
+              $('.callback-form-pupop-wrap').fadeOut()
         });
 
         //=========for flood page

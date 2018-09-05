@@ -59,9 +59,9 @@
 							<a id="openText2" href="#" class="status-page__btn status-page__btn_sm">Читать далее</a>
 
 					 <style>
-					.top-callback__btn-d{background: white;}
+					.top-callback__btn-d_ru{background: white;}
 					.top-callback__btn-d::before, .top-callback__btn-d_ru::before {	background-color: #002442;}
-					.top-callback__btn-d:hover:after, .default .top-callback__btn-d_ru:hover:after{	color: white;}
+					.top-callback__btn-d:hover:after, .top-callback__btn-d_ru:hover:after{	color: white;}
 					.floor-page{ display: block;}
 					.floor-link{margin-bottom: 125px;}
 					.floor-link .floor-page__descr {
@@ -70,10 +70,8 @@
 							display: block;
 							white-space: nowrap;
 						}
-					.floor-page__img-wrap {
-					    margin: 0 auto;
-						}
-						.floor-page__bottom-box {
+					.floor-page__img-wrap {margin: 0 auto;}
+					.floor-page__bottom-box {
 					 		margin-bottom: 30px;
 						}
 						.status-page__btn_sm {

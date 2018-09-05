@@ -10,20 +10,59 @@
 	<link rel="canonical" href="<?php echo 'https://'.$_SERVER['SERVER_NAME'] . '/floorpage/' ?>"/>
 	<link rel="stylesheet" href="/css/intlTelInput.css">
 	<link rel="stylesheet" href="css/main.min.css">
-	<style media="screen">
+	<style>
+	@media (max-width: 750px) {
+	 .default .phoneRingo {
+			color: #002442 !important;
+		}
 
-	@media (max-width: 750px) {.default .phoneRingo {color: #002442 !important;}}
-		.phoneRingo1,	.phoneRingo {	color: #002442;	text-decoration: none;}
-		.phoneRingo1::before,.phoneRingo::before {content: '044 ';}
-		.top-callback__link_other:hover .phoneRingo{color: #fff;}
-		.phoneRingo:hover {color:#fff;	text-decoration: none;}
-		.phoneRingo:visited {color: #fff !important;	text-decoration: none !important;}
-		.phoneRingo1:hover {color: #002442;	text-decoration: none;}
-		.phoneRingo1:visited {color: #002442 !important;	text-decoration: none !important;}
-		.default .phoneRingo1,.default .phoneRingo {	color: #fff;	text-decoration: none;}
-		.default.phoneRingo1:hover {color: #002442;	text-decoration: none;}
-		.default.phoneRingo1 {color: #002442;}
-		.phoneRingo:visited {color: #002442 !important;text-decoration: none !important;}
+	}
+		.phoneRingo1,
+		.phoneRingo {
+			color: #002442;
+			text-decoration: none;
+		}
+		.phoneRingo1::before,
+		.phoneRingo::before {
+			content: '044 ';
+		}
+		.top-callback__link_other:hover .phoneRingo{
+			color: #fff;
+		}
+		.phoneRingo:hover {
+			color: #fff;
+			text-decoration: none;
+		}
+		.phoneRingo:visited {
+			color: #fff !important;
+			text-decoration: none !important;
+		}
+		.phoneRingo1:hover {
+			color: #002442;
+			text-decoration: none;
+		}
+		.phoneRingo1:visited {
+			color: #002442 !important;
+			text-decoration: none !important;
+		}
+		.default .phoneRingo1,
+		.default .phoneRingo {
+			color: #fff;
+			text-decoration: none;
+		}
+		.default.phoneRingo1:hover {
+			color: #002442;
+			text-decoration: none;
+		}
+
+
+		.default.phoneRingo1 {
+			color: #002442;
+		}
+		.phoneRingo:visited {
+			color: #002442 !important;
+			text-decoration: none !important;
+		}
 	</style>
 		<!-- Start Google Tag Manager -->
 		<script>(function (w, d, s, l, i) {
@@ -59,10 +98,13 @@ $mApart = "https://einstein.smarto.com.ua/apartment.php";
 $mApart2 = "https://einstein.smarto.com.ua/apartment.php?";
 if($actual_link == $mApart || $actual_link == $mApart2 ){
 	header("Location: https://einstein.smarto.com.ua/apartment.php?apart=2A");
+
 }
 
 $tips = str_replace('/', '', $_GET['apart']);
-// $row = mysql_query("SELECT * FROM aparts where type='$tips'" ,$DB);
+
+//$row = mysql_query("SELECT * FROM aparts where type='$tips'" ,$db);
+
 $check0 = $db->query("SELECT * FROM aparts where type='$tips'");
 
 
@@ -156,38 +198,88 @@ switch ($currow['type']) {
 		<main class="content blok-apartment">
 			<div class="blok-apartment__inner">
 				<div class="blok-apartment__caption-wrap">
-
-					<div class="blok-apartment__change-wrap">
-
-						<div class="blok-apartment__change-floor">
-							<button class="blok-apartment__change-floor-next">
-								<a  href="/select-apartment-floor-<?if($bt_up <= 10){echo $bt_up;}else{$bt_up=2; echo $bt_up;}?>"  class="ar_btn">
-									<img src="img/apartment/arrow-up.svg" alt="arrow-up">
-								</a>
-							</button>
-							<div class="blok-apartment__change-floor-inner">
-								<span><?=$_SESSION['fl'];?></span>
-								<p>поверх</p>
-							</div>
-							<button class="blok-apartment__change-floor-prev">
-								<a href="/select-apartment-floor-<?if($bt_down >= 2){echo $bt_down;}else{$bt_down=2; echo $bt_down;}?>" class="ar_btn">
-									<img src="img/apartment/arrow-down.svg" alt="arrow-down">
-								</a>
-							</button>
+					<h1 class="blok-apartment__caption">Квартира <?=$currow['type_text'];?></h1>
+					<span class="blok-apartment__text">Планування <?=$currow['rooms']; if($currow['rooms']== 1){echo "-о";}else{echo "-х";}?> кімнатної квартири типу <?=$currow['type_text'];?></span>
+				</div>
+				<!-- /end select-apartment__caption-wrap -->
+				<div class="blok-apartment__change-wrap">
+					<div class="blok-apartment__img-wrap">
+						<div class="blok-apartment__img-inner">
+							<img src="img/apartment/nav.png" alt="icon navigation">
 						</div>
+					</div>
+					<div class="blok-apartment__change-floor">
+						<button class="blok-apartment__change-floor-next">
+<a  href="/select-apartment-floor-<?if($bt_up <= 10){echo $bt_up;}else{$bt_up=2; echo $bt_up;}?>"  class="ar_btn">
+							<img src="img/apartment/arrow-up.svg" alt="arrow-up">
+</a>
+						</button>
+						<div class="blok-apartment__change-floor-inner">
+							<span><?=$_SESSION['fl'];?></span>
+							<p>поверх</p>
+						</div>
+						<button class="blok-apartment__change-floor-prev">
+<a href="/select-apartment-floor-<?if($bt_down >= 2){echo $bt_down;}else{$bt_down=2; echo $bt_down;}?>" class="ar_btn">
+							<img src="img/apartment/arrow-down.svg" alt="arrow-down">
+</a>
+						</button>
+					</div>
+					<!-- / end select-apartment__change-floor -->
+				</div>
+				<!-- /end select-apartment-wrap-->
+				<div class="blok-apartment__apartments-wrap">
+					<div class="blok-apartment__apartments-inner">
+						<img src="img/app/<?=$currow['type'];?>.png" alt="apartment plan">
+					</div>
+				</div>
+				<!-- /end select-apartment__apartments -->
+				<div class="blok-apartment__description-wrap">
+					<div class="blok-apartment__description">
+						<div class="blok-apartment__box">
+							<div class="box-corner">
+								<div class="box-corner__top box-corner__left"></div>
+								<div class="box-corner__top box-corner__right"></div>
+								<div class="box-corner__bottom box-corner__right"></div>
+								<div class="box-corner__bottom box-corner__left"></div>
+								<div class="blok-apartment__box-inner">
+									<ul class="blok-apartment__list">
+										<li class="blok-apartment__descr">Площа<span>м2</span></li>
 
+<li class="blok-apartment__item">Коридор<span><?=$currow['peredpokiy'];?></span></li>
+<li <?=$hidd_holl;?> class="blok-apartment__item">Хол<span><?=$currow['holl'];?></span></li>
+<li <?=$hidd_kuhVit;?> class="blok-apartment__item">Кухня-Вітальня<span><?=$currowp['kuhnia-vitalnia'];?></span></li>
+<li <?=$hidd_kuhnia;?> class="blok-apartment__item">Кухня<span><?=$currow['kuhnia'];?></span></li>
+<li <?=$hidd_vitalnia;?> class="blok-apartment__item">Вітальня<span><?=$currow['vitalnia'];?></span></li>
+<li <?=$hidd_spalnia_1;?> class="blok-apartment__item">Спальня 1<span><?=$currow['spalnia_1'];?></span></li>
+<li <?=$hidd_spalnia_2;?> class="blok-apartment__item">Спальня 2<span><?=$currow['spalnia_2'];?></span></li>
+<li <?=$hidd_spalnia_3;?>class="blok-apartment__item">Спальня 3<span><?=$currow['spalnia_3'];?></span></li>
+<li <?=$hidd_spalnia;?> class="blok-apartment__item">Спальня<span><?=$currow['spalnia'];?></span></li>
+<li <?=$hidd_sanvuzol;?> class="blok-apartment__item">Санвузол<span><?=$currow['sanvuzol'];?></span></li>
+<li <?=$hidd_sanvuzol_2;?> class="blok-apartment__item">Санвузол 2<span><?=$currow['sanvuzol_2'];?></span></li>
+<li <?=$hidd_vanna;?> class="blok-apartment__item">Ванна<span><?=$currow['vanna'];?></span></li>
+<li <?=$hidd_garderob;?> class="blok-apartment__item">Гардероб<span><?=$currow['garderob'];?></span></li>
+<li <?=$hidd_balkon;?> class="blok-apartment__item">Балкон<span><?=$currow['balkon'];?></span></li>
+<li <?=$hidd_terasa;?> class="blok-apartment__item">Тераса<span><?=$currow['terasa'];?></span></li>
+
+
+										<?/* <li class="blok-apartment__all">Житлова<span><?=$currow['zhitlova'];?></span></li> */?>
+										<li class="blok-apartment__all">Загальна<span><?=$currow['zagalna'];?></span></li>
+									</ul>
+								</div>
+							</div>
+						</div>
 						<!-- / end select-apartment__box -->
-						<div class="blok-apartment__box box-left">
+						<!--<div class="blok-apartment__box">
 								<div class="box-corner">
 									<div class="box-corner__top box-corner__left"></div>
 										<div class="box-corner__top box-corner__right"></div>
 										<div class="box-corner__bottom box-corner__right"></div>
 										<div class="box-corner__bottom box-corner__left"></div>
 										<div class="blok-apartment__link-wrap">
-											<a class="blok-apartment__link-btn" style="text-align: center;" href="/floorpage">Обрати поверх</a>
+											<a class="blok-apartment__link-btn" href="img/plans/<?/* =$currow['type']; */?>.jpg" target="_blank">Завантажити планування в PDF</a>
 										</div>
 								</div>
-						</div>
+						</div>-->
 						<!-- / end select-apartment__box -->
 						<div class="blok-apartment__box box-left">
 								<div class="box-corner">
@@ -196,7 +288,7 @@ switch ($currow['type']) {
 										<div class="box-corner__bottom box-corner__right"></div>
 										<div class="box-corner__bottom box-corner__left"></div>
 										<div class="blok-apartment__link-wrap">
-											<a class="blok-apartment__link-btn" style="text-align: center;" href="/select-apartment-floor-<?=$_SESSION['fl'];?>">До плану поверху</a>
+											<a class="blok-apartment__link-btn" href="/select-apartment-floor-<?=$_SESSION['fl'];?>">Повернутися до вибору поверху</a>
 										</div>
 								</div>
 						</div>
@@ -208,81 +300,24 @@ switch ($currow['type']) {
 										<div class="box-corner__bottom box-corner__right"></div>
 										<div class="box-corner__bottom box-corner__left"></div>
 										<div class="blok-apartment__link-wrap">
-											<a class="blok-apartment__link-btn" id="callback-btn3"  style="text-align: center;" href="#">Дізнатися ціну</a>
+											<a class="blok-apartment__link-btn" id="callback-btn3" href="#">Дізнатися ціну</a>
 										</div>
 								</div>
 						</div>
 						<!-- / end select-apartment__box -->
-						<!-- / end select-apartment__change-floor -->
-					</div>
 
-
-					<div class="blok-apartment__description-wrap">
-						<div class="blok-apartment__description">
-							<h1 class="blok-apartment__caption">Квартира <?=$currow['type_text'];?></h1>
-							<div class="blok-apartment__box">
-								<div class="box-corner">
-									<div class="box-corner__top box-corner__left"></div>
-									<div class="box-corner__top box-corner__right"></div>
-									<div class="box-corner__bottom box-corner__right"></div>
-									<div class="box-corner__bottom box-corner__left"></div>
-									<div class="blok-apartment__box-inner">
-										<ul class="blok-apartment__list">
-											<li class="blok-apartment__descr">Площа<span>м2</span></li>
-
-											<li class="blok-apartment__item">Коридор<span><?=$currow['peredpokiy'];?></span></li>
-											<li <?=$hidd_holl;?> class="blok-apartment__item">Хол<span><?=$currow['holl'];?></span></li>
-											<li <?=$hidd_kuhVit;?> class="blok-apartment__item">Кухня-Вітальня<span><?=$currowp['kuhnia-vitalnia'];?></span></li>
-											<li <?=$hidd_kuhnia;?> class="blok-apartment__item">Кухня<span><?=$currow['kuhnia'];?></span></li>
-											<li <?=$hidd_vitalnia;?> class="blok-apartment__item">Вітальня<span><?=$currow['vitalnia'];?></span></li>
-											<li <?=$hidd_spalnia_1;?> class="blok-apartment__item">Спальня 1<span><?=$currow['spalnia_1'];?></span></li>
-											<li <?=$hidd_spalnia_2;?> class="blok-apartment__item">Спальня 2<span><?=$currow['spalnia_2'];?></span></li>
-											<li <?=$hidd_spalnia_3;?>class="blok-apartment__item">Спальня 3<span><?=$currow['spalnia_3'];?></span></li>
-											<li <?=$hidd_spalnia;?> class="blok-apartment__item">Спальня<span><?=$currow['spalnia'];?></span></li>
-											<li <?=$hidd_sanvuzol;?> class="blok-apartment__item">Санвузол<span><?=$currow['sanvuzol'];?></span></li>
-											<li <?=$hidd_sanvuzol_2;?> class="blok-apartment__item">Санвузол 2<span><?=$currow['sanvuzol_2'];?></span></li>
-											<li <?=$hidd_vanna;?> class="blok-apartment__item">Ванна<span><?=$currow['vanna'];?></span></li>
-											<li <?=$hidd_garderob;?> class="blok-apartment__item">Гардероб<span><?=$currow['garderob'];?></span></li>
-											<li <?=$hidd_balkon;?> class="blok-apartment__item">Балкон<span><?=$currow['balkon'];?></span></li>
-											<li <?=$hidd_terasa;?> class="blok-apartment__item">Тераса<span><?=$currow['terasa'];?></span></li>
-
-
-											<?/* <li class="blok-apartment__all">Житлова<span><?=$currow['zhitlova'];?></span></li> */?>
-											<li class="blok-apartment__all">Загальна<span><?=$currow['zagalna'];?></span></li>
-										</ul>
-									</div>
-								</div>
-							</div>
-							<!-- / end select-apartment__box -->
-							<div class="blok-apartment__box">
-									<div class="box-corner">
-										<div class="box-corner__top box-corner__left"></div>
-											<div class="box-corner__top box-corner__right"></div>
-											<div class="box-corner__bottom box-corner__right"></div>
-											<div class="box-corner__bottom box-corner__left"></div>
-											<div class="blok-apartment__link-wrap">
-												<a class="blok-apartment__link-btn" href="img/app/<?=$currow['type'];?>.png" download >Завантажити план</a>
-											</div>
-									</div>
-							</div>
-
-
-						</div>
 					</div>
 				</div>
-
-				<!-- /end select-apartment-wrap-->
-				<div class="blok-apartment__apartments-wrap">
-
-					<div class="blok-apartment__apartments-inner">
-						<img src="img/app/<?=$currow['type'];?>.png" alt="apartment plan">
-					</div>
-				</div>
-				<!-- /end select-apartment__apartments -->
+				<!-- /end select-apartment__description-wrap -->
 
 			</div>
 			<!-- /end blok-apartment-inner-->
-
+			<style>
+			.blok-apartment__apartments-wrap img {
+				background-color: #002442;
+				border: solid #002442 6px;
+			}
+			</style>
 		</main>
 <?
 }

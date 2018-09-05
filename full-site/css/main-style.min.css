@@ -1238,15 +1238,15 @@ ul {
 
 .promotions_btn {
 	font-family: 'RobotoLight', sans-serif;
-	position: fixed; 
-	background-color: #002442; 
-	z-index: 1000; 
+	position: fixed;
+	background-color: #002442;
+	z-index: 1000;
 	top: 280px;
 	height: 30px;
 	line-height: 30px;
 	left: -85px;
-	text-align: center; 
-	transform: rotate(-90deg); 
+	text-align: center;
+	transform: rotate(-90deg);
 	border-radius: 2px;
 }
 .promotions_btn__link {
@@ -2626,7 +2626,7 @@ ul {
 	line-height: 1.16;
 	color: #fff;
 	letter-spacing: 0.002em;
-	font-family: 'RobotoLight', sans-serif;	
+	font-family: 'RobotoLight', sans-serif;
 }
 
 .blok-about .about-descr img {
@@ -2987,7 +2987,7 @@ ul {
 	font-size: 14px;
 	line-height: 18px;
 	margin: 0;
-	font-family: 'RobotoLight', sans-serif;	
+	font-family: 'RobotoLight', sans-serif;
 }
 
 .blok-system-secur {
@@ -3188,7 +3188,7 @@ ul {
 	font-size: 14px;
 	line-height: 18px;
 	margin: 0;
-	font-family: 'RobotoLight', sans-serif;	
+	font-family: 'RobotoLight', sans-serif;
 }
 
 /* Other projects start */
@@ -3316,7 +3316,7 @@ ul {
 }
 
 .contact__wrap {
-	width: 79.6610169%;
+	width: 85%;
 	float: right;
 }
 
@@ -3330,8 +3330,11 @@ ul {
 }
 
 .contact__description {
-	width: 36.2033898%;
+	width: 65%;
 	float: left;
+}
+.contact__description img{
+	margin-right: 20px;
 }
 
 .contact__caption {
@@ -3344,7 +3347,15 @@ ul {
 	margin: 0;
 	padding: 0;
 }
-
+.contact__caption__inner{
+	display: flex;
+	display: -webkit-flex;
+	justify-content: space-between;
+	-webkit-justify-content: space-between;
+}
+.contact__caption__inner__item{
+	width: 48%;
+}
 .contact__list {
 	margin-top: 30px;
 	display: inline-block;
@@ -3365,13 +3376,20 @@ ul {
 	letter-spacing: 0.002em;
 	color: #fff;
 }
+.contact__header{
+	line-height: normal;
+	margin: 20px 0;
+	font-size: 1.2em;
+	font-weight: bold;
+	min-height: 50px;
 
+}
 .contact__link:hover {
 	color: #fff;
 }
 
 .contact__link img {
-	margin-right: 13px;
+	margin-right: 20px;
 }
 
 .contact__form {
@@ -3393,9 +3411,13 @@ ul {
 	font-family: 'RobotoLight', sans-serif;
 	font-size: 1em;
 	letter-spacing: 0.002em;
-	line-height: 2.25;
+	line-height: 3.2;
 	/* font-style: italic; */
 	color: #fff;
+	padding-left: 52px;
+}
+.intl-tel-input{
+	width: 100%;
 }
 
 .contact__form .form input::after, .contact__form .form textarea::after {
@@ -3435,15 +3457,15 @@ ul {
 	resize: none;
 }
 .facebook__link {
-	display: inline-block; 
-	width: 30px; 
-	height: 30px; 
+	display: inline-block;
+	width: 30px;
+	height: 30px;
 	vertical-align: middle
 }
 
 /* Modal window styles Andrey 23.10.17 */
 .modal_window__container {
-    display: block; 
+    display: block;
     position: fixed;
     z-index: 100000;
     left: 0;
@@ -6153,7 +6175,7 @@ input[type=button] {
 	.blok-system-secur {
 		height: auto;
 	}
-	
+
 	.blok-living-system {
 		height: auto;
 	}
@@ -7098,7 +7120,7 @@ input[type=button] {
 	}
 
 	.contact {
-		margin-bottom: -75px; 
+		margin-bottom: -75px;
 	}
 }
 
@@ -7190,7 +7212,7 @@ input[type=button] {
 		min-height: 300px;
 		height: 1228px;
 	}
-	
+
 	.blok-living-system {
 		background: url("../img/system-secur/SFERA-living-system-bg.jpg") no-repeat center center;
 		background-size: cover;
