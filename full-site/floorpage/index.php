@@ -45,7 +45,7 @@
 <body>
 
 	<div class="wrapper">
-	<?php include('../include/header_darken.php'); ?>
+	<?php include('../include/header.php'); ?>
 
 		<main class="content floor-page">
 			<div class="floor-page__left">
@@ -12698,6 +12698,7 @@ KcZmSo9EtItQdNGCWDqkn//Z
 	 	-moz-animation: 1s linear 0s infinite alternate blink;
 		-o-animation: 1s linear 0s infinite alternate blink;
 		animation: 1s linear 0s infinite alternate blink;
+		pointer-events: none;
 	}
 	.hidden_box_info:after{
 		content: '';

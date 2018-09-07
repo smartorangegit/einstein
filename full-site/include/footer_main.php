@@ -10,66 +10,43 @@ $webAd = 'https://' . $_SERVER['HTTP_HOST'] . $_SERVER['PHP_SELF'];
 		<div class="contact__wrap">
 			<div class="contact__description">
 				<h2 class="contact__caption">Контактна інформація:</h2>
-				<ul class="contact__list">
-					<li class="contact__item">
-						<span class="contact__link">
-							<img src="/img/contact-icon/map-icon.png" alt="map-icon">м. Київ, вул. Златоустівська, 24А</span>
-					</li>
-					<li class="contact__item">
-						<a class="contact__link" href="#">
-							<img src="/img/contact-icon/phone-icon.svg" alt="phone-icon">+38 (044) 290 34 27</a></li>
-					<li class="contact__item">
-						<a class="contact__link" href="mailto:info@einstein.house">
-							<img src="/img/contact-icon/mail-icon.svg" alt="mail-icon">info@einstein.house
-						</a></li>
-					<!-- <p class="contact__medium">Відділ маркетингу:</p>
-					<li class="contact__item">
-						<a class="contact__link" href="mailto:marketing@riverside.net.ua">
-							<img src="/img/contact-icon/mail-icon.svg" alt="mail-icon">marketing@saga-development.com.ua </a>
-					</li> -->
-					<li class="working_hours">
-						<p class="contact__medium" style="font-weight: bold; font-size: 1.4em;">Адреса відділу продажу:</p>
-						<div class="contact__link"><img src="/img/contact-icon/map-icon.png" alt="map-icon">м. Київ, вул. Антоновича 74</span></div>
-					</li>
-					<li class="working_hours">
-						<p class="contact__medium">Години роботи відділу продажу:</p>
-						<div class="contact__item">Пн-пт: 09.00 - 19.00</div>
-						<div class="contact__item">Сб - нд: 10.00 - 18.00</div>
-						<!-- <div class="contact__item">Нд: 10.00 - 18.00</div> -->
-					</li>
-					<li class="working_hours">
-						<p class="contact__medium">Відділ післяпродажного обслуговування:</p>
-					</li>
-					<li class="contact__item">
-						<a class="contact__link" href="#"><img src="/img/contact-icon/phone-icon.svg" alt="phone-icon">+38 (067) 230 42 65</a>
-					</li>
-					<li class="contact__item">
-						<a class="contact__link" href="#"><img src="/img/contact-icon/phone-icon.svg" alt="phone-icon">+38 (067) 616 75 38 </a>
-					</li>
-					<li class="working_hours">
-						<div class="contact__item">Пн-пт: 09.00 - 18.00</div>
-						<div class="contact__item">Сб: 10.00 - 18.00</div>
-						<div class="contact__item">Нд: вихідний</div>
-					</li>
+				<div class="contact__list">
+					<div class=" contact__medium">
+						<p><img src="/img/contact-icon/map-icon.png" alt="map-icon">м. Київ, вул. Златоустівська, 24А</p>
+						<p class="contact__header">Відділ продажу:</p>
+						<p><img src="/img/contact-icon/map-icon.png" alt="map-icon">м. Київ, вул. Антоновича 74</p>
+						<p><a class="contact__link" href="#"><img src="/img/contact-icon/phone-icon.svg" alt="phone-icon">+38 (044) 290 34 27</a></p>
+						<p><a class="contact__link" href="mailto:info@einstein.house"><img src="/img/contact-icon/mail-icon.svg" alt="mail-icon">info@einstein.house</a></p>
+						<p>Години роботи відділу продажу:</p>
+						<p>Пн-пт: 09.00 - 19.00</p>
+						<p>Сб-нд: 10.00 - 18.00</p>
 
-				</ul>
+						<p class="contact__medium">Відділ післяпродажного обслуговування:</p>
+						<p><a class="contact__link" href="#"><img src="/img/contact-icon/phone-icon.svg" alt="phone-icon">+38 (067) 230 42 65</a></p>
+						<p><a class="contact__link" href="#"><img src="/img/contact-icon/phone-icon.svg" alt="phone-icon">+38 (067) 616 75 38 </a></p>
+						<p>Пн-пт: 09.00 - 18.00</p>
+						<p>Сб: 10.00 - 18.00</p>
+						<p>Нд: вихідний</p>
+					</div>
+				</div>
 			</div>
 			<!-- / end contact__description -->
 			<div class="contact__form" id="contact">
 				<div class="contact-for-all">
 					<div class="contact__caption">Зв’яжіться з нами:</div>
 					<form class="form" id="form">
-						<input class="text-big text-big_form" type="text"  placeholder="Ваше ім’я:" name="name" value=""
-							   required="required">
-						<input
-							class="text-big text-big_form"
-							type="tel" placeholder="Ваш телефон"
-							name="tel"
-							value=""
-							required="required"
-							>
-						<input class="text-big text-big_form" type="email" placeholder="Ваш e-mail:" name="email" value="">
-						<textarea  onkeyup="javascript:countmeForm('form');"   class="text-big text-big_form" name="textarea"  rows="1" placeholder="Ваше повідомлення:"></textarea>
+						<div class="input_wrapper">
+							<input class="text-big text-big_form" type="text"  placeholder="Ваше ім’я:" name="name" value="" required="required">
+						</div>
+						<div class="input_wrapper">
+							<input class="text-big text-big_form" type="tel" placeholder="Ваш телефон" name="tel"	value="" required="required">
+						</div>
+						<div class="input_wrapper">
+							<input class="text-big text-big_form" type="email" placeholder="Ваш e-mail:" name="email" value="">
+						</div>
+						<div class="input_wrapper">
+							<textarea  onkeyup="javascript:countmeForm('form');"   class="text-big text-big_form" name="textarea"  rows="1" placeholder="Ваше повідомлення:"></textarea>
+						</div>
 						<input name="webad" class="webad" type="hidden" value="<?= $webAd; ?>"/>
 						<input name="metka" class="metka" type="hidden" value="Einstein callback"/>
 						<input name="inn" class="userInn" type="hidden" value="Einstein callback"/>

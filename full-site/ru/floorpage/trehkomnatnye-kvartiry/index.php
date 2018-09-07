@@ -13,35 +13,13 @@
 	<link rel="canonical" href="<?php echo 'https://'.$_SERVER['SERVER_NAME'],$_SERVER['REQUEST_URI']; ?>"/>
 	<style>
 	@media (max-width: 750px) {
-	 .default .phoneRingo {
-			color: #002442 !important;
-		}
-	
-	}
-		.phoneRingo1,
-		.phoneRingo {
-			color: #002442;
-			text-decoration: none;
-		}
-		.phoneRingo1::before,
-		.phoneRingo::before {
-			content: '044 ';
-		}
-		.top-callback__link_other:hover .phoneRingo{
-			color: #fff;
-		}
-		.phoneRingo:hover {
-			color: #fff;
-			text-decoration: none;
-		}
-		.phoneRingo:visited {
-			color: #fff !important;
-			text-decoration: none !important;
-		}
-		.default .phoneRingo1,
-		.default .phoneRingo {
-			color: #fff;
-		}
+	 .default .phoneRingo {	color: #002442 !important;}	}
+		.phoneRingo1,	.phoneRingo {	color: #002442;	text-decoration: none;}
+		.phoneRingo1::before,.phoneRingo::before {	content: '044 ';}
+		.top-callback__link_other:hover .phoneRingo{	color: #fff;}
+		.phoneRingo:hover {	color: #fff;	text-decoration: none;}
+		.phoneRingo:visited {	color: #fff !important;	text-decoration: none !important;}
+		.default .phoneRingo1,.default .phoneRingo {	color: #fff;}
 	</style>
 		<!-- Start Google Tag Manager -->
 		<script>(function (w, d, s, l, i) {
@@ -59,119 +37,106 @@
 	<!-- End Google Tag Manager -->
 </head>
 <body>
-	
+	<?php include('../../../DB.php');
+
+	$fl = $db->query("SELECT * FROM aparts WHERE rooms='3'");
+
+	?>
+
 	<div class="wrapper">
 	<?php include('../../../include/header_ru.php'); ?>
-	<main class="content news-page">
+	<main class="content news-page typeflats__page">
 	<? //Правки от 08.09.17 Андрей ?>
-		<div class="floor-page__left floor-page__on-floor-page">
-			<div class="floor-page__left-inner floor-page__on-floor-page">
-				<div class="floor-page__left-img floor-page__on-floor-page">
-					<ul class="floor-link">
-						<li><a class="floor-page__descr" href="/ru/floorpage/odnokomnatnye-kvartiry/">1 комнатные квартиры</a></li>
-						<li><a class="floor-page__descr" href="/ru/floorpage/dvuhkomnatnye-kvartiry/">2 комнатные квартиры</a></li>
-						<li><a class="floor-page__descr" href="/ru/floorpage/dvuhurovnevye-kvartiry/">Двухуровневые квартиры</a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-		<? //Правки от 08.09.17 Андрей ?>
-		<div class="news-page__inner news-page_inner-with-floor-page-inks">
-			<div class="news-page__page-caption">
-				<h1 class="news-page__caption">Трехкомнатные квартиры в EINSTEIN Concept House для большой семьи</h1>
-			</div>
-			<div class="news-page__page-description">
-				<div class="news-page__date-time-wrap">
-					<?php/*<div class="news-page__date-time-inner">
-						<div class="news-page__time">
-							<img class="news-wrapper__icon" src="/img/news-page/icon-clock.svg" alt="clock">
-							<span>13:42</span>
+	<ul class="floor-link">
+			<li><a class="floor_link_item" href="/ru/floorpage/odnokomnatnye-kvartiry/">1 комнатные квартиры</a></li>
+			<li><a class="floor_link_item" href="/ru/floorpage/dvuhkomnatnye-kvartiry/">2 комнатные квартиры</a></li>
+			<li class="floor_link_item floor_link_active">3 комнатные квартири</li>
+			<li><a class="floor_link_item" href="/ru/floorpage/dvuhurovnevye-kvartiry/">Двухуровневые квартиры</a></li>
+		</ul>
+
+		<div class="number_floor__box">
+			<ul class="result__list with-empty-cells">
+				<!-- ОДНА ИЗ КВАРТИР -->
+								<?while ($app = mysqli_fetch_array($fl)) {
+										//print_r($app);
+								?>
+				<li class="sort result__item cell">
+					<div class="result__item__inner">
+						<div class="result__img">
+							<img src="/img/app/<?=$app['type'];?>.png" alt="">
 						</div>
-						<div class="news-page__date">
-							<img src="/img/news-page/icon-calendar.svg" alt="calendar">
-							<span>23.06.17</span>
-						</div>
+						<table class="table_results">
+							<tr><td>Тип </td>     <td><?=$app['type_user']?></td></tr>
+							<tr><td>Этаж </td><td><?=$app['poverx']?></td></tr>
+							<tr><td>Количество комнат </td><td><?=$app['rooms']?></td></tr>
+							<tr><td>Общая площадь </td><td><?=$app['zagalna']?></td></tr>
+						</table>
 					</div>
-					<!-- / end news-page__date-time-wrap -->
-					<h3 class="news-page__content-description">МІЖ БОТСАДОМ І ДВОМА СКВЕРАМИ</h3>*/?>
-				</div>
-				<!-- <h3 class="news-page__content-description">Будівельні роботи</h3> -->
-				<div class="news-page__gallery">
-					<?php/*<div class="news-page__gallery-main-img">
-						<img src="/img/news-page/ex1.jpg" alt="img">
-					</div>*/?>
-					<!-- <ul class="news-page__list">
-						<li class="news-page__item">
-								<img src="img/news-page/ex2.jpg" alt="/">
-						</li>
-						<li class="news-page__item">
-							<img src="img/news-page/ex2.jpg" alt="/">
-						</li>
-						<li class="news-page__item">
-							<img src="img/news-page/ex2.jpg" alt="/">
-						</li>
-						<li class="news-page__item">
-							<img src="img/news-page/ex2.jpg" alt="/">
-						</li>
-					</ul> -->
-				</div>
-				<!-- / end news-page__gallery -->
-				<div class="news-page__content">
+					<a class="location__link" href="/apartment.php?apart=<?=$app['type'];?>" title="Квартира <?=$app['type_user']?>">Дивитися квартиру</a>
+				</li>
+<?}?>
+			</ul>
+
+		</div>
+
+		<div class="typeflats__descr">
+				<h1 class="news-page__caption">Трехкомнатные квартиры в EINSTEIN Concept House для большой семьи</h1>
+					<div class="news-page__content">
 					<p class="news-page__text">
-						Жилой комплекс EINSTEIN Concept House – это новый дом в центре Киева, аналогов которому нет. На идею его создания нас 
-						вдохновило высказывание А.Эйнштейна о том, что забота о людях тесно связана с прогрессом и инновационными технологиями. 
+						Жилой комплекс EINSTEIN Concept House – это новый дом в центре Киева, аналогов которому нет. На идею его создания нас
+						вдохновило высказывание А.Эйнштейна о том, что забота о людях тесно связана с прогрессом и инновационными технологиями.
 						По сути, любой технологический скачок должен выполняться во благо человека.
 					</p>
 					<p class="news-page__text">
-						Трехкомнатные квартиры в EINSTEIN Concept House – это, несомненно, пространство и уют для каждого члена большой семьи. 
-						О таких приобретениях задумываются семьи с несколькими детьми или перспективой их рождения. Сюда же можно заехать с 
-						пожилыми родителями. В трехкомнатной квартире в центре Киева достаточно пространства для комфортного отдыха и взрослых, 
+						Трехкомнатные квартиры в EINSTEIN Concept House – это, несомненно, пространство и уют для каждого члена большой семьи.
+						О таких приобретениях задумываются семьи с несколькими детьми или перспективой их рождения. Сюда же можно заехать с
+						пожилыми родителями. В трехкомнатной квартире в центре Киева достаточно пространства для комфортного отдыха и взрослых,
 						и совсем юных жителей.
 					</p>
 					<p class="news-page__text">
-						Места предостаточно! Площадь трехкомнатных квартир в EINSTEIN Concept House большая в сравнении с предложениями 
+						Места предостаточно! Площадь трехкомнатных квартир в EINSTEIN Concept House большая в сравнении с предложениями
 						других застройщиков, - чуть более 121 м<sup>2</sup>.
 					</p>
 					<p class="news-page__text">
-						Это не просто жилая площадь, это оборудованные по последнему слову техники квартиры. Централизованное управление всеми 
-						функциями вашей квартиры, экономичная система использования энергоресурсов, инновационные системы безопасности – все это 
+						Это не просто жилая площадь, это оборудованные по последнему слову техники квартиры. Централизованное управление всеми
+						функциями вашей квартиры, экономичная система использования энергоресурсов, инновационные системы безопасности – все это
 						жильцы дома получают в свое использование сразу по факту сдачи дома в эксплуатацию.
 					</p>
 
 					<h2 class="news-feed__description">Удобство расположения</h2>
 					<p class="news-page__text">
-						Мы строим EINSTEIN Concept House на улице Златоустовская. Это тихая уютная улица в трех минутах от Киевского цирка, площади 
-						Победы, ТРЦ «Украина». К центральной киевской площади Победы выходят несколько таких улиц: Златоустовская, Дмитриевская, 
-						Бульварно-Кудрявская, Гончара. Все они передают чарующий дух старого Киева, а на площади Победы с разветвляющимися от нее 
-						проспектом Победы и бульваром Шевченка ощущается живость и стремительность Киева современного. Проживание в этом районе 
+						Мы строим EINSTEIN Concept House на улице Златоустовская. Это тихая уютная улица в трех минутах от Киевского цирка, площади
+						Победы, ТРЦ «Украина». К центральной киевской площади Победы выходят несколько таких улиц: Златоустовская, Дмитриевская,
+						Бульварно-Кудрявская, Гончара. Все они передают чарующий дух старого Киева, а на площади Победы с разветвляющимися от нее
+						проспектом Победы и бульваром Шевченка ощущается живость и стремительность Киева современного. Проживание в этом районе
 						позволит насладиться и тем, и другим.
 					</p>
                     <p class="news-page__text">
-						Безусловное преимущество трехкомнатной квартиры в центре Киева еще и в быстрой доступности транспортной инфраструктуры, пространств 
-						для отдыха и прогулок, медицинских, торговых, образовательных заведений. В нескольких минутах езды от площади Победы 
+						Безусловное преимущество трехкомнатной квартиры в центре Киева еще и в быстрой доступности транспортной инфраструктуры, пространств
+						для отдыха и прогулок, медицинских, торговых, образовательных заведений. В нескольких минутах езды от площади Победы
 						располагаются метро Университет и Вокзальная.
 					</p>
 
 					<h2 class="news-feed__description">Простота ремонта и обустройства</h2>
 					<p class="news-page__text">
-						Базовые планировки трехкомнатных квартир предполагают три просторные спальни в одном крыле квартиры, кухню-гостиную с балконом в другом 
-						крыле. В квартирах также имеется гардеробная и два санузла. EINSTEIN Concept House строится с применением монолитно-каркасной технологии, 
-						а значит, допускается свободная, то есть авторская, планировка владельца учитывающая все его потребности. Реализуйте свои представления о комфорте, 
+						Базовые планировки трехкомнатных квартир предполагают три просторные спальни в одном крыле квартиры, кухню-гостиную с балконом в другом
+						крыле. В квартирах также имеется гардеробная и два санузла. EINSTEIN Concept House строится с применением монолитно-каркасной технологии,
+						а значит, допускается свободная, то есть авторская, планировка владельца учитывающая все его потребности. Реализуйте свои представления о комфорте,
 						удобстве, предназначении трехкомнатной квартиры – здесь предостаточно места для детских и игровых зон, для отдыха, работы и приема гостей.
 					</p>
 					<p class="news-page__text">
-						Каждый член большой семьи, въехавшей в трехкомнатную квартиру в EINSTEIN Concept House, будет чувствовать себя здесь комфортно и безопасно. 
-						А все благодаря системе «умный дом», инновационным охранным и противопожарным системам. EINSTEIN Concept House – это энергоэффективный и 
+						Каждый член большой семьи, въехавшей в трехкомнатную квартиру в EINSTEIN Concept House, будет чувствовать себя здесь комфортно и безопасно.
+						А все благодаря системе «умный дом», инновационным охранным и противопожарным системам. EINSTEIN Concept House – это энергоэффективный и
 						высокотехнологичный дом. Приобретение квартиры в нём означает экономию на коммунальных услугах и беспрецедентное удобство их использования.
 					</p>
 
 					<h2 class="news-feed__description">Оптимальная стоимость</h2>
 					<p class="news-page__text">
-						Если вы хотите выгодно купить трехкомнатную квартиру в Киеве, обратите внимание на EINSTEIN Concept House. Только здесь вы приобретаете 
-						не просто квадратные метры для комфортного проживания в центре столицы, но и ряд высокотехнологичных решений, которые обретут массовую популярность 
-						в скором будущем. Сегодня же мы предлагаем вам быть новаторами и с максимальной выгодой использовать преимущества завтрашнего дня. Интеллектуальный 
-						подход к управлению энергоснабжением экономит до 40&#37; энергоресурсов, система "умный дом" предлагает вам несколько экономичных сценариев 
-						потребления энергии. Инновационные системы безопасности, включая замок со сканером отпечатков пальцев в подъезде и видеодомофон в каждой квартире, 
+						Если вы хотите выгодно купить трехкомнатную квартиру в Киеве, обратите внимание на EINSTEIN Concept House. Только здесь вы приобретаете
+						не просто квадратные метры для комфортного проживания в центре столицы, но и ряд высокотехнологичных решений, которые обретут массовую популярность
+						в скором будущем. Сегодня же мы предлагаем вам быть новаторами и с максимальной выгодой использовать преимущества завтрашнего дня. Интеллектуальный
+						подход к управлению энергоснабжением экономит до 40&#37; энергоресурсов, система "умный дом" предлагает вам несколько экономичных сценариев
+						потребления энергии. Инновационные системы безопасности, включая замок со сканером отпечатков пальцев в подъезде и видеодомофон в каждой квартире,
 						системы антизатопления и обесточивания квартиры в случае аварии – вот, что защищает по-настоящему.
 					</p>
 					<p class="news-page__text">
@@ -179,7 +144,6 @@
 					</p>
 				</div>
 				<!-- /end news-page__content -->
-			</div>
 			<!-- / end news-page__page-description -->
 		</div>
 		<!-- / end news-page__inner -->

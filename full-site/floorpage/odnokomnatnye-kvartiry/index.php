@@ -13,35 +13,13 @@
 	<link rel="canonical" href="<?php echo 'https://'.$_SERVER['SERVER_NAME'],$_SERVER['REQUEST_URI']; ?>"/>
 	<style>
 	@media (max-width: 750px) {
-	 .default .phoneRingo {
-			color: #002442 !important;
-		}
-	
-	}
-		.phoneRingo1,
-		.phoneRingo {
-			color: #002442;
-			text-decoration: none;
-		}
-		.phoneRingo1::before,
-		.phoneRingo::before {
-			content: '044 ';
-		}
-		.top-callback__link_other:hover .phoneRingo{
-			color: #fff;
-		}
-		.phoneRingo:hover {
-			color: #fff;
-			text-decoration: none;
-		}
-		.phoneRingo:visited {
-			color: #fff !important;
-			text-decoration: none !important;
-		}
-		.default .phoneRingo1,
-		.default .phoneRingo {
-			color: #fff;
-		}
+	 .default .phoneRingo {	color: #002442 !important;}	}
+		.phoneRingo1,	.phoneRingo {	color: #002442;	text-decoration: none;}
+		.phoneRingo1::before,.phoneRingo::before {	content: '044 ';}
+		.top-callback__link_other:hover .phoneRingo{	color: #fff;}
+		.phoneRingo:hover {	color: #fff;	text-decoration: none;}
+		.phoneRingo:visited {	color: #fff !important;	text-decoration: none !important;}
+		.default .phoneRingo1,.default .phoneRingo {	color: #fff;}
 	</style>
 		<!-- Start Google Tag Manager -->
 		<script>(function (w, d, s, l, i) {
@@ -59,87 +37,75 @@
 	<!-- End Google Tag Manager -->
 </head>
 <body>
-	
+<?php include('../../DB.php');
+
+$fl = $db->query("SELECT * FROM aparts WHERE rooms='1'");
+
+?>
+
 	<div class="wrapper">
 	<?php include('../../include/header.php'); ?>
-	<main class="content news-page">
-		<? //Правки от 08.09.17 Андрей ?>
-		<div class="floor-page__left floor-page__on-floor-page">
-			<div class="floor-page__left-inner floor-page__on-floor-page">
-				<div class="floor-page__left-img floor-page__on-floor-page">
-					<ul class="floor-link">
-						<li><a class="floor-page__descr" href="/floorpage/dvuhkomnatnye-kvartiry/">2 кімнатні квартири</a></li>
-						<li><a class="floor-page__descr" href="/floorpage/trehkomnatnye-kvartiry/">3 кімнатні квартири</a></li>
-						<li><a class="floor-page__descr" href="/floorpage/dvuhurovnevye-kvartiry/">Дворівневі квартири</a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-		<? //Правки от 08.09.17 Андрей ?>
-		<div class="news-page__inner news-page_inner-with-floor-page-inks">
-			<div class="news-page__page-caption">
-				<h1 class="news-page__caption">Затишні однокімнатні квартири в EINSTEIN Concept House</h1>
-			</div>
-			<div class="news-page__page-description">
-				<div class="news-page__date-time-wrap">
-					<?php/*<div class="news-page__date-time-inner">
-						<div class="news-page__time">
-							<img class="news-wrapper__icon" src="/img/news-page/icon-clock.svg" alt="clock">
-							<span>13:42</span>
+	<main class="content news-page typeflats__page">
+			<ul class="floor-link">
+				<li class="floor_link_item floor_link_active">1 кімнатні квартири</a></li>
+				<li><a class="floor_link_item" href="/floorpage/dvuhkomnatnye-kvartiry/">2 кімнатні квартири</a></li>
+				<li><a class="floor_link_item" href="/floorpage/trehkomnatnye-kvartiry/">3 кімнатні квартири</a></li>
+				<li><a class="floor_link_item" href="/floorpage/dvuhurovnevye-kvartiry/">Дворівневі квартири</a></li>
+			</ul>
+
+		<div class="number_floor__box">
+			<ul class="result__list with-empty-cells">
+
+				<!-- ОДНА ИЗ КВАРТИР -->
+                <?while ($app = mysqli_fetch_array($fl)) {
+                    //print_r($app);
+                ?>
+				<li class="sort result__item cell">
+					<div class="result__item__inner">
+						<div class="result__img">
+							<img src="/img/app/<?=$app['type'];?>.png" alt="">
 						</div>
-						<div class="news-page__date">
-							<img src="/img/news-page/icon-calendar.svg" alt="calendar">
-							<span>23.06.17</span>
-						</div>
+						<table class="table_results">
+							<tr><td>Тип </td>     <td><?=$app['type_user']?></td></tr>
+							<tr><td>Поверх </td><td><?=$app['poverx']?></td></tr>
+							<tr><td>Кількість кімнат </td><td><?=$app['rooms']?></td></tr>
+							<tr><td>Загальна площа   </td><td><?=$app['zagalna']?></td></tr>
+						</table>
 					</div>
-					<!-- / end news-page__date-time-wrap -->
-					<h3 class="news-page__content-description">МІЖ БОТСАДОМ І ДВОМА СКВЕРАМИ</h3>*/?>
-				</div>
-				<!-- <h3 class="news-page__content-description">Будівельні роботи</h3> -->
-				<div class="news-page__gallery">
-					<?php/*<div class="news-page__gallery-main-img">
-						<img src="/img/news-page/ex1.jpg" alt="img">
-					</div>*/?>
-					<!-- <ul class="news-page__list">
-						<li class="news-page__item">
-								<img src="img/news-page/ex2.jpg" alt="/">
-						</li>
-						<li class="news-page__item">
-							<img src="img/news-page/ex2.jpg" alt="/">
-						</li>
-						<li class="news-page__item">
-							<img src="img/news-page/ex2.jpg" alt="/">
-						</li>
-						<li class="news-page__item">
-							<img src="img/news-page/ex2.jpg" alt="/">
-						</li>
-					</ul> -->
-				</div>
-				<!-- / end news-page__gallery -->
-				<div class="news-page__content">
+					<a class="location__link" href="/apartment.php?apart=<?=$app['type'];?>" title="Квартира <?=$app['type_user']?>">Дивитися квартиру</a>
+				</li>
+<?}?>
+			</ul>
+
+		</div>
+
+
+		<div class="typeflats__descr">
+				<h1 class="news-page__caption">Затишні однокімнатні квартири в EINSTEIN Concept House</h1>
+			<div class="news-page__content">
 					<p class="news-page__text">
-						Житловий комплекс EINSTEIN Concept House – це унікальна нерухомість в самому серці столиці. Тут 20 квартир, і до кожної 
-						з них підключена система «розумний дім». Ця та ряд інших інноваційних технологій тільки освоюються українськими споживачами, 
+						Житловий комплекс EINSTEIN Concept House – це унікальна нерухомість в самому серці столиці. Тут 20 квартир, і до кожної
+						з них підключена система «розумний дім». Ця та ряд інших інноваційних технологій тільки освоюються українськими споживачами,
 						але якщо ви досить прогресивні, то квартира в новобудові з уже налаштованою системою «розумний дім» точно для вас.
 					</p>
 					<p class="news-page__text">Однокімнатні квартири на вулиці Златоустівська – не тільки престижно, але і по-справжньому зручно:</p>
 					<ul>
 						<li>
 							<p class="news-page__text">
-								Ви можете заселитися сюди самі або родиною: для молодих людей квартира на Златоустівській означає економію часу, адже житловий 
+								Ви можете заселитися сюди самі або родиною: для молодих людей квартира на Златоустівській означає економію часу, адже житловий
 								комплекс розташований в безпосередній близькості до ділового центру столиці, де знаходиться більшість офісів, навчальних і розважальних закладів;
 							</p>
 						</li>
 						<li>
 							<p class="news-page__text">
-								однокімнатна квартира в центрі міста з хорошим ремонтом і високотехнологічними рішеннями буде комфортною для всіх поколінь, наприклад, ваших батьків, адже 
-								Златоустівська – це тиха вуличка з затишними дворами і симпатичними будинками минулого століття, тут відчуваєш себе по-справжньому вдома, 
+								однокімнатна квартира в центрі міста з хорошим ремонтом і високотехнологічними рішеннями буде комфортною для всіх поколінь, наприклад, ваших батьків, адже
+								Златоустівська – це тиха вуличка з затишними дворами і симпатичними будинками минулого століття, тут відчуваєш себе по-справжньому вдома,
 								а в пішому доступі є сквери, продуктові магазини, медичні установи;
 							</p>
 						</li>
 						<li>
 							<p class="news-page__text">
-								однокімнатну квартиру можна вигідно здавати в оренду: дістатися сюди від Центрального київського вокзалу питання семи хвилин, а в пішому доступі 
+								однокімнатну квартиру можна вигідно здавати в оренду: дістатися сюди від Центрального київського вокзалу питання семи хвилин, а в пішому доступі
 								знаходиться безліч київських пам'яток; хороша транспортна розв'язка дозволить гостям вашої квартири легко відвідати будь-яку точку Києва.
 							</p>
 						</li>
@@ -147,23 +113,23 @@
 
 					<h2 class="news-feed__description">Простота ремонту та обладнання</h2>
 					<p class="news-page__text">
-						У EINSTEIN Concept House можна купити однокімнатну квартиру без посередників і одразу ж перейти до її благоустрою. Площа однокімнатних 
+						У EINSTEIN Concept House можна купити однокімнатну квартиру без посередників і одразу ж перейти до її благоустрою. Площа однокімнатних
 						квартир складає 43.42 м<sup>2</sup>, у базових плануваннях передбачені велика кухня з виходом на балкон, простора кімната, спальня та роздільні ванна й туалет.
 					</p>
 					<p class="news-page__text">
-						Будинок зведенийі з застосуванням монолітно-каркасної технології, що гарантує покупцям опцію вільного планування, тобто власники зможуть самі 
-						зонувати особистий простір з урахуванням усіх побажань. Відповідно до уявлень про комфорт, затишок, призначення купленої квартири ви можете організувати тут простори для 
+						Будинок зведенийі з застосуванням монолітно-каркасної технології, що гарантує покупцям опцію вільного планування, тобто власники зможуть самі
+						зонувати особистий простір з урахуванням усіх побажань. Відповідно до уявлень про комфорт, затишок, призначення купленої квартири ви можете організувати тут простори для
 						відпочинку, роботи, прийому гостей. Не проблема перетворити однокімнатну квартиру в EINSTEIN Concept House в квартиру-студію. Сучасні дизайнерські рішення до ваших послуг.
 					</p>
 					<p class="news-page__text">
-						Комфорт проживання в однокімнатній квартирі в EINSTEIN Concept House обумовлений ще й тим, що будь-які функції квартири керуються централізовано, по всьому будинку встановлені 
+						Комфорт проживання в однокімнатній квартирі в EINSTEIN Concept House обумовлений ще й тим, що будь-які функції квартири керуються централізовано, по всьому будинку встановлені
 						сучасні охоронні та протипожежні системи, реалізовані інноваційні енергоефективні рішення.
 					</p>
 
 					<h2 class="news-feed__description">Оптимальна вартість</h2>
-                    <p class="news-page__text">
-						У EINSTEIN Concept House можна купити однокімнатну квартиру в Києві від забудовника. Це означає відсутність будь-яких додаткових комісій і найбільшу вигоду ринкової пропозиції. 
-						Крім того, ви купуєте інноваційне житло з перевагами, які дозволяють відчувати себе вдома комфортно і безпечно, а застосування інтелектуального підходу до управління енергопостачанням 
+          <p class="news-page__text">
+						У EINSTEIN Concept House можна купити однокімнатну квартиру в Києві від забудовника. Це означає відсутність будь-яких додаткових комісій і найбільшу вигоду ринкової пропозиції.
+						Крім того, ви купуєте інноваційне житло з перевагами, які дозволяють відчувати себе вдома комфортно і безпечно, а застосування інтелектуального підходу до управління енергопостачанням
 						економить до 40&#37; енергоресурсів.
 					</p>
 					<p class="news-page__text">
@@ -172,22 +138,21 @@
 
 					<h2 class="news-feed__description">Зручність розташування</h2>
                     <p class="news-page__text">
-						EINSTEIN Concept House розташований на вулиці Златоустівська, що в трьох хвилинах від центральної столичної площі Перемоги й однойменного проспекту. Це історичний 
-						центр міста, тут безліч архітектурних пам'яток і затишних скверів для прогулянки, а також відмінна транспортна розв'язка. 
+						EINSTEIN Concept House розташований на вулиці Златоустівська, що в трьох хвилинах від центральної столичної площі Перемоги й однойменного проспекту. Це історичний
+						центр міста, тут безліч архітектурних пам'яток і затишних скверів для прогулянки, а також відмінна транспортна розв'язка.
 					</p>
 					<p class="news-page__text">
 						За декілька хвилин їзди від площі Перемоги розташовані станції метро Університет і Вокзальна, по самій площі проходить розгалужена мережа наземного транспорту.
 					</p>
 					<p class="news-page__text">
-						Проживання в цьому районі української столиці – мрія багатьох городян. І вам під силу її здійснити. У новому будинку EINSTEIN Concept House двадцять квартир, але 
-						серед них є однокімнатні, двокімнатні та трикімнатні, а також дворівневі апартаменти. З турботою про людей, зацікавлених у комфортабельному проживанні в розумній 
+						Проживання в цьому районі української столиці – мрія багатьох городян. І вам під силу її здійснити. У новому будинку EINSTEIN Concept House двадцять квартир, але
+						серед них є однокімнатні, двокімнатні та трикімнатні, а також дворівневі апартаменти. З турботою про людей, зацікавлених у комфортабельному проживанні в розумній
 						квартирі на правому березі, ми розробили кілька вдалих планувань квартир з різною площею.
 					</p>
 
 				</div>
 				<!-- /end news-page__content -->
-			</div>
-			<!-- / end news-page__page-description -->
+				<!-- / end news-page__page-description -->
 		</div>
 		<!-- / end news-page__inner -->
 	</main>

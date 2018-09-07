@@ -10,20 +10,59 @@
 	<link rel="canonical" href="<?php echo 'https://'.$_SERVER['SERVER_NAME'] . '/floorpage/' ?>"/>
 	<link rel="stylesheet" href="/css/intlTelInput.css">
 	<link rel="stylesheet" href="css/main.min.css">
-	<style media="screen">
+	<style>
+	@media (max-width: 750px) {
+	 .default .phoneRingo {
+			color: #002442 !important;
+		}
 
-	@media (max-width: 750px) {.default .phoneRingo {color: #002442 !important;}}
-		.phoneRingo1,	.phoneRingo {	color: #002442;	text-decoration: none;}
-		.phoneRingo1::before,.phoneRingo::before {content: '044 ';}
-		.top-callback__link_other:hover .phoneRingo{color: #fff;}
-		.phoneRingo:hover {color:#fff;	text-decoration: none;}
-		.phoneRingo:visited {color: #fff !important;	text-decoration: none !important;}
-		.phoneRingo1:hover {color: #002442;	text-decoration: none;}
-		.phoneRingo1:visited {color: #002442 !important;	text-decoration: none !important;}
-		.default .phoneRingo1,.default .phoneRingo {	color: #fff;	text-decoration: none;}
-		.default.phoneRingo1:hover {color: #002442;	text-decoration: none;}
-		.default.phoneRingo1 {color: #002442;}
-		.phoneRingo:visited {color: #002442 !important;text-decoration: none !important;}
+	}
+		.phoneRingo1,
+		.phoneRingo {
+			color: #002442;
+			text-decoration: none;
+		}
+		.phoneRingo1::before,
+		.phoneRingo::before {
+			content: '044 ';
+		}
+		.top-callback__link_other:hover .phoneRingo{
+			color: #fff;
+		}
+		.phoneRingo:hover {
+			color: #fff;
+			text-decoration: none;
+		}
+		.phoneRingo:visited {
+			color: #fff !important;
+			text-decoration: none !important;
+		}
+		.phoneRingo1:hover {
+			color: #002442;
+			text-decoration: none;
+		}
+		.phoneRingo1:visited {
+			color: #002442 !important;
+			text-decoration: none !important;
+		}
+		.default .phoneRingo1,
+		.default .phoneRingo {
+			color: #fff;
+			text-decoration: none;
+		}
+		.default.phoneRingo1:hover {
+			color: #002442;
+			text-decoration: none;
+		}
+
+
+		.default.phoneRingo1 {
+			color: #002442;
+		}
+		.phoneRingo:visited {
+			color: #002442 !important;
+			text-decoration: none !important;
+		}
 	</style>
 		<!-- Start Google Tag Manager -->
 		<script>(function (w, d, s, l, i) {
@@ -59,13 +98,23 @@ $mApart = "https://einstein.smarto.com.ua/apartment.php";
 $mApart2 = "https://einstein.smarto.com.ua/apartment.php?";
 if($actual_link == $mApart || $actual_link == $mApart2 ){
 	header("Location: https://einstein.smarto.com.ua/apartment.php?apart=2A");
+
 }
 
 $tips = str_replace('/', '', $_GET['apart']);
+
 // $row = mysql_query("SELECT * FROM aparts where type='$tips'" ,$DB);
+
 $check0 = $db->query("SELECT * FROM aparts where type='$tips'");
 
-
+/*
+$fl = $db->query("SELECT * FROM aparts");
+while ($app = mysqli_fetch_array($fl)) {
+    echo "<pre>";
+        print_r($app);
+    echo "</pre>";
+}
+*/
 
 while ($currow = mysqli_fetch_array($check0))
 {
@@ -124,11 +173,38 @@ if(empty($currow['garderob'])){
 	$hidd_garderob = "style='display:none;'";
 }
 
+//В базе забиты названия типов на англ, 2V, 3G надо рус, на данный момент 11.09 делалось на тестовом, дабы не ломать прод, если еще стоит данная приблуда надо исправить -- Андрей
+//Поменяй названия в базе и названия изображений, также заменить все $currow['type_text'] на $currow['type']; 2 шт.
+switch ($currow['type']) {
+	case '2V':
+		$currow['type_text'] = '2В';
+		break;
+	case '2B':
+		$currow['type_text'] = '2Б';
+		break;
+	case '1B':
+		$currow['type_text'] = '1Б';
+		break;
+	case '3B':
+		$currow['type_text'] = '3Б';
+		break;
+	case '3V':
+		$currow['type_text'] = '3В';
+		break;
+	case '3G':
+		$currow['type_text'] = '3Г';
+		break;
+	case '2G':
+		$currow['type_text'] = '2Г';
+		break;
+	default:
+		$currow['type_text'] = $currow['type'];
+		break;
+}
 ?>
 		<main class="content blok-apartment">
 			<div class="blok-apartment__inner">
 				<div class="blok-apartment__caption-wrap">
-
 					<div class="blok-apartment__change-wrap">
 
 						<div class="blok-apartment__change-floor">
@@ -140,11 +216,12 @@ if(empty($currow['garderob'])){
 							<div class="blok-apartment__change-floor-inner">
 								<span><?=$_SESSION['fl'];?></span>
 								<p>поверх</p>
+
 							</div>
 							<button class="blok-apartment__change-floor-prev">
 								<a href="/select-apartment-floor-<?if($bt_down >= 2){echo $bt_down;}else{$bt_down=2; echo $bt_down;}?>" class="ar_btn">
-									<img src="img/apartment/arrow-down.svg" alt="arrow-down">
-								</a>
+								<img src="img/apartment/arrow-down.svg" alt="arrow-down">
+	</a>
 							</button>
 						</div>
 
@@ -180,7 +257,7 @@ if(empty($currow['garderob'])){
 										<div class="box-corner__bottom box-corner__right"></div>
 										<div class="box-corner__bottom box-corner__left"></div>
 										<div class="blok-apartment__link-wrap">
-											<a class="blok-apartment__link-btn" id="callback-btn3" style="text-align: center;" href="#">Дізнатися ціну</a>
+											<a class="blok-apartment__link-btn" id="callback-btn3"  style="text-align: center;"href="#">Дізнатися ціну</a>
 										</div>
 								</div>
 						</div>
@@ -191,7 +268,7 @@ if(empty($currow['garderob'])){
 
 					<div class="blok-apartment__description-wrap">
 						<div class="blok-apartment__description">
-							<h1 class="blok-apartment__caption">Квартира <?=$currow['type_user'];?></h1>
+							<h1 class="blok-apartment__caption">Квартира <?=$currow['type_text'];?></h1>
 							<div class="blok-apartment__box">
 								<div class="box-corner">
 									<div class="box-corner__top box-corner__left"></div>
@@ -242,6 +319,7 @@ if(empty($currow['garderob'])){
 						</div>
 					</div>
 				</div>
+				<!-- /end select-apartment__caption-wrap -->
 
 				<!-- /end select-apartment-wrap-->
 				<div class="blok-apartment__apartments-wrap">
@@ -252,9 +330,23 @@ if(empty($currow['garderob'])){
 				</div>
 				<!-- /end select-apartment__apartments -->
 
+				<!-- /end select-apartment__description-wrap -->
+
 			</div>
 			<!-- /end blok-apartment-inner-->
-
+			<style>
+			.blok-apartment__apartments-wrap img {
+				background-color: #002442;
+				border: 20px solid #002442;
+			}
+			.blok-apartment__apartments-inner img {
+				max-width: 100%;
+				width: auto;
+				display: block;
+				max-height: 67vh;
+				/* margin: 0 auto; */
+			}
+			</style>
 		</main>
 <?
 }

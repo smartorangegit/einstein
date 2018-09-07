@@ -10,21 +10,18 @@ $webAd = 'https://' . $_SERVER['HTTP_HOST'] . $_SERVER['PHP_SELF'];
 		<div class="contact__wrap">
 			<div class="contact__description">
 				<h2 class="contact__caption">Контактная информация:</h2>
-				<div class="contact__caption__inner">
-					<div class="contact__caption__inner__item contact__medium">
-						<p class="contact__header">Адрес отдела продаж:</p>
+				<div class="contact__list">
+					<div class=" contact__medium">
+						<p><img src="/img/contact-icon/map-icon.png" alt="map-icon">г. Киев, ул. Златоустовская, 24А</p>
+						<p class="contact__header">Отдел продаж:</p>
 						<p><img src="/img/contact-icon/map-icon.png" alt="map-icon">г. Киев, ул. Антоновича 74</p>
 						<p><a class="contact__link" href="#"><img src="/img/contact-icon/phone-icon.svg" alt="phone-icon">+38 (044) 290 34 27</a></p>
 						<p><a class="contact__link" href="mailto:info@einstein.house"><img src="/img/contact-icon/mail-icon.svg" alt="mail-icon">info@einstein.house</a></p>
 						<p>Часы работы отдела продаж:</p>
 						<p>Пн-пт: 09.00 - 19.00</p>
 						<p>Сб - вск: 10.00 - 18.00</p>
-					</div>
 
-					<div class="contact__caption__inner__item contact__medium">
-						<p class="contact__header">Адрес комплекса:</p>
-						<p><img src="/img/contact-icon/map-icon.png" alt="map-icon">г. Киев, ул. Златоустовская, 24А</p>
-						<p class="contact__header">Отдел послепродажного обслуживания:</p>
+						<p class="contact__medium">Отдел послепродажного обслуживания:</p>
 						<p><a class="contact__link" href="#"><img src="/img/contact-icon/phone-icon.svg" alt="phone-icon">+38 (067) 230 42 65</a></p>
 						<p><a class="contact__link" href="#"><img src="/img/contact-icon/phone-icon.svg" alt="phone-icon">+38 (067) 616 75 38 </a></p>
 						<p>Пн-пт: 09.00 - 18.00</p>

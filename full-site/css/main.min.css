@@ -1859,7 +1859,7 @@ header {
 .blok-about .about-descr__item {
     padding-bottom: 40px
 }
-
+.clearfix:after,
 .blok-about .about-descr__item::after,
 .blok-about .about-descr__item::before {
     content: "";
@@ -2424,8 +2424,9 @@ header {
 .contact {
     background: #285477 url(../img/fotter-bg.png) no-repeat center center;
     background-size: cover;
+    /* min-height: 300px; */
     padding: 55px 0;
-    margin-bottom: -40px
+    margin-bottom: -40px;
 }
 
 .contact__inner {
@@ -2457,7 +2458,7 @@ header {
 }
 
 .contact__wrap {
-    width: 79.6610169%;
+    width: 80%;
     float: right
 }
 
@@ -2468,12 +2469,12 @@ header {
 }
 
 .contact__wrap::after {
-    clear: both
+    clear: both;
 }
 
 .contact__description {
-    width: 36.2033898%;
-    float: left
+    width: 65%;
+    float: left;
 }
 
 .contact__caption {
@@ -2486,6 +2487,15 @@ header {
     margin: 0;
     padding: 0
 }
+.contact__caption__inner{
+	display: flex;
+	display: -webkit-flex;
+	justify-content: space-between;
+	-webkit-justify-content: space-between;
+}
+.contact__caption__inner__item{
+	width: 48%;
+}
 
 .contact__list {
     margin-top: 30px;
@@ -2495,7 +2505,7 @@ header {
 .contact__medium {
     font-size: 1.125em;
     font-family: RobotoMedium, sans-serif;
-    line-height: 2;
+    line-height: 1.8;
     letter-spacing: .002em;
     color: #fff
 }
@@ -2507,13 +2517,21 @@ header {
     letter-spacing: .002em;
     color: #fff
 }
+.contact__header{
+	line-height: normal;
+	margin: 10px 0;
+	font-size: 1.2em;
+	font-weight: bold;
+}
 
 .contact__link:hover {
     color: #fff
 }
-
-.contact__link img {
-    margin-right: 13px
+.contact__description img{
+	margin-right: 20px;
+}
+.contact__list img {
+    margin-right: 20px
 }
 
 .contact__form {
@@ -2536,11 +2554,14 @@ header {
     font-family: RobotoLight, sans-serif;
     font-size: 1em;
     letter-spacing: .002em;
-    line-height: 2.25;
+    line-height: 3.2;
     /* font-style: italic; */
-    color: #fff
+    color: #fff;
+    padding-left: 52px;
+    }
+.intl-tel-input{
+  width: 100%;
 }
-
 .contact__form .form input::after,
 .contact__form .form textarea::after {
     content: '*';
@@ -3338,9 +3359,79 @@ header {
     content: "";
     display: table
 }
-
+.result__list{
+  display: flex;
+  flex-wrap: wrap;
+  display: -webkit-flex;
+  -webkit-flex-wrap: wrap;
+  transition: 0.36s;
+  -webkit-transition: .36s;
+}
+.result__item{
+  width: 20%;
+  padding: 10px;
+  color: #002442;
+}
+@media only screen and (max-width: 1000px) {
+  .result__item{
+    width: 25%;
+  }
+}
+@media only screen and (max-width: 860px) {
+  .result__item{
+    width: 33.3333%;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .result__item{
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 460px) {
+  .result__item{
+    width: 100%;
+  }
+}
+.result__item .location__link{
+  text-decoration: none;
+  margin-top: 0;
+  transition: 0.35s;
+  -webkit-transition: 0.35s;
+}
+.result__item .location__link:hover{
+  background-color: #002442;
+  color: white;
+}
+.result__item__inner{
+  background-color: #e5e5e5;
+  padding: 24px 24px 12px;
+}
+.result__img{
+  height: 150px;
+  background: #002442;
+  padding: 8px 0px 8px;
+  margin-bottom: 12px;
+}
+.result__img img{
+  max-height: 100%;
+  margin: 0 auto;
+  display: block;
+}
+.table_results{
+  width: 100%;
+  font-size: 14px;
+}
+.table_results td:nth-child(2){
+  text-align: right;
+}
 .floor-page::after {
     clear: both
+}
+.typeflats__descr{
+  width: 100%;
+  max-width: 880px;
+  padding: 0 10px;
+  margin: 30px auto;
 }
 
 .floor-page__left {
@@ -3350,8 +3441,11 @@ header {
 }
 
 .floor-page__left.floor-page__on-floor-page {
-    width: 20%;
-    margin-top: 225px;
+    /* width: 100%;
+    margin-top: 160px; */
+    width: 100%;
+    float: none;
+    margin-top: 240px;
 }
 
 .floor-page__left-img.floor-page__on-floor-page {
@@ -3379,7 +3473,22 @@ header {
 .floor-page__left-inner::after {
     clear: both;
 }
+.typeflats__page .floor-link{
+  display: flex;
+  display: -webkit-flex;
+  justify-content: space-around;
+  justify-content: space-around;
+  margin-top: 230px;
 
+}
+.floor_link_item{
+  font-size: 18px;
+  color: #002442;
+  text-decoration: none;
+}
+.floor_link_active{
+  font-size: 22px;
+}
 .floor-page__left-img {
     width: 38%;
     padding-top: 185px;
@@ -5330,10 +5439,9 @@ input[type=button] {
     /* Правки от 08.09.17 Андрей */
     .floor-page__left-inner {
         padding: 0;
-        /* width: 80%; */
         margin: 50px 0 0;
-        flex-direction: column-reverse;
-        -webkit-flex-direction: column-reverse;
+        flex-direction: column;
+        -webkit-flex-direction: column;
 
     }
     .floor-page__left-img {
@@ -6262,7 +6370,8 @@ input[type=button] {
     .floor-page__left {
         float: none;
         width: 100%;
-        padding-bottom: 10px
+        padding-bottom: 10px;
+        margin-top: 376px;
     }
     .floor-page__left.floor-page__on-floor-page {
         width: 100%;
@@ -6286,7 +6395,11 @@ input[type=button] {
         width: 120px
     }
     .floor-page__left-page-description {
-        margin: 0 auto
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column-reverse;
+        display: -webkit-flex;
+        -webkit-flex-direction: column-reverse;
     }
     .floor-page__bottom-box {
         display: none
@@ -6296,7 +6409,7 @@ input[type=button] {
     }
     .floor-page__left-page-caption {
         text-align: center;
-        margin-bottom: 130px
+        /* margin-top: 230px */
     }
     .floor-page__text {
         display: none
@@ -6464,7 +6577,7 @@ input[type=button] {
     .select-apartment__apartments-wrap {
         width: 100%;
         padding: 0 10px;
-        margin: 100px 0 0 0
+        margin: 100px 0 30px 0;
     }
     .select-apartment__description-wrap {
         display: none
