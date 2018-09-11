@@ -112,48 +112,14 @@ $webAd = 'https://' . $_SERVER['HTTP_HOST'] . $_SERVER['PHP_SELF'];
 </div>
 <!-- /end wrapper -->
 
+
+
 <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC3v4tMpbXGrrr2GY00coDwi9YeP4aqyA4&amp;language=uk&amp;ver=1.16"></script>
-
-<!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCb1nF3LPA_ZOACIAdwgtrh0nrQd4NYybA&sensor=false"></script> -->
-<!-- /end wrapper -->
-
-<!--
-	Add jQuety.min.js, jquery.magnific-popup.min.js, common.js
-	Commented scripts.min.js
-
-	17/08/17 Alex-K
--->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.js"></script>
-<script src="/js/intlTelInput.min.js"></script>
 <script src="/js/jquery.magnific-popup.min.js"></script>
 <script src="/js/slick.min.js"></script>
-<script src="/js/common.js"></script>
-<script src="/js/apart.js?v=1.0"></script>
-<script src="/js/viewportchecker.js"></script>
 <script src="/js/scripts.js"></script>
-<script>
-    jQuery('.post').addClass("hidden").viewportChecker({
-        classToAdd: 'visible animate',
-        offset: 200
-	});
-
-	$('form').on('submit', function() {
-		console.log($('form input[type="tel"]').val());
-	})
-
-	$(".collaboration_btn").on("click", function(e) {
-		e.preventDefault();
-		$(".contact-for-all").toggle();
-		$(".contact-for-realtor").fadeToggle();
-	});
-</script>
-
 <!-- Google Tag Manager (noscript) -->
-<noscript>
-	<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TCWCW9Z"
-			height="0" width="0" style="display:none;visibility:hidden"></iframe>
-</noscript>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TCWCW9Z" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
 </body>

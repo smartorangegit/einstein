@@ -18,9 +18,32 @@ $uRn = "https://$_SERVER[HTTP_HOST]".'/en'."$_SERVER[REQUEST_URI]";
 }
 //echo $uRa ;
 ?>
+<!--<script src="https://www.google.com/recaptcha/api.js?onload=myCallBack&render=explicit"></script>-->
+<!--<script>-->
+<!--    var reCaptcha1;-->
+<!--    var reCaptcha2;-->
+<!--    var myCallBack = function () {-->
+<!--        reCaptcha1 = grecaptcha.render('reCaptcha1', {-->
+<!--            'sitekey': '6Le_Zh4UAAAAAAQRz_elE3ba_GBVzqxK3LX5Tit4', //Replace this with your Site key-->
+<!--            'theme': 'light'-->
+<!--        });-->
+<!--        var element = document.getElementById('reCaptcha2');-->
+<!--        if (!element) {-->
+<!--        } else {-->
+<!--            reCaptcha2 = grecaptcha.render('reCaptcha2', {-->
+<!--                'sitekey': '6Le_Zh4UAAAAAAQRz_elE3ba_GBVzqxK3LX5Tit4', //Replace this with your Site key-->
+<!--                'theme': 'light'-->
+<!--            });-->
+<!--        }-->
+<!--    };-->
+<!--</script>-->
 <? include('form.php'); ?>
 <? include('preloader.php')?>
 
+<!--
+	19/08/17 Alex-K, new style for header
+		Completely new
+-->
 <header class="top-header">
 	<div class="top-header__inner">
 		<div class="top-header__left-d">

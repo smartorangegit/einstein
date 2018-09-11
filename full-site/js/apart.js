@@ -1,30 +1,24 @@
-$("html").mousemove(function(e){
-    var x = e.clientX;
-    var y = e.clientY;
-    var coor = "Coordinates: (" + x + "," + y + ")";
-    /*document.getElementById("demo").innerHTML = coor;*/
-
-    });
-
-$(document).ready(function(){
-    $(".2a").mousemove(function(e){
-    var x = e.clientX;
-    var y = e.clientY;
-    var coor = "Coordinates: (" + x + "," + y + ")";
-
-    $(".lin_1").offset({top:y+100, left:x+170});
-    });
-  });
-
-
-
-$('.2a').mouseover(function() {
-  $('.lin_1').css('display', 'block');
-
-}).mouseout(function()
-{
-$('.lin_1').css('display', 'none');
-});
+// $("html").mousemove(function(e){
+//     var x = e.clientX;
+//     var y = e.clientY;
+//     var coor = "Coordinates: (" + x + "," + y + ")";
+//     });
+// $(document).ready(function(){
+//     $(".2a").mousemove(function(e){
+//     var x = e.clientX;
+//     var y = e.clientY;
+//     var coor = "Coordinates: (" + x + "," + y + ")";
+//
+//     $(".lin_1").offset({top:y+100, left:x+170});
+//     });
+//   });
+//
+// $('.2a').mouseover(function() {
+//   $('.lin_1').css('display', 'block');
+//   }).mouseout(function()
+// {
+// $('.lin_1').css('display', 'none');
+// });
 
 
 
@@ -46,20 +40,16 @@ if(strGETm != 2){
 }
 }
 
-
+/// наведение на квартиры , выбор планировок и выведение данных //Begas A. август 2018
 $('.svg_links').each(function() {
-
     $(this).mouseenter(function() {
       $('#level').html(this.dataset.flats);
       $('#level_1').html(this.dataset.number);
       $('#level_3').html(this.dataset.square);
     });
-
     $(this).mouseleave(function() {
-
     });
   });
-
 
 
 $(document).ready(function(){
