@@ -945,6 +945,19 @@ $(function () {
       document.getElementById('count').value = ++ct;
   }
 
+  ////ctc for menu1
+  $(document).ready(function(){
+    if ($(window).width() > 768){
+
+  $('#ctc_open, #ctc_active').hover(
+    function(){
+    $('#ctc_active').css('height','35px');
+  },function(){
+    $('#ctc_active').css('height','0');
+  });
+  }
+});
+
   /////form form_rieltor
   jQuery('.post').addClass("hidden").viewportChecker({
       classToAdd: 'visible animate',
@@ -960,3 +973,48 @@ $(".collaboration_btn").on("click", function(e) {
   $(".contact-for-all").toggle();
   $(".contact-for-realtor").fadeToggle();
 });
+
+///// timer
+var deadline = 'March 28 2018';
+var t = getTimeRemaining(deadline);
+function getTimeRemaining(endtime){
+var t = Date.parse(endtime) - Date.parse(new Date());
+var seconds = Math.floor( (t/1000) % 60 );
+var minutes = Math.floor( (t/1000/60) % 60 );
+var hours = Math.floor( (t/(1000*60*60)) % 24 );
+var days = Math.floor( t/(1000*60*60*24) );
+return {
+'total': t,
+'days': days,
+'hours': hours,
+'minutes': minutes,
+'seconds': seconds
+};
+}
+function initializeClock(id, endtime){
+var clock = document.getElementById(id);
+var daysSpan = clock.querySelector('.days');
+var hoursSpan = clock.querySelector('.hours');
+var minutesSpan = clock.querySelector('.minutes');
+var secondsSpan = clock.querySelector('.seconds');
+var timeinterval = setInterval(function(){
+t = getTimeRemaining(deadline);
+daysSpan.innerHTML = t.days;
+hoursSpan.innerHTML = t.hours;
+minutesSpan.innerHTML = t.minutes;
+secondsSpan.innerHTML = t.seconds;
+
+
+},1000);
+if(t.total<=0){
+clearInterval(timeinterval);
+}else{
+$('.modal_window__container').attr('style', 'display:block;');
+}
+}
+// initializeClock('clock', deadline);
+
+
+/*  $('.modal_window__close').click(function(){
+ $('.modal_window__container').fadeOut(1000)
+});*/

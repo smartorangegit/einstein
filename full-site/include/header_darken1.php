@@ -29,7 +29,7 @@ $uRn = "https://$_SERVER[HTTP_HOST]".'/en'."$_SERVER[REQUEST_URI]";
 			</a>
 		</div>
 		<!-- /end top-header__left -->
-		<div class="top-header__right" id="menu">
+		<div class="top-header__right-def" id="menu">
 
 			<nav class="navigation">
 				<div class="navigation__mnu-logo">
@@ -39,28 +39,28 @@ $uRn = "https://$_SERVER[HTTP_HOST]".'/en'."$_SERVER[REQUEST_URI]";
 				</div>
 				<ul class="navigation__menu">
 					<li class="navigation__item">
-						<a class="navigation__link-b" href="/news/">Новини</a>
+						<a class="navigation__link" href="/news/">Новини</a>
 					</li>
 					<li class="navigation__item">
-						<a class="navigation__link-b" href="/location/">Розташування</a>
+						<a class="navigation__link" href="/location/">Розташування</a>
 					</li>
 					<li class="navigation__item">
-						<a class="navigation__link-b" href="/architecture/">Архітектура</a>
+						<a class="navigation__link" href="/architecture/">Архітектура</a>
 					</li>
 					<li class="navigation__item">
-						<a class="navigation__link-b" href="/floorpage/">Квартири</a>
+						<a class="navigation__link" href="/floorpage/">Квартири</a>
 					</li>
 					<li class="navigation__item">
-						<a class="navigation__link-b" href="/#perevagi">Переваги</a>
+						<a class="navigation__link" href="/#perevagi">Переваги</a>
 					</li>
 					<li class="navigation__item">
-						<a class="navigation__link-b" id="ctc_open" href="/construction/">Будівництво</a>
+						<a class="navigation__link" id="ctc_open" href="/construction/">Будівництво</a>
 						<ul id="ctc_active">
-							<li><a href="/ctc" class="navigation__link-b">Client TechControl</a></li>
+							<li><a href="/ctc" class="navigation__link">Client TechControl</a></li>
 						</ul>
 					</li>
 					<li class="navigation__item">
-						<a class="navigation__link-b" href="/#contact">Контакти</a>
+						<a class="navigation__link" href="/#contact">Контакти</a>
 					</li>
 					<li class="navigation__item" style="display:  flex; align-items:  center;">
 						<svg height="13.820739" width="6" xmlns="http://www.w3.org/2000/svg" fill="#002442"><path d="m5.9331145 12.650191c-.1420656.15464-.284196.30089-.4345576.45134-.351081.27999-.7606216.50148-1.1910636.63936-.6351475.12955-1.2954741.10032-1.9265061-.0794-.4011799-.1212-.7312947-.39282-.9193438-.76056-1.93904702-3.7192803-1.94740764-8.1447903-.033443-11.8766103.2214916-.42214003.6100981-.74390003 1.0698024-.86510003.3426556-.0877.685376-.15043 1.023819-.15876.7940316-.0125 1.5546207.22983 2.1981937.67281.079393.0502.1295246.15043.1295246.25073 0 .0502-.020869.10860003-.050099.15045003l-1.6047196 2.6787c-.079393.13789-.2591142.18802-.4011799.1086l-.8609161-.47221c-.050131-.0293-.1002948-.0376-.1504264-.0376-.1713602 0-.3008849.13788-.3008849.30921v6.4230903c0 .17133.1295571.30925.3009173.30925.058492 0 .1169844-.0209.1671475-.0502l.4847537-.33012c.1295248-.0794.2883117-.0586.3886066.0418l2.0978664 2.18556c.050131.0586.079394.12955.079394.20895 0 .071-.029262.1421-.066886.20058z" stroke-width=".032405"/></svg>
@@ -70,23 +70,6 @@ $uRn = "https://$_SERVER[HTTP_HOST]".'/en'."$_SERVER[REQUEST_URI]";
 					<svg id="navigation__close-mnu" class="navigation__close-mnu" enable-background="new 0 0 50 50" viewBox="0 0 50 50" width="40" xmlns="http://www.w3.org/2000/svg"><path d="m37.304 11.282 1.414 1.414-26.022 26.02-1.414-1.413z" fill="#002442"></path><path d="m12.696 11.282 26.022 26.02-1.414 1.415-26.022-26.02z" fill="#002442"></path></svg>
 				</nav>
 
-					<!-- <li class="lang_item">
-						<ul class="language-select">
-							<li class="active" data-lang="ua">
-								<a href="<?if(!empty($url_a)){ echo $url_a;}else{ echo $uRa;}?>">укр</a>
-							</li>
-							<li data-lang="ru">
-								<a href="<?if(!empty($url_r)){ echo $url_r;}else{ echo $uRr;}?>">рус</a>
-							</li>
-							<?/*
-							<li data-lang="en">
-								<a href="<?if(!empty($url_n)){ echo $url_n;}else{ echo $uRn;}?>">eng</a>
-							</li>
-							*/?>
-						</ul>
-					</li> -->
-				<!-- <button id="navigation__close-mnu" class="navigation__close-mnu"></button> -->
-			<!-- / end nav -->
 			<div class="top-callback">
 				<div class="top-callback__inner">
 					<ul class="language-select" style="color:#ffffff;">
@@ -109,7 +92,7 @@ $uRn = "https://$_SERVER[HTTP_HOST]".'/en'."$_SERVER[REQUEST_URI]";
 					 fill="#002442"/></g></svg>
 					</a>
 
-					<button class="top-callback__btn-d" id="callback-btn">Замовити дзвінок</button>
+					<button class="top-callback__btn" id="callback-btn">Замовити дзвінок</button>
 					<a href="http://saga-development.com.ua/" class="saga-logo" target="_blank">
 					<img src="/img/Saga_white.svg">
 					</a>
@@ -140,5 +123,7 @@ $uRn = "https://$_SERVER[HTTP_HOST]".'/en'."$_SERVER[REQUEST_URI]";
 			</div>
 		</div>
 	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
 	<!-- / end top-header__inner -->
 </header>

@@ -12,25 +12,14 @@ if($pieces[3] == 'ru'):
 	<meta name="description" content='Благодарим за обращение!'>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<link rel="stylesheet" href="/css/intlTelInput.css">
-	<link rel="stylesheet" href="/css/main.min.css">
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 	<link rel="alternate" hreflang="uk" href="https://einstein.house<?php echo $_SERVER['REQUEST_URI'];?>" />
-    <link rel="alternate" hreflang="ru" href="https://einstein.house<?php echo '/ru'.$_SERVER['REQUEST_URI'];?>" />
+  <link rel="alternate" hreflang="ru" href="https://einstein.house<?php echo '/ru'.$_SERVER['REQUEST_URI'];?>" />
 	<link rel="canonical" href="<?php echo 'https://'.$_SERVER['SERVER_NAME'],$_SERVER['REQUEST_URI']; ?>"/>
+  <link rel="stylesheet" href="/css/main-style.min.css">
 	<style>
-	@media (max-width: 750px) {
-	 .default .phoneRingo {	color: #002442 !important;}
-	}
-  .content.not_found_page{    width: 100%; max-width: 800px; margin: 0 auto;}
-		.phoneRingo1,	.phoneRingo {color: #002442;	text-decoration: none;}
-		.phoneRingo1::before, .phoneRingo::before {content: '044 ';}
-		.top-callback__link_other:hover .phoneRingo{color: #fff;}
-		.phoneRingo:hover {color: #fff;	text-decoration: none;}
-		.phoneRingo:visited {color: #fff !important; 	text-decoration: none !important;}
-		.default .phoneRingo1,
-		.default .phoneRingo {color: #fff;}
-    .slick-slide{padding: 20px; box-sizing: border-box;}
+	  .content.not_found_page{    width: 100%; max-width: 800px; margin: 0 auto;}
+	  .slick-slide{padding: 20px; box-sizing: border-box;}
     .slick-track{display: flex; display: -webkit-flex; align-items: center; -webkit-align-items: center;}
     .blok-other-projects__logo__rybalsky.slick-slide  img{ width: 70%; display: block; margin: 0 auto;}
 
@@ -129,27 +118,16 @@ if($pieces[3] == 'ru'):
 	<meta charset="UTF-8">
 	<title>Дякуємо | EINSTEIN Concept House</title>
 	<meta name="description" content='Дякуємо за зверення!'>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<link rel="stylesheet" href="/css/main.min.css">
+	<link rel="stylesheet" href="/css/main-style.min.css">
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-
 	<link rel="alternate" hreflang="uk" href="https://einstein.house<?php echo $_SERVER['REQUEST_URI'];?>" />
-    <link rel="alternate" hreflang="ru" href="https://einstein.house<?php echo '/ru'.$_SERVER['REQUEST_URI'];?>" />
+  <link rel="alternate" hreflang="ru" href="https://einstein.house<?php echo '/ru'.$_SERVER['REQUEST_URI'];?>" />
 	<link rel="canonical" href="<?php echo 'https://'.$_SERVER['SERVER_NAME'],$_SERVER['REQUEST_URI']; ?>"/>
 	<style>
-	@media (max-width: 750px) {
-	 .default .phoneRingo {	color: #002442 !important;}
-	}
     .content.not_found_page{    width: 100%; max-width: 800px; margin: 0 auto; }
-		.phoneRingo1,.phoneRingo {color: #002442;	text-decoration: none;		}
-		.phoneRingo1::before,
-		.phoneRingo::before {	content: '044 ';}
-		.top-callback__link_other:hover .phoneRingo{	color: #fff;}
-		.phoneRingo:hover {	color: #fff;	text-decoration: none;}
-		.phoneRingo:visited {	color: #fff !important;	text-decoration: none !important;}
-		.default .phoneRingo1, .default .phoneRingo {	color: #fff;}
-    .slick-slide{padding: 20px; box-sizing: border-box;}
+		.slick-slide{padding: 20px; box-sizing: border-box;}
     .slick-track{display: flex; display: -webkit-flex; align-items: center; -webkit-align-items: center;}
     .blok-other-projects__logo__rybalsky.slick-slide  img{ width: 70%; display: block; margin: 0 auto;}
 	</style>

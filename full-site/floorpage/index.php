@@ -3,108 +3,33 @@
 <html lang="uk">
 <head>
 	<meta charset="UTF-8">
-	<title>Купуйте квартиру в центрі Києва - оберіть поверх у ЖК EINSTEIN Concept House</title>
-	<meta name="description" content="EINSTEIN Concept House - купуйте квартиру з плануванням на будь-який смак  у центрі Києва по вул. Златоустівська, 24А. Обирайте потрібний поверх.">
+	<title>≡ ЖК Ейнштейн 》 Купити квартиру в житловому комплексі EINSTEIN Concept House</title>
+	<meta name="description" content="【Квартири】EINSTEIN Concept House - розумний будинок з централізованим управлінням ... ✅【EINSTEIN】 Дистанційний контроль за споживанням електроенергії, газу та води онлайн ... ✅【EINSTEIN】 Доступ до під'їзду по відбитку пальця, тротуар з підігрівом, відеоспостереж ... ✅【EINSTEIN】 - це технологічність в історичному центрі Києва!">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 	<link rel="alternate" hreflang="uk" href="https://einstein.house<?php echo $_SERVER['REQUEST_URI'];?>" />
 	<link rel="alternate" hreflang="ru" href="https://einstein.house<?php echo '/ru'.$_SERVER['REQUEST_URI'];?>" />
 	<link rel="canonical" href="<?php echo 'https://'.$_SERVER['SERVER_NAME'],$_SERVER['REQUEST_URI']; ?>"/>
-	<link rel="stylesheet" href="/css/intlTelInput.css">
-	<link rel="stylesheet" href="/css/main.min.css">
-	<style>
-	@media (max-width: 750px) {.default .phoneRingo {color: #002442 !important;}}
-		.phoneRingo1,	.phoneRingo {	color: #002442;	text-decoration: none;}
-		.phoneRingo1::before,.phoneRingo::before {content: '044 ';}
-		.top-callback__link_other:hover .phoneRingo{color: #fff;}
-		.phoneRingo:hover {color:#fff;	text-decoration: none;}
-		.phoneRingo:visited {color: #fff !important;	text-decoration: none !important;}
-		.phoneRingo1:hover {color: #002442;	text-decoration: none;}
-		.phoneRingo1:visited {color: #002442 !important;	text-decoration: none !important;}
-		.default .phoneRingo1,.default .phoneRingo {	color: #fff;	text-decoration: none;}
-		.default.phoneRingo1:hover {color: #002442;	text-decoration: none;}
-		.default.phoneRingo1 {color: #002442;}
-		.phoneRingo:visited {color: #002442 !important;text-decoration: none !important;}
-	</style>
-		<!-- Start Google Tag Manager -->
-		<script>(function (w, d, s, l, i) {
-            w[l] = w[l] || [];
-            w[l].push({
-                'gtm.start': new Date().getTime(), event: 'gtm.js'
-            });
-            var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
-            j.async = true;
-            j.src =
-                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-            f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-TCWCW9Z');</script>
-	<!-- End Google Tag Manager -->
+	<link rel="stylesheet" href="/css/main-style.min.css">
+	<?php include('../include/gtm_h.php'); ?>
 </head>
 <body>
 
 	<div class="wrapper">
-	<?php include('../include/header.php'); ?>
+		<?php include('../include/header.php'); ?>
 
 		<main class="content floor-page">
 			<div class="floor-page__left">
 				<div class="floor-page__left-inner">
 					<div class="floor-page__left-img">
-						<!-- <div class="floor-page__info"> -->
 							<p class="floor-page__descr">
 							Пропонуємо вам зручну опцію для ознайомлення з плануваннями одно- і двокімнатних квартир, а також трикімнатних і дворівневих
 							апартаментів в EINSTEIN Concept House. Вибирайте на зображенні поверх, що цікавить вас, і відповідне планування квартири,
 							плануйте свій завтрашній день вже сьогодні!
 							</p>
 							<a id="openText2" href="#" class="status-page__btn status-page__btn_sm">Читати далі</a>
-						<!-- </div> -->
-					 <style>
-					 .top-callback__btn-d{ background: white; }
-					 .top-callback__btn-d::before, .top-callback__btn-d_ru::before {background-color: #002442;}
-					 .top-callback__btn-d:hover:after, .top-callback__btn-d_ru:hover:after{color: white;}
-					 .floor-page{
-						 display: block;
-					 }
-					 .floor-link{margin-bottom: 125px;}
-					.floor-link .floor-page__descr {
-						text-decoration: none;
-						font-size: 16px;
-						display: block;
-						white-space: nowrap;
-					}
-					.floor-page__img-wrap {margin: 0 auto;}
-					.floor-page__bottom-box {margin-bottom: 30px;}
-						.status-page__btn_sm {
-						  max-width: 220px;
-						  text-align: center;
-							margin: 20px 0 20px auto;
-						}
-						.not_shown{height: 0px;	overflow: hidden;}
-						.floor-page__info{margin-top: 60px;}
-						.shown{
-							height: auto;
-							clear: both;
-							width: 100%;
-					    max-width: 1160px;
-					    margin: 30px auto;
-							padding: 10px;
-							box-sizing: border-box;
-						}
-						@media only screen and (max-width: 1200px){
-							.floor-link{margin-bottom: 0; padding:24px;}
-							.floor-page__img-wrap { margin: 0 auto; width: 30%;}
-							.floor-page__caption { font-size: 1.5em;}
-						}
-						@media only screen and (max-width: 1200px){
-						.navigation__mnu-logo img{width: 63%; }
-							.floor-page__descr{ display: block;}
-							.status-page__btn_sm {width: 140px;}
-						}
-					 </style>
-						<!-- <div class="floor-page__img-wrap">
-							<img src="/img/apartment/nav.png" alt="icon navigation">
-						</div> -->
+
 					</div>
 					<div class="floor-page__left-page-description">
 						<div class="floor-page__left-page-caption">

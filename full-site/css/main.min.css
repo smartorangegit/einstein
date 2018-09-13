@@ -4333,7 +4333,6 @@ header {
     letter-spacing: .025em;
     font-family: RobotoMedium, sans-serif;
     font-weight: 800;
-    /* text-transform: uppercase; */
     margin: 0;
     padding: 0;
     color: #002442;
@@ -4365,7 +4364,6 @@ header {
     color: #002442;
     font-family: 'RobotoLight', sans-serif;
 }
-
 .box-corner__bottom,
 .box-corner__top {
     position: absolute;
@@ -4735,7 +4733,6 @@ input[type=button] {
     font-size: 2em;
     line-height: 1.16667;
     letter-spacing: .025em;
-    /* text-transform: uppercase */
 }
 
 .status-page__description {
@@ -4744,7 +4741,6 @@ input[type=button] {
     font-size: 1em;
     line-height: 1.5;
     letter-spacing: .025em;
-    /* text-transform: uppercase */
 }
 
 .status-page__navIcon-wrap {
@@ -4865,7 +4861,6 @@ input[type=button] {
     font-size: 1em;
     line-height: 2.625;
     letter-spacing: .025em;
-    /* text-transform: uppercase; */
     text-align: center
 }
 
@@ -5796,7 +5791,7 @@ input[type=button] {
         min-height: 2135px
     }
     .blok-about__inner {
-        padding: 180px 10px 78px
+        padding: 10px 10px 78px
     }
     .bc-wrapper {
         width: 50%;
@@ -5953,12 +5948,7 @@ input[type=button] {
     .contact__form {
         width: 70%
     }
-    .floor-page__left-inner {
-        /* margin: 0 */
-    }
-    .floor-page__left-img {
-        /* top: 70px */
-    }
+
     .floor-page__left-page-description {
         margin: 80px 0 0
     }
@@ -6055,7 +6045,7 @@ input[type=button] {
 	/*
 		19/08/17 Alex-K, new style for top-header
     */
-    .top-header {
+    /* .top-header {
         background-color: #fff;
     }
 	.top-header__inner {
@@ -6356,7 +6346,7 @@ input[type=button] {
 
 	.default .top-header__btn {
 		background-color: transparent;
-	}
+	} */
 
 	/*
 		/ END 19/08/17 Alex-K, new style for top-header
@@ -6498,32 +6488,7 @@ input[type=button] {
 }
 
 @media only screen and (max-width:600px) {
-	/*
-		19/08/17 Alex-K, delete style
-	*/
-
-    /*.default .top-header__callback-btn {*/
-        /*position: absolute;*/
-        /*right: 10px;*/
-        /*top: 12px;*/
-        /*margin: 0;*/
-        /*width: 140px*/
-    /*}*/
-    /*.default .top-header__tel {*/
-        /*top: 23px;*/
-        /*width: 110px;*/
-        /*font-size: .75em*/
-    /*}*/
-    /*.default .top-header__btn {*/
-        /*top: 17px;*/
-        /*width: 90px*/
-    /*}*/
-
-	/*
-		/ END 19/08/17 Alex-K, delete style
-	*/
-
-    .bc-wrapper {
+  .bc-wrapper {
         width: 60%
     }
     .blok-about__inner {
@@ -6714,7 +6679,8 @@ input[type=button] {
     .blok-about {
         background: #01131d url(../img/blok-about/top-bg-380.jpg) no-repeat center top;
         background-size: cover;
-        min-height: 2852px
+        padding-top: 65px;
+        /* min-height: 2852px */
     }
     .blok-about__inner {
         padding: 730px 10px 78px

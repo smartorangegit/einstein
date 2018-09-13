@@ -34,45 +34,8 @@ while ($myrow = mysqli_fetch_array($sel))
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="canonical" href="<?php echo 'http://' . $_SERVER['SERVER_NAME'], $_SERVER['REQUEST_URI']; ?>"/>
-    <link rel="stylesheet" href="/css/main.min.css">
-    <style>
-        @media (max-width: 750px) {
-            .default .phoneRingo {
-                color: #002442 !important;
-            }
+    <link rel="stylesheet" href="/css/main-style.min.css">
 
-        }
-
-        .phoneRingo1,
-        .phoneRingo {
-            color: #002442;
-            text-decoration: none;
-        }
-
-        .phoneRingo1::before,
-        .phoneRingo::before {
-            content: '044 ';
-        }
-
-        .top-callback__link_other:hover .phoneRingo {
-            color: #fff;
-        }
-
-        .phoneRingo:hover {
-            color: #fff;
-            text-decoration: none;
-        }
-
-        .phoneRingo:visited {
-            color: #fff !important;
-            text-decoration: none !important;
-        }
-
-        .default .phoneRingo1,
-        .default .phoneRingo {
-            color: #fff;
-        }
-    </style>
 </head>
 <body>
 <!-- Google Tag Manager (noscript) -->

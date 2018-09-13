@@ -11,18 +11,8 @@
 	<link rel="alternate" hreflang="uk" href="https://einstein.house<?php echo $_SERVER['REQUEST_URI']; ?>"/>
 	<link rel="alternate" hreflang="ru" href="https://einstein.house<?php echo '/ru' . $_SERVER['REQUEST_URI']; ?>"/>
 	<link rel="canonical" href="<?php echo 'https://' . $_SERVER['SERVER_NAME'], $_SERVER['REQUEST_URI']; ?>"/>
-	<link rel="stylesheet" href="/css/intlTelInput.css">
-	<link rel="stylesheet" href="/css/main.min.css">
-	<style>
-		@media (max-width: 750px) {	.default .phoneRingo {	color: #002442 !important;}	}
-		.phoneRingo1, .phoneRingo {color: #002442; text-decoration: none;}
-		.phoneRingo1::before, .phoneRingo::before {	content: '044 ';}
-		.top-callback__link_other:hover .phoneRingo {	color: #fff;}
-		.phoneRingo:hover {color: #fff;text-decoration: none;	}
-		.phoneRingo:visited {	color: #fff !important;	text-decoration: none !important;}
-		.default .phoneRingo1, .default .phoneRingo {	color: #fff;}
-	</style>
-		<?php include('../include/gtm_h.php'); ?>
+	<link rel="stylesheet" href="/css/main-style.min.css">
+	<?php include('../include/gtm_h.php'); ?>
 </head>
 <body>
 
@@ -210,7 +200,7 @@
 					.ctc__box .ctc_img {width: 15%;display: flex;align-items: center;position: relative;left: -20px; }
 					@media only screen and (max-width: 570px) {
 						.content_name{font-size: 38px;}
-						.content_wrap{margin-bottom: 0; padding-top: 340px;}
+						.content_wrap{margin-bottom: 0; padding-top: 70px;}
 						.ctc__footer, .ctc__box{flex-direction: column; -webkit-flex-direction: column;}
 						.ctc__footer .ctc_img, .ctc__box  .ctc_img{width: 100%; left: 0;}
 						.ctc__content { width: 100%;column-count: 1; -moz-column-count: 1; -webkit-column-count: 1; }
