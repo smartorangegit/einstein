@@ -4,37 +4,13 @@
 	<meta charset="UTF-8">
 	<title>Купить двухкомнатную квартиру с удачным расположением по ул. Златоустовская в EINSTEIN Concept House</title>
 	<meta name="description" content="EINSTEIN Concept House предлагает большой выбор двухкомнатных квартир, вы можете сами создать планировку под свои нужды г. Киев, ул. Златоустовская, 24А">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<link rel="stylesheet" href="/css/intlTelInput.css">
-	<link rel="stylesheet" href="/css/main.min.css">
 	<link rel="alternate" hreflang="uk" href="https://einstein.house<?php echo str_replace('ru/', '', $_SERVER['REQUEST_URI'])?>" />
-    <link rel="alternate" hreflang="ru" href="https://einstein.house<?php echo $_SERVER['REQUEST_URI'];?>" />
+  <link rel="alternate" hreflang="ru" href="https://einstein.house<?php echo $_SERVER['REQUEST_URI'];?>" />
 	<link rel="canonical" href="<?php echo 'https://'.$_SERVER['SERVER_NAME'],$_SERVER['REQUEST_URI']; ?>"/>
-	<style>
-	@media (max-width: 750px) {
-	 .default .phoneRingo {	color: #002442 !important;}	}
-		.phoneRingo1,	.phoneRingo {	color: #002442;	text-decoration: none;}
-		.phoneRingo1::before,.phoneRingo::before {	content: '044 ';}
-		.top-callback__link_other:hover .phoneRingo{	color: #fff;}
-		.phoneRingo:hover {	color: #fff;	text-decoration: none;}
-		.phoneRingo:visited {	color: #fff !important;	text-decoration: none !important;}
-		.default .phoneRingo1,.default .phoneRingo {	color: #fff;}
-	</style>
-		<!-- Start Google Tag Manager -->
-		<script>(function (w, d, s, l, i) {
-            w[l] = w[l] || [];
-            w[l].push({
-                'gtm.start': new Date().getTime(), event: 'gtm.js'
-            });
-            var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
-            j.async = true;
-            j.src =
-                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-            f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-TCWCW9Z');</script>
-	<!-- End Google Tag Manager -->
+	<link rel="stylesheet" href="/css/main-style.min.css">
+	<?php include('../../include/gtm_h.php'); ?>
 </head>
 <body>
 	<?php include('../../../DB.php');

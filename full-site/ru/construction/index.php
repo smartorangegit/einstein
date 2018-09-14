@@ -14,27 +14,11 @@ include("../../admin/bd.php");
 	<link rel="alternate" hreflang="uk" href="https://einstein.house<?php echo str_replace('ru/', '', $_SERVER['REQUEST_URI'])?>"/>
 	<link rel="alternate" hreflang="ru" href="https://einstein.house<?php echo $_SERVER['REQUEST_URI']; ?>"/>
 	<link rel="canonical" href="<?php echo 'https://' . $_SERVER['SERVER_NAME'], $_SERVER['REQUEST_URI']; ?>"/>
-	<link rel="stylesheet" href="/css/intlTelInput.css">
-	<link rel="stylesheet" href="/css/main.min.css">
+	<link rel="stylesheet" href="/css/main-style.min.css">
+	<?php include('../../include/gtm_h.php'); ?>
+
 
 	<style>
-		@media (max-width: 750px) {
-			.default .phoneRingo {
-				color: #002442 !important;
-			}
-
-		}
-
-		.phoneRingo1,
-		.phoneRingo {
-			color: #002442;
-			text-decoration: none;
-		}
-
-		a {
-			outline: none;
-		}
-
 		a.img_link {
 			width: 100%;
 			height: auto;
@@ -42,51 +26,12 @@ include("../../admin/bd.php");
 			margin: auto;
 			padding: auto;
 		}
-
-		.phoneRingo1::before,
-		.phoneRingo::before {
-			content: '044 ';
-		}
-
-		.top-callback__link_other:hover .phoneRingo {
-			color: #fff;
-		}
-
-		.phoneRingo:hover {
-			color: #fff;
-			text-decoration: none;
-		}
-
-		.phoneRingo:visited {
-			color: #fff !important;
-			text-decoration: none !important;
-		}
-
-		.default .phoneRingo1,
-		.default .phoneRingo {
-			color: #fff;
-		}
-
 		.construction__link {
 			text-decoration: none;
 			cursor: pointer;
 		}
 	</style>
-		<!-- Start Google Tag Manager -->
-		<script>(function (w, d, s, l, i) {
-            w[l] = w[l] || [];
-            w[l].push({
-                'gtm.start': new Date().getTime(), event: 'gtm.js'
-            });
-            var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
-            j.async = true;
-            j.src =
-                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-            f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-TCWCW9Z');</script>
-	<!-- End Google Tag Manager -->
-</head>
+	</head>
 <body>
 
 <div class="wrapper">
@@ -359,62 +304,14 @@ include("../../admin/bd.php");
 						<? } ?>
 					<!-- /end construction__item -->
 					<? /*
-					<li class="construction__item">
-						<div class="construction__link" id="btnClick090617">
-							<div class="construction__date-time">
-								<div class="construction__const-time">
-									<img src="/img/construction/clock.svg" alt="clock">
-									<span>11:55</span>
-								</div>
-								<div class="construction__date">
-									<img src="/img/construction/calendar.svg" alt="calendar">
-									<span>09.06.17</span>
-								</div>
-							</div>
-							<!-- /end const__date-time -->
-							<img class="construction__pic" src="/img/construction/gal-0906/ex1.jpg" alt="img">
-							<div class="construction__blok-inner">
-								<p class="construction__description">Будівельні роботи</p>
-								<p class="construction__text">Облаштування опалубки ліфтової та сходової шахти.</p>
-							</div>
-						</div>
-						<!-- / end const -->
-					</li>
-					<!-- /end construction__item -->
 
-					<li class="construction__item">
-						<div class="construction__link" id="btnClick020617">
-							<div class="construction__date-time">
-								<div class="construction__const-time">
-									<img src="/img/construction/clock.svg" alt="clock">
-									<span>13:42</span>
-								</div>
-								<div class="construction__date">
-									<img src="/img/construction/calendar.svg" alt="calendar">
-									<span>02.06.17</span>
-								</div>
-							</div>
-							<!-- /end const__date-time -->
-							<img class="construction__pic" src="/img/construction/gal-0206/ex3.jpg" alt="img">
-							<div class="construction__blok-inner">
-								<p class="construction__description">Будівельні роботи</p>
-								<p class="construction__text">Облаштування вертикальних елементів 1-го поверху</p>
-							</div>
-						</div>
-						<!-- / end const -->
-					</li>
                     */ ?>
 					<!-- /end construction__item -->
 
 
 				</ul>
 				<!-- / end construction__list -->
-				<!-- <div class="pagination">
-					<a class="active" href="#">1</a>
-					<a href="#">2</a>
-					<a href="#">3</a>
-					<a href="#">4</a>
-				</div> -->
+			
 			</div>
 			<!-- /end construction__inner -->
 		</div>

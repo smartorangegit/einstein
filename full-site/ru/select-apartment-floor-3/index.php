@@ -19,42 +19,13 @@ $_SESSION['fl'] = $fl;
 	<link rel="alternate" hreflang="uk" href="https://einstein.house<?php echo str_replace('ru/', '', $_SERVER['REQUEST_URI'])?>" />
 	<link rel="alternate" hreflang="ru" href="https://einstein.house<?php echo $_SERVER['REQUEST_URI'];?>" />
 	<link rel="canonical" href="<?php echo 'https://'.$_SERVER['SERVER_NAME'],$_SERVER['REQUEST_URI']; ?>"/>
-	<link rel="stylesheet" href="/css/intlTelInput.css">
-	<link rel="stylesheet" href="/css/main.min.css">
-	<link rel="stylesheet" href="/css/apart.css">
-	<style>
-	@media (max-width: 750px) {.default .phoneRingo {color: #002442 !important;}}
-		.phoneRingo1,	.phoneRingo {	color: #002442;	text-decoration: none;}
-		.phoneRingo1::before,.phoneRingo::before {content: '044 ';}
-		.top-callback__link_other:hover .phoneRingo{color: #fff;}
-		.phoneRingo:hover {color:#fff;	text-decoration: none;}
-		.phoneRingo:visited {color: #fff !important;	text-decoration: none !important;}
-		.phoneRingo1:hover {color: #002442;	text-decoration: none;}
-		.phoneRingo1:visited {color: #002442 !important;	text-decoration: none !important;}
-		.default .phoneRingo1,.default .phoneRingo {	color: #fff;	text-decoration: none;}
-		.default.phoneRingo1:hover {color: #002442;	text-decoration: none;}
-		.default.phoneRingo1 {color: #002442;}
-		.phoneRingo:visited {color: #002442 !important;text-decoration: none !important;}
-	</style>
-		<!-- Start Google Tag Manager -->
-		<script>(function (w, d, s, l, i) {
-            w[l] = w[l] || [];
-            w[l].push({
-                'gtm.start': new Date().getTime(), event: 'gtm.js'
-            });
-            var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
-            j.async = true;
-            j.src =
-                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-            f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-TCWCW9Z');</script>
-	<!-- End Google Tag Manager -->
+	<link rel="stylesheet" href="/css/main-style.min.css">
+	<?php include('../../include/gtm_h.php'); ?>
 </head>
 <body class="body_flatplan">
 
 	<div class="wrapper">
-<?php include('../../include/header_darken_ru.php'); ?>
+<?php include('../../include/header_ru.php'); ?>
 		<main class="content select-apartment">
 			<div class="select-apartment__inner">
 				<div class="select-apartment__caption-wrap">
@@ -176,7 +147,7 @@ $_SESSION['fl'] = $fl;
 										</div>
 								</div>
 						</div>
-						
+
 					</div>
 				</div>
 				<!-- /end select-apartment__description -->

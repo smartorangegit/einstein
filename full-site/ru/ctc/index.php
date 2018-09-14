@@ -12,17 +12,7 @@
 	<link rel="alternate" hreflang="uk" href="https://einstein.house<?php echo str_replace('ru/', '', $_SERVER['REQUEST_URI'])?>"/>
 	<link rel="alternate" hreflang="ru" href="https://einstein.house<?php echo $_SERVER['REQUEST_URI']; ?>"/>
 	<link rel="canonical" href="<?php echo 'https://' . $_SERVER['SERVER_NAME'], $_SERVER['REQUEST_URI']; ?>"/>
-	<link rel="stylesheet" href="/css/intlTelInput.css">
-	<link rel="stylesheet" href="/css/main.min.css">
-	<style>
-		@media (max-width: 750px) {.default .phoneRingo {color: #002442 !important;}}
-		.phoneRingo1,.phoneRingo {	color: #002442;	text-decoration: none;}
-		.phoneRingo1::before,.phoneRingo::before {	content: '044 ';}
-		.top-callback__link_other:hover .phoneRingo {	color: #fff;}
-		.phoneRingo:hover {	color: #fff;	text-decoration: none;}
-		.phoneRingo:visited {	color: #fff !important;	text-decoration: none !important;}
-		.default .phoneRingo1,.default .phoneRingo {	color: #fff;}
-	</style>
+	<link rel="stylesheet" href="/css/main-style.min.css">
 	<?php include('../../include/gtm_h.php'); ?>
 
 

@@ -12,9 +12,8 @@
 	<link rel="alternate" hreflang="uk" href="https://einstein.house" />
 	<link rel="canonical" href="https://einstein.house/ru/"/>
 	<link rel="stylesheet" href="/css/main-style.min.css">
-	<!-- Start Google Tag Manager -->
-	<script>!function(e,t,a,n,g){e[n]=e[n]||[],e[n].push({"gtm.start":(new Date).getTime(),event:"gtm.js"});var m=t.getElementsByTagName(a)[0],r=t.createElement(a);r.async=!0,r.src="https://www.googletagmanager.com/gtm.js?id=GTM-TCWCW9Z",m.parentNode.insertBefore(r,m)}(window,document,"script","dataLayer");</script>
-	<!-- End Google Tag Manager -->
+	<?php include('../include/gtm_h.php'); ?>
+
 </head>
 <body>
 

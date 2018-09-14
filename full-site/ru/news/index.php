@@ -29,63 +29,11 @@ $zwqe = 2.7;
     <?if(intval($_GET['page'])>=2){?><link rel="prev" href="<?if(intval($_GET['page'])==2){echo "http://einstein.house/news/";}
     else{echo 'https://einstein.house/ru/news/?page='.(intval($_GET['page'])-1).'/';}?>"><?}?>
 
-    <link rel="stylesheet" href="/css/intlTelInput.css">
-    <link rel="stylesheet" href="/css/main.min.css">
+    <link rel="stylesheet" href="/css/main-style.min.css">
     <link rel="alternate" hreflang="uk" href="https://einstein.house/news/"/>
     <link rel="alternate" hreflang="ru" href="https://einstein.house/ru/news/"/>
     <link rel="canonical" href="https://einstein.house/ru/news/"/>
-    <style>
-        @media (max-width: 750px) {
-            .default .phoneRingo {
-                color: #002442 !important;
-            }
-
-        }
-
-        .phoneRingo1,
-        .phoneRingo {
-            color: #002442;
-            text-decoration: none;
-        }
-
-        .phoneRingo1::before,
-        .phoneRingo::before {
-            content: '044 ';
-        }
-
-        .top-callback__link_other:hover .phoneRingo {
-            color: #fff;
-        }
-
-        .phoneRingo:hover {
-            color: #fff;
-            text-decoration: none;
-        }
-
-        .phoneRingo:visited {
-            color: #fff !important;
-            text-decoration: none !important;
-        }
-
-        .default .phoneRingo1,
-        .default .phoneRingo {
-            color: #fff;
-        }
-    </style>
-    	<!-- Start Google Tag Manager -->
-		<script>(function (w, d, s, l, i) {
-            w[l] = w[l] || [];
-            w[l].push({
-                'gtm.start': new Date().getTime(), event: 'gtm.js'
-            });
-            var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
-            j.async = true;
-            j.src =
-                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-            f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-TCWCW9Z');</script>
-	<!-- End Google Tag Manager -->
+  <?php include('../../include/gtm_h.php'); ?>
 </head>
 <body>
 
@@ -157,7 +105,7 @@ $zwqe = 2.7;
                 <div class="pagination">
                     <a <?if($_GET['page'] ==""){echo "class='active'";}?> href="/ru/news/">1</a>
                     <a <?if($_GET['page'] == 2){echo "class='active'";}?> href="#" data-number="2" onClick="showUser(this.getAttribute('data-number')); return false;">2</a>
-                </div> 
+                </div>
 
             <!-- / end news-feed__inner -->
         </div>
@@ -172,12 +120,6 @@ $zwqe = 2.7;
 </div>
 <!-- /end wrapper -->
 
-<!--
-	Add jQuety.min.js, jquery.magnific-popup.min.js, common.js
-	Commented scripts.min.js
-
-	17/08/17 Alex-K
--->
 
 <script src="/js/jquery.magnific-popup.min.js"></script>
 <script>
@@ -195,4 +137,3 @@ $zwqe = 2.7;
 <!-- End Google Tag Manager (noscript) -->
 </body>
 </html>
-

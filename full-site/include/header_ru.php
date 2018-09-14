@@ -28,7 +28,7 @@ $uRn = "https://$_SERVER[HTTP_HOST]".'/en'."$_SERVER[REQUEST_URI]";
 	<div class="top-header__inner">
 		<div class="top-header__left">
 			<a class="top-header__logo" href="/ru/">
-				<img class="logo-white" src="/img/EINSTEIN-logo-blue.svg" alt="einstein-logo" style="max-width: 195px;">
+				<img src="/img/EINSTEIN-logo-blue.svg" alt="einstein-logo" style="max-width: 195px;">
 			</a>
 		</div>
 		<!-- /end top-header__left -->
