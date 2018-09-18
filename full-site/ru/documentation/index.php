@@ -3,8 +3,8 @@
 <html lang="uk">
 <head>
 	<meta charset="UTF-8">
-	<title>Документація</title>
-	<meta name="description" content="EINSTEIN Concept House пропонує широкий вибір найсучасніших однокімнатних квартир, ви можете обрати власне планування та будь-який поверх м. Київ, вул. Златоустівська, 24А">
+	<title>≡ ЖК Эйнштейн 》 Документы жилого комплекса EINSTEIN Concept House</title>
+	<meta name="description" content="【Документы】EINSTEIN Concept House - умный дом с централизованным управлевлением... ✅【EINSTEIN】Дистанционный контроль потребления электроэнергии, газа и воды онлайн ...  ✅【EINSTEIN】Доступ в подъезд по отпечатку пальца, тротуар с подогревом, видеонаблю... ✅【EINSTEIN】- это технологичность в историческом центре Киева!">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<link rel="alternate" hreflang="uk" href="https://einstein.house<?php echo $_SERVER['REQUEST_URI'];?>" />

@@ -3,8 +3,8 @@
 <html lang="uk">
 <head>
 	<meta charset="UTF-8">
-	<title>EINSTEIN Concept House - розташування житлового комплексу на правому березі Києва по вул. Златоустівська біля метро Університет</title>
-	<meta name="description" content="EINSTEIN Concept House - всі переваги розташування житлового комплексу на правому березі Києва м. Київ, вул. Златоустівська, 24А">
+	<title>≡ ЖК Ейнштейн 》 Розташування житлового комплексу EINSTEIN Concept House</title>
+	<meta name="description" content="【Розташування】EINSTEIN Concept House - розумний будинок з централізованим управлін ... ✅【EINSTEIN】 Дистанційний контроль за споживанням електроенергії, газу та води онлайн ... ✅【EINSTEIN】 Доступ до під'їзду по відбитку пальця, тротуар з підігрівом, відеоспостереж ... ✅【EINSTEIN】 - це технологічність в історичному центрі Києва!">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">

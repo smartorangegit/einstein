@@ -7,8 +7,7 @@ include("../../admin/bd.php");
 <head>
 	<meta charset="UTF-8">
 	<title>≡ ЖК Эйнштейн 》 Ход строительства жилого комплекса EINSTEIN Concept House</title>
-	<meta name="description"
-		  content="【Ход строительства】EINSTEIN Concept House - умный дом с централизованным управле... ✅【EINSTEIN】Дистанционный контроль потребления электроэнергии, газа и воды онлайн ...  ✅【EINSTEIN】Доступ в подъезд по отпечатку пальца, тротуар с подогревом, видеонаблю... ✅【EINSTEIN】- это технологичность в историческом центре Киева!">
+	<meta name="description" content="【Ход строительства】EINSTEIN Concept House - умный дом с централизованным управле... ✅【EINSTEIN】Дистанционный контроль потребления электроэнергии, газа и воды онлайн ...  ✅【EINSTEIN】Доступ в подъезд по отпечатку пальца, тротуар с подогревом, видеонаблю... ✅【EINSTEIN】- это технологичность в историческом центре Киева!">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<link rel="alternate" hreflang="uk" href="https://einstein.house<?php echo str_replace('ru/', '', $_SERVER['REQUEST_URI'])?>"/>
@@ -311,7 +310,7 @@ include("../../admin/bd.php");
 
 				</ul>
 				<!-- / end construction__list -->
-			
+
 			</div>
 			<!-- /end construction__inner -->
 		</div>

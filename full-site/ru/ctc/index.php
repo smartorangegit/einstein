@@ -3,9 +3,8 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
-	<title>EINSTEIN Concept House - умный жк с гармоничной архитектурой и утонченным стилем</title>
-	<meta name="description"
-		  content="EINSTEIN Concept House - ЖК с гармоничной архитектурой и утонченным стилем - удобные и комфортные квартиры  г. Киев, ул. Златоустовская, 24А">
+	<title>≡ EINSTEIN Concept House 》 умный жилой комплекс Эйнштейн в центре Киева</title>
+	<meta name="description" content="【Client Technical Control】EINSTEIN Concept House - умный дом с централизованным управлевлением... ✅【EINSTEIN】Дистанционный контроль потребления электроэнергии, газа и воды онлайн ...  ✅【EINSTEIN】Доступ в подъезд по отпечатку пальца, тротуар с подогревом, видеонаблю... ✅【EINSTEIN】- это технологичность в историческом центре Киева!">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">

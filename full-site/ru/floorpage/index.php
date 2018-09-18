@@ -3,8 +3,8 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
-	<title>Покупайте квартиру в центре Киева -  выбирайте этаж в ЖК EINSTEIN Concept House</title>
-	<meta name="description" content="EINSTEIN Concept House - покупайте квартиру с планировкрой на любой вкус в центре Киева по ул. Златоустовская, 24А. Выбирайте нужный этаж.">
+	<title>≡ ЖК Эйнштейн 》 Купить квартиру в жилом комплексе EINSTEIN Concept House</title>
+	<meta name="description" content="【Квартиры】EINSTEIN Concept House - умный дом с централизованным управлевлением вс... ✅【EINSTEIN】Дистанционный контроль потребления электроэнергии, газа и воды онлайн ...  ✅【EINSTEIN】Доступ в подъезд по отпечатку пальца, тротуар с подогревом, видеонаблю... ✅【EINSTEIN】- это технологичность в историческом центре Киева!">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">

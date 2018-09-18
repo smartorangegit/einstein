@@ -3,8 +3,8 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
-	<title>Вебкамера на стоительстве EINSTEIN Concept House, следите за ходом работ онлайн</title>
-	<meta name="description" content="EINSTEIN Concept House - вебкамера на стоительстве, следите за ходом работ онлайн г. Киев, ул. Златоустовская, 24А">
+	<title>≡ ЖК Эйнштейн 》 Вебкамера жилого комплекса EINSTEIN Concept House</title>
+	<meta name="description" content="【Вебкамера】EINSTEIN Concept House - умный дом с централизованным управлевлением ... ✅【EINSTEIN】Дистанционный контроль потребления электроэнергии, газа и воды онлайн ...  ✅【EINSTEIN】Доступ в подъезд по отпечатку пальца, тротуар с подогревом, видеонаблю... ✅【EINSTEIN】- это технологичность в историческом центре Киева!">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<link rel="alternate" hreflang="uk" href="https://einstein.house<?php echo str_replace('ru/', '', $_SERVER['REQUEST_URI'])?>" />

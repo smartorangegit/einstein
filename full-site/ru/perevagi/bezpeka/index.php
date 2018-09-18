@@ -3,13 +3,13 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
-	<title>EINSTEIN Concept House - современные системы безопасности для дома в каждой квартире жилого комплекса</title>
-	<meta name="description" content="EINSTEIN Concept House описание преимуществ внедрения современных систем безопасности для дома в каждой новой квартире г. Киев, ул. Златоустовская, 24А">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>≡ ЖК Эйнштейн 》 Системы безопасности жилого комплекса EINSTEIN Concept House</title>
+	<meta name="description" content="【Системы безопасности】EINSTEIN Concept House - умный дом с централизованным упр... ✅【EINSTEIN】Дистанционный контроль потребления электроэнергии, газа и воды онлайн ...  ✅【EINSTEIN】Доступ в подъезд по отпечатку пальца, тротуар с подогревом, видеонаблю... ✅【EINSTEIN】- это технологичность в историческом центре Киева!">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<link rel="stylesheet" href="/css/main-style.min.css">
 	<link rel="alternate" hreflang="uk" href="https://einstein.house<?php echo str_replace('ru/', '', $_SERVER['REQUEST_URI'])?>" />
-    <link rel="alternate" hreflang="ru" href="https://einstein.house<?php echo $_SERVER['REQUEST_URI'];?>" />
+  <link rel="alternate" hreflang="ru" href="https://einstein.house<?php echo $_SERVER['REQUEST_URI'];?>" />
 	<link rel="canonical" href="<?php echo 'https://'.$_SERVER['SERVER_NAME'],$_SERVER['REQUEST_URI']; ?>"/>
 	<?php include('../../include/gtm_h.php'); ?>
 
@@ -41,7 +41,7 @@
 					<h2 class="news-feed__description">Подробнее о защищенности и безопасности</h2>
 					<p class="news-page__text">
 						После преобретения квадратных метров в EINSTEIN Concept House вам останется оформить жилье в соответствии со своими представлениями
-						о красоте и уюте, ведь техническую часть ваших забот мы взяли на себя. Например, на момент сдачи дома в эксплуатацию 
+						о красоте и уюте, ведь техническую часть ваших забот мы взяли на себя. Например, на момент сдачи дома в эксплуатацию
 						владельцы квартир уже могут не волноваться ни за свою безопасность, ни за сохранность своего имущества.
 					</p>
 

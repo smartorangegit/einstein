@@ -3,13 +3,13 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
-	<title>EINSTEIN Concept House - расположение новостройки на правом берегу Киева по ул. Златоустовская, возле метро Университет</title>
-	<meta name="description" content="EINSTEIN Concept House - все преимущества расположения новостройки на правом берегу Киева г. Киев, ул. Златоустовская, 24А">
+	<title>≡ ЖК Эйнштейн 》 Расположение жилого комплекса EINSTEIN Concept House</title>
+	<meta name="description" content="【Расположение】EINSTEIN Concept House - умный дом с централизованным управлевле ... ✅【EINSTEIN】Дистанционный контроль потребления электроэнергии, газа и воды онлайн ...  ✅【EINSTEIN】Доступ в подъезд по отпечатку пальца, тротуар с подогревом, видеонаблю... ✅【EINSTEIN】- это технологичность в историческом центре Киева!">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 	<link rel="alternate" hreflang="uk" href="https://einstein.house<?php echo str_replace('ru/', '', $_SERVER['REQUEST_URI'])?>" />
-  	<link rel="alternate" hreflang="ru" href="https://einstein.house<?php echo $_SERVER['REQUEST_URI'];?>" />
+  <link rel="alternate" hreflang="ru" href="https://einstein.house<?php echo $_SERVER['REQUEST_URI'];?>" />
 	<link rel="canonical" href="<?php echo 'https://' . $_SERVER['SERVER_NAME'], $_SERVER['REQUEST_URI']; ?>"/>
 	<link rel="stylesheet" href="/css/main-style.min.css">
 <?php include('../../include/gtm_h.php'); ?>

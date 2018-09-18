@@ -15,20 +15,16 @@ $zwqe = 2.7;
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Последние новости от жилого комплекса EINSTEIN Concept House</title>
-    <meta name="description"
-          content="EINSTEIN Concept House - последние новости от жилого комплекса  г. Киев, ул. Златоустовская, 24А">
+    <title>≡ ЖК Эйнштейн 》 Новости жилого комплекса EINSTEIN Concept House</title>
+    <meta name="description" content="【Новости】 EINSTEIN Concept House - умный дом с централизованным управлевлением .... ✅【EINSTEIN】Дистанционный контроль потребления электроэнергии, газа и воды онлайн ...  ✅【EINSTEIN】Доступ в подъезд по отпечатку пальца, тротуар с подогревом, видеонаблю... ✅【EINSTEIN】- это технологичность в историческом центре Киева!">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
     <? if(intval($_GET['page'])!= $collN):?>
         <link rel="next" href="<?if(intval($_GET['page'])==""){echo "https://einstein.house/news/?page=2/";}
         else{if($collN>=1){echo "1";}else{echo "https://einstein.house/news/?page".intval($_GET['page']+1).'/';}}?>">
     <? endif; ?>
-
     <?if(intval($_GET['page'])>=2){?><link rel="prev" href="<?if(intval($_GET['page'])==2){echo "http://einstein.house/news/";}
     else{echo 'https://einstein.house/ru/news/?page='.(intval($_GET['page'])-1).'/';}?>"><?}?>
-
     <link rel="stylesheet" href="/css/main-style.min.css">
     <link rel="alternate" hreflang="uk" href="https://einstein.house/news/"/>
     <link rel="alternate" hreflang="ru" href="https://einstein.house/ru/news/"/>
@@ -41,12 +37,8 @@ $zwqe = 2.7;
     <script src="https://code.jquery.com/jquery-latest.js"></script>
     <script src="https://code.jquery.com/jquery-2.1.1.js"></script>
 
-    <!--
-        19/08/17 Alex-K, new style for header
-            Completely new
-    -->
-    <?php include('../../include/header_ru.php'); ?>
 
+    <?php include('../../include/header_ru.php'); ?>
     <main class="content">
         <div class="news-feed">
             <div class="news-feed__inner">

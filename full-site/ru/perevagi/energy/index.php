@@ -3,12 +3,12 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
-	<title>EINSTEIN Concept House - управление освещением и системой климат контроля в каждой квартире</title>
-	<meta name="description" content="EINSTEIN Concept House вы можете управлять всей квартирой прямо из своего мобильного телефона - контоль использования энергии, управление освещением и отоплением  г. Киев, ул. Златоустовская, 24А">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>≡ ЖК Эйнштейн 》 Оптимизация энергозатрат в жилом комплексе EINSTEIN Concept House</title>
+	<meta name="description" content="【Оптимизация энергозатрат】EINSTEIN Concept House - умный дом с централизованным ... ✅【EINSTEIN】Дистанционный контроль потребления электроэнергии, газа и воды онлайн ...  ✅【EINSTEIN】Доступ в подъезд по отпечатку пальца, тротуар с подогревом, видеонаблю... ✅【EINSTEIN】- это технологичность в историческом центре Киева!">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<link rel="alternate" hreflang="uk" href="https://einstein.house<?php echo str_replace('ru/', '', $_SERVER['REQUEST_URI'])?>" />
-    <link rel="alternate" hreflang="ru" href="https://einstein.house<?php echo $_SERVER['REQUEST_URI'];?>" />
+  <link rel="alternate" hreflang="ru" href="https://einstein.house<?php echo $_SERVER['REQUEST_URI'];?>" />
 	<link rel="canonical" href="<?php echo 'https://'.$_SERVER['SERVER_NAME'],$_SERVER['REQUEST_URI']; ?>"/>
 	<link rel="stylesheet" href="/css/main-style.min.css">
 	<?php include('../../include/gtm_h.php'); ?>
@@ -23,7 +23,7 @@
 				<h1 class="news-page__caption">Оптимизация энергозатрат</h1>
 			</div>
 			<div class="news-page__page-description">
-			
+
 				<!-- / end news-page__gallery -->
 				<div class="news-page__content">
 					<p class="news-page__text">
