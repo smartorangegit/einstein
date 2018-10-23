@@ -30,15 +30,15 @@ include("../admin/bd.php");
 					<div class="status-page__descr-inner">
 						<h1 class="status-page__heading">Хід будівництва</h1>
 						<p class="status-page__description" style="font-size: 0.875em;">
-Триває монтаж вікон та утеплення фасаду. Ведуться роботи з улаштування цегляних внутрішніх перегородок.
-Триває прокладка внутрішніх електромереж та монтаж сантехнічного обладнання.
+Монтаж вікон на 9-му поверсі. Триває утеплення фасаду. Проводяться роботи з улаштування цегляних внутрішніх перегородок цокольних і мансардних поверхів. 
+Триває прокладання внутрішніх електромереж та монтаж сантехнічного обладнання на 9 поверсі. На 1 поверсі виконані роботи з гідроізоляції. Розпочато заливку стяжок на 7 поверсі.
 
 						</p>
 					</div>
 				</div>
 <style>
- .status-page__heading {margin-top: -14px;}
-.status-page__descr-inner {margin: 30px 0 0 auto;}
+ .status-page__heading {margin-top: -30px;}
+.status-page__descr-inner {margin: 8px 0 0 auto;}
 </style>
 				<div class="status-page__navIcon-wrap">
 					<div class="status-page__navIcon-inner">
