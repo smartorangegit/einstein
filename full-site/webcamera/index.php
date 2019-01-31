@@ -21,7 +21,6 @@
 			<div class="webcamera__inner">
 				<div class="webcamera__page-caption">
 					<h1 class="webcamera__caption">ВЕБКАМЕРА</h1>
-					<p class="webcamera__top-text">Завершення будівництва – ΙV квартал 2018 року</p>
 				</div>
 				<div class="webcamera__stutas">
 					<iframe width="100%" height="auto" src="https://macparts.kiev.ua:8413/player.html" frameborder="0" allowfullscreen></iframe>
